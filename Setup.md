@@ -1,16 +1,25 @@
-*This guide is accurate as of version 0.4.3 (released 7 May 2024)*
+*This guide is accurate as of version 0.4.5 (released 25 May 2024)*
 
 CrossCode is an "unsupported" Archipelago game, meaning it is not distributed with the main Archipelago installation.
-Fortunately, it is easy to run unsupported games.
+Fortunately, it is easy to run unsupported games even with stock Archipelago.
 
 ## How to generate your own multiworld with CrossCode seeds
 
-Download the APWorld file from the [releases page of the CrossCode Archipelago
-project](https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/latest) and put it into `lib/worlds` in your
-Archipelago folder.
+First, you need a local installation of Archipelago itself. It should be as simple as downloading a release from [this
+page](https://github.com/ArchipelagoMW/Archipelago/releases/latest) and either unzipping it or running the installer,
+depending on your operating system.
 
-Then put your yamls in the `Players` directory and run the `Generate` program. If you need a yaml to build off of, we
-have some in the discord.
+Next, download the APWorld file from the [releases page of the CrossCode Archipelago
+project](https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/latest) and put it into `lib/worlds` in your
+Archipelago installation folder.
+
+Then put your yamls in the `Players` directory (once again, in the root of your installation) and run the
+`ArchipelagoGenerate` program. If you need a yaml to build off of, we have some in the discord. The result should be
+in the `output` directory. The terminal window should tell you the filename.
+
+This file can then be either self-hosted with the `ArchipelagoServer` program or cloud-hosted on https://archipelago.gg
+(or any of the third-party Archipelago host sites) so long as the server's Archipelago version is sufficiently
+up-to-date to support CrossCode.
 
 ## How to join a multiworld with CrossCode seeds
 
