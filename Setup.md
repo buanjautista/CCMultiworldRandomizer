@@ -37,18 +37,35 @@ You will also need the following dependency mods:
 * [nax-module-cache](https://github.com/conorlawton/nax-module-cache/releases/latest): technically just a requirement
   for CCUILib.
 
-Open CrossCode and start a new save file. I recommend New Game+ with the Randomizer Start option (an enhanced version
-of the Skip Beginning option which also skips Rookie Dungeon). Also consider using Get on My Level so that you'll have
-the ability to fight back against enemies in areas the game does not expect you to be in. You will start in the Rookie
-Harbor Quest Hub.
+Open CrossCode and start a new save file. Either:
+* Use the Archipelago Start option. You will be prompted for details, then, upon a successful server connection, you
+  will be brought to the New Game+ tab to pick perks.
+* Use the New Game+ Start option. Select your perks and then, once you're in game, pause and click the "Archipelago
+  Options" button and put in your connection details there. Once the pause menu screen says "AP: CONNECTED", you can
+  start playing.
+
+If you're unfamiliar with the terminology, here's a quick guide:
+* "Hostname" is the computer where the host is running (for example, `archipelago.gg` if you uploaded to or `localhost`)
+* "Port" is a number that specifies where on the server Archipelago is running. The server should tell you the port
+  pretty plainly.
+* "Slot" is your player name. This is not the name of your YAML, it is the `name` field inside of your YAML file.
+
+I recommend playing with the Randomizer Start option (an enhanced version of the Skip Beginning option which also skips
+Rookie Dungeon). Also consider using Get on My Level so that you'll have the ability to fight back against enemies in
+areas the game does not expect you to be in. You will start in the Rookie Harbor Quest Hub.
 
 You will know if the mod is working when you get to space for the first time and you don't recieve the Disc of Insight
-and Green Leaf Shade as expected. Instead, you should see a prompt in the top-right.
+and Green Leaf Shade as expected. Instead, you should see a prompt in the top-right notifying you of what was actually
+found.
 
-## Optional poptracker package
+## Poptracker Pack
 
-Courtesy of Lurch9229, you can have a fancier interface for tracking your progress. [See here for
+Courtesy of Lurch9229, you can have a fancier interface for tracking your progress. This is optional but extremely
+helpful, especially if you don't have a solid mental model of the world. [See here for
 information](https://github.com/lurch9229/CrossCode-Poptracker-AP).
+
+Other tracking solutions are available, but the poptracker pack is developed by a trusted member and moderator of the
+community, and is therefore more likely to give accurate results.
 
 ## How to get support
 
