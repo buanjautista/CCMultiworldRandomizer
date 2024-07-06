@@ -1,4 +1,4 @@
-*This guide is accurate as of version 0.4.5 (released 25 May 2024)*
+*This guide is accurate as of version 0.5.0 (released 4 July 2024)*
 
 CrossCode is an "unsupported" Archipelago game, meaning it is not distributed with the main Archipelago installation.
 Fortunately, it is easy to run unsupported games even with stock Archipelago.
@@ -28,12 +28,10 @@ release](https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/latest)
 directory. **Make sure you get the `.ccmod` file and not the source code zip for all mods downloaded.**
 
 You will also need the following dependency mods:
-* [CC-Open-World](https://github.com/buanjautista/cc-open-world/releases/latest) (version 0.1.7 or greater): this is to
+* [CC-Open-World](https://github.com/buanjautista/cc-open-world/releases/latest) (version 0.3.2 or greater): this is to
   prevent softlocks when you inevitably sequence-break the game.
-* [CCUILib](https://github.com/conorlawton/CCUILib/releases/latest): gives access to the text input box.
-  * Note that as of writing this, there is a bug with CCUILib where pressing tab while a text input field is selected
-    unfocuses the window. This is expected, just don't press tab. I've submitted a fixed release to the author, but
-    that has not been released yet and I can't be bothered to package someone else's mod.
+* [CCUILib](https://github.com/conorlawton/CCUILib/releases/latest) (version 1.2.4 or greater): provides additional user
+  interface widgets, including text input boxes.
 * [nax-module-cache](https://github.com/conorlawton/nax-module-cache/releases/latest): technically just a requirement
   for CCUILib.
 
