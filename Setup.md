@@ -43,7 +43,7 @@ Open CrossCode and start a new save file. Either:
   start playing.
 
 If you're unfamiliar with the terminology, here's a quick guide:
-* "Hostname" is the computer where the host is running (for example, `archipelago.gg` if you uploaded to or `localhost`)
+* "Hostname" is the computer where the host is running (for example `archipelago.gg`).
 * "Port" is a number that specifies where on the server Archipelago is running. The server should tell you the port
   pretty plainly.
 * "Slot" is your player name. This is not the name of your YAML, it is the `name` field inside of your YAML file.
