@@ -1,4 +1,4 @@
-*This guide is accurate as of version 0.5.0 (released 4 July 2024)*
+*This guide is accurate as of version 0.6.0 (updated 27 August 2024)*
 
 CrossCode is an "unsupported" Archipelago game, meaning it is not distributed with the main Archipelago installation.
 Fortunately, it is easy to run unsupported games even with stock Archipelago.
