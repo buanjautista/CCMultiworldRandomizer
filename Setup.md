@@ -1,4 +1,4 @@
-*This guide is accurate as of version 0.6.0 (updated 27 August 2024)*
+*This guide has been updated 27 August 2024 and is accurate as of version 0.6.0.*
 
 CrossCode is an "unsupported" Archipelago game, meaning it is not distributed with the main Archipelago installation.
 Fortunately, it is easy to run unsupported games even with stock Archipelago.
@@ -10,8 +10,9 @@ page](https://github.com/ArchipelagoMW/Archipelago/releases/latest) and either u
 depending on your operating system.
 
 Next, download the APWorld file from the [releases page of the CrossCode Archipelago
-project](https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/latest) and put it into `lib/worlds` in your
-Archipelago installation folder.
+project](https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/latest) and put it into `custom_worlds` in your
+Archipelago installation folder (if you have installed an old version previously in `lib/worlds`, delete it before
+attempting to generate).
 
 Then put your yamls in the `Players` directory (once again, in the root of your installation) and run the
 `ArchipelagoGenerate` program. If you need a yaml to build off of, we have some in the discord. The result should be
