@@ -23,19 +23,19 @@ up-to-date to support CrossCode.
 
 ## How to join a multiworld with CrossCode seeds
 
-Install [CCLoader2](https://wiki.c2dl.info/CCLoader), then download the *most recent* [CCMultiworldRandomizer
-release](https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/latest) and place it into the `assets/mods`
+Install [CCLoader2](https://wiki.c2dl.info/CCLoader), then download the *most recent* release of
+[CCModManager](https://github.com/CCDirectLink/CCModManager/releases/latest) and place it into the `assets/mods`
 directory. **Make sure you get the `.ccmod` file and not the source code zip for all mods downloaded.**
 
-You will also need the following dependency mods:
-* [CC-Open-World](https://github.com/buanjautista/cc-open-world/releases/latest) (version 0.3.2 or greater): this is to
-  prevent softlocks when you inevitably sequence-break the game.
-* [CCUILib](https://github.com/conorlawton/CCUILib/releases/latest) (version 1.2.4 or greater): provides additional user
-  interface widgets, including text input boxes.
-* [nax-module-cache](https://github.com/conorlawton/nax-module-cache/releases/latest): technically just a requirement
-  for CCUILib.
+Open CrossCode and do the following:
+* Enter the Options menu.
+* Press the "mods" hotkey (listed in the top bar of the menu).
+* Search or scroll through the mod list until you find the mod labeled **Multiworld randomizer by CodeTriangle** with
+  the Archipelago logo as its icon.
+* Select the mod and install it using the button listed at the bottom of the screen.
+* You will be prompted to restart the game. Do that.
 
-Open CrossCode and start a new save file. Either:
+Now, assuming you don't get any errors in the top-right corner, you can start a new save file. Either:
 * Use the Archipelago Start option. You will be prompted for details, then, upon a successful server connection, you
   will be brought to the New Game+ tab to pick perks.
 * Use the New Game+ Start option. Select your perks and then, once you're in game, pause and click the "Archipelago
@@ -48,13 +48,31 @@ If you're unfamiliar with the terminology, here's a quick guide:
   pretty plainly.
 * "Slot" is your player name. This is not the name of your YAML, it is the `name` field inside of your YAML file.
 
-I recommend playing with the Randomizer Start option (an enhanced version of the Skip Beginning option which also skips
-Rookie Dungeon). Also consider using Get on My Level so that you'll have the ability to fight back against enemies in
-areas the game does not expect you to be in. You will start in the Rookie Harbor Quest Hub.
-
 You will know if the mod is working when you get to space for the first time and you don't recieve the Disc of Insight
 and Green Leaf Shade as expected. Instead, you should see a prompt in the top-right notifying you of what was actually
 found.
+
+### What New Game+ perks should I use?
+
+When you arrive at the New Game+ perk selection screen, you may notice that the Randomizer Start option is
+automatically selected and cannot be deselected. This is a feature of the randomizer, an enhanced version of the Skip
+Beginning perk which starts Lea in Rookie Harbor after the tedious Rhombus Dungeon sequence).
+
+All of the multipliers are very useful to decrease the grind. I don't recommend you carry anything over as that will
+probably ruin the purpose of the randomization.
+You may consider using Get on My Level so that you'll have the ability to fight back against enemies in areas the game
+does not expect you to be in, although this does increase the difficulty by quite a bit in areas that are meant to be
+easier.
+
+Other modifiers are up to personal preference. Most of the rest of them increase the difficulty, which may or may not
+be something that interests you.
+
+If you are looking for some more quirky options, you can install the **New Game++** mod from CCModManager as well, which
+provides [these features](https://github.com/CCDirectLink/CCNewGamePP/blob/master/readme.md#features), though
+I do not guarantee compatibility or fun.
+
+If you do find yourself regretting your NG+ perk choices, you can also install **New game+ Cheats** from CCModManager,
+which will allow you to switch out perks on the fly.
 
 ## Poptracker Pack
 
