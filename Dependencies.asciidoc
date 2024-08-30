@@ -30,9 +30,9 @@ This table was last updated 29 Aug 2024 and is accurate as of version 0.6.1 of t
 
 == Manual installation
 
-Install [CCLoader2](https://wiki.c2dl.info/CCLoader), then download the *most recent* [CCMultiworldRandomizer
-release](https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/latest) and place it into the `assets/mods`
-directory. Then, download a compliant version (probably the most recent) of all of the mods listed above.
-**Make sure you get the `.ccmod` file and not the source code zip for all mods downloaded.**
+Install https://wiki.c2dl.info/CCLoader[CCLoader 2], then download the *most recent*
+https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/latest[CCMultiworldRandomizer release] and place it
+into the `assets/mods` directory. Then, download a compliant version (probably the most recent) of all of the mods
+listed above. **Make sure you get the `.ccmod` file and not the source code zip for all mods downloaded.**
 
 Continue with the setup process as outlined in the link:Setup[setup guide].
