@@ -28,6 +28,9 @@ Install [CCLoader2](https://wiki.c2dl.info/CCLoader), then download the *most re
 [CCModManager](https://github.com/CCDirectLink/CCModManager/releases/latest) and place it into the `assets/mods`
 directory. **Make sure you get the `.ccmod` file and not the source code zip for all mods downloaded.**
 
+*At this point, if you want to do a manual setup, skip the next paragraph and instead go to
+[this page](Dependencies#manual-installation).*
+
 Open CrossCode and do the following:
 * Enter the Options menu.
 * Press the "mods" hotkey (listed in the top bar of the menu).
