@@ -20,6 +20,27 @@ traps appear as if they contained useful items.
 Yes! Enter analyze mode (left on the quick menu) and hover any unopened chest in the game. A dialog will appear
 indicating the chest's name and what type of item it contains (filler, useful, or progression).
 
+## I can't hint the shade that I need to continue! What do I do?
+
+You probably have `progressive_area_unlocks` set, which replaces all instances of particular shades and passes with the
+correct number of items named "Progressive (something) Unlock".
+
+Depending on the value of that option, you need to search for different things:
+
+| Item | `dungeons` | `overworld` | `split` | `combined` |
+|---|---|---|---|---|
+| Green Leaf Shade  | Green Leaf Shade | Progressive Overworld Area Unlock | Progressive Overworld Area Unlock | Progressive Area Unlock |
+| Mine Pass         | Progressive Dungeon Unlock | Mine Pass         | Progressive Dungeon Unlock | Progressive Area Unlock |
+| Blue Ice Shade    | Blue Ice Shade   | Progressive Overworld Area Unlock | Progressive Overworld Area Unlock | Progressive Area Unlock |
+| Yellow Sand Shade | Progressive Dungeon Unlock | Yellow Sand Shade | Progressive Dungeon Unlock | Progressive Area Unlock |
+| Red Flame Shade   | Red Flame Shade  | Progressive Overworld Area Unlock | Progressive Overworld Area Unlock | Progressive Area Unlock |
+| Green Seed Shade  | Green Seed Shade | Progressive Overworld Area Unlock | Progressive Overworld Area Unlock | Progressive Area Unlock |
+| Purple Bolt Shade | Progressive Dungeon Unlock | Purple Bolt Shade | Progressive Dungeon Unlock | Progressive Area Unlock |
+| Azure Drop Shade  | Progressive Dungeon Unlock | Azure Drop Shade  | Progressive Dungeon Unlock | Progressive Area Unlock |
+| Star Shade        | Star Shade       | Progressive Overworld Area Unlock | Progressive Overworld Area Unlock | Progressive Area Unlock |
+| Meteor Shade      | Meteor Shade     | Progressive Overworld Area Unlock | Progressive Overworld Area Unlock | Progressive Area Unlock |
+| Green Leaf Shade  | Green Leaf Shade | Progressive Overworld Area Unlock | Progressive Overworld Area Unlock | Progressive Area Unlock |
+
 ## My game is checking different locations than I actually got. What do I do?
 
 In every documented case, this has been due to version mismatch. In short, your `.apworld` file and your `.ccmod` file
