@@ -24,12 +24,8 @@ up-to-date to support CrossCode.
 
 ## How to join a multiworld with CrossCode seeds
 
-Install [CCLoader2](https://wiki.c2dl.info/CCLoader), then download the *most recent* release of
-[CCModManager](https://github.com/CCDirectLink/CCModManager/releases/latest) and place it into the `assets/mods`
-directory. **Make sure you get the `.ccmod` file and not the source code zip for all mods downloaded.**
-
-*At this point, if you want to do a manual setup, skip the next paragraph and instead go to
-[this page](Dependencies#manual-installation).*
+Install [CCLoader2](https://wiki.c2dl.info/CCLoader). CCLoader comes with a custom and versatile mod manager which can
+be used to install CCMultiworldRandomizer and its dependencies.
 
 Open CrossCode and do the following:
 * Enter the Options menu.
@@ -55,6 +51,9 @@ If you're unfamiliar with the terminology, here's a quick guide:
 You will know if the mod is working when you get to space for the first time and you don't recieve the Disc of Insight
 and Green Leaf Shade as expected. Instead, you should see a prompt in the top-right notifying you of what was actually
 found.
+
+Alternatively, manual installation is supported, but not recommended. At this point, if you want to do a manual setup,
+skip the first bulleted list of this section guide and use [this page](Dependencies#manual-installation) instead.
 
 ### What New Game+ perks should I use?
 
