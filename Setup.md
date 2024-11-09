@@ -1,7 +1,31 @@
-*This guide has been updated 27 August 2024 and is accurate as of version 0.6.0.*
+*This guide has been updated 08 November 2024 and is accurate as of version 0.6.1.*
 
 CrossCode is an "unsupported" Archipelago game, meaning it is not distributed with the main Archipelago installation.
 Fortunately, it is easy to run unsupported games even with stock Archipelago.
+
+## Important: Complete CrossCode first
+
+I (CodeTriangle) would **strongly** encourage you to complete the game at least once before running the game randomized.
+With many other games, including some that are quite similar to CrossCode, you may be able to get by in a randomized
+context with basic game knowledge. With some others, you may be able to have a good experience going in blind and
+randomized.
+
+CrossCode is not one of those games. As a story-driven RPG, CrossCode relies heavily on its narrative to guide the
+player through the setpieces of the game. You will run into snags as you attempt to find many checks and even the final
+boss without full knowledge of the story.
+
+Furthermore, because CrossCode is exceedingly linear, it requires an "open-world" mod, which allows the player to
+sequence-break the game and reach certain areas long before they would typically be unlocked. This will lead to further
+confusion as we have had to disable some of the methods that the CrossCode developers have implemented to remind players
+of their story progress and next objective. Many areas and gameplay features will become available without warning or
+fanfare where they would be helpfully telegraphed in a non-randomized playthrough.
+
+It is also my (CodeTriangle's) opinion that CrossCode is one of the finest video game stories ever crafted. To play this
+game randomized without having beaten it vanilla is to deprive yourself of the ability to experience the story the way
+it was meant to be experienced.
+
+You may choose for yourself whether you want to continue. If you do, know that support for issues stemming from this
+choice will be limited.
 
 ## How to generate your own multiworld with CrossCode seeds
 
@@ -41,6 +65,9 @@ Now, assuming you don't get any errors in the top-right corner, you can start a 
 * Use the New Game+ Start option. Select your perks and then, once you're in game, pause and click the "Archipelago
   Options" button and put in your connection details there. Once the pause menu screen says "AP: CONNECTED", you can
   start playing.
+  * If the New Game+ Start option is not available, this is because you do not have a completed CrossCode save file.
+    Please read [the first section on this page](#important-complete-crosscode-first) to learn why. Then, if you're
+    still sure you want to play, ask us for help acquiring a completed save file.
 
 If you're unfamiliar with the terminology, here's a quick guide:
 * "Hostname" is the computer where the host is running (for example `archipelago.gg`).

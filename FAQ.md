@@ -41,18 +41,12 @@ Depending on the value of that option, you need to search for different things:
 | Meteor Shade      | Meteor Shade     | Progressive Overworld Area Unlock | Progressive Overworld Area Unlock | Progressive Area Unlock |
 | Green Leaf Shade  | Green Leaf Shade | Progressive Overworld Area Unlock | Progressive Overworld Area Unlock | Progressive Area Unlock |
 
-## My game is checking different locations than I actually got. What do I do?
+## Why aren't New Game+ options available?
 
-In every documented case, this has been due to version mismatch. In short, your `.apworld` file and your `.ccmod` file
-do not know how to talk to each other, meaning they disagree on which locations mean what. Unless you know exactly what
-you're doing, you must *ONLY* download the `.apworld` and `.ccmod` file from the *SAME* releases page.
-
-Once you've generated your seed with a specific version of the APWorld, however, you are locked in. Downloading
-different versions of files will not help you. Instead, the most practical solution is to figure out what version your
-APWorld is and download its corresponding mod file. Once this is done, if you're not too far along, restart your
-playthrough. Otherwise, you may [seek
-support](https://github.com/CodeTriangle/CCMultiworldRandomizer/wiki/Setup#how-to-get-support) and we will release your
-locations manually.
+Because you don't have a completed save file. New Game+ options are not enabled if you have not completed the game
+because I don't want you to play randomized before completing the game normally. Please read [this section of the setup
+guide](https://github.com/CodeTriangle/CCMultiworldRandomizer/wiki/Setup#important-complete-crosscode-first) and then,
+if you're still sure you want to play, ask us for help acquiring a completed save file.
 
 ## Is glitched logic supported?
 
