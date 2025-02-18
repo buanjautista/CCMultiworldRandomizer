@@ -54,3 +54,29 @@ parts to modify yourself because large portions of the code, especially the code
 the input data. As long as you're not touching logic, it should be possible to change things with no additional setup;
 however, if you'll be working with logic in any form, you will also need to take some additional steps. Documentation on
 that process will be forthcoming.
+
+## Ongoing Community Projects
+
+The following is a list of current community-driven efforts to expand the project. Please contact the people listed for
+information on progress and how you can help.
+
+### Glitched Logic
+
+An effort to add barrier skips and other glitches to the logic of the randomizer, enabling faster access to regions
+based on the player's skill.
+
+Discuss this project in **#development-general** or **#logic**.
+
+**Contributors:**
+
+* @sterlia (Discord) / @TheShadowOfLight (GitHub)
+
+### DLC Areas
+
+Ever wanted to play the DLC **A New Home** randomized? You might be able to soon.
+
+Discuss this project in **#development-general** or **#logic**.
+
+**Contributors:**
+
+* @buanjautista (Discord/GitHub)
