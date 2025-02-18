@@ -1,0 +1,18 @@
+{
+	"_includes": [
+		"chests.json",
+		"cutscenes.json",
+		"quests.json",
+		"shops.json"
+	],
+	"_comment": "Checks that are found only in DLC areas",
+	"_global": {
+		"/cutscenes|chests|quests|shops/": {
+			"*": {
+				"metadata": {
+					"dlc": true
+				}
+			}
+		}
+	}
+}
