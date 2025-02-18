@@ -1,4 +1,49 @@
 {
 	"cutscenes": {
+		"Full Rhombus Pass cutscene": {
+			"location": {
+				"area": "tree-dng",
+				"map": "jungle.dng.tree-expo-space",
+				"mapId": 60,
+				"path": ".settings.event.44" 
+			},
+			"region": {
+				"linear": "30",
+				"open": "openDLC2" 
+			},
+			"reward": [
+				[ "item", "Full Rhombus Pass", 1 ]
+			]
+		},
+		"Ancient Shade SP Upgrade": {
+			"location": {
+				"area": "tree-dng",
+				"map": "jungle.dng.tree-expo-space",
+				"mapId": 60,
+				"path": ".settings.event.44" 
+			},
+			"region": {
+				"linear": "30",
+				"open": "openDLC2" 
+			},
+			"reward": [
+				[ "sp" ]
+			]
+		},
+		"Ancient Shade": {
+			"location": {
+				"area": "rookie-harbor",
+				"map": "rookie-harbor.expo-space",
+				"mapId": 136,
+				"path": ".settings.event.74" 
+			},
+			"region": {
+				"linear": "2",
+				"open": "openDLC2" 
+			},
+			"reward": [
+				[ "item", "Ancient Shade", 1 ]
+			]
+		}
 	}
 }
