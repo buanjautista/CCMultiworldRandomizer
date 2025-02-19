@@ -22,7 +22,7 @@
           ]
         },
         {
-          "from": "open2",
+          "from": "open20",
           "to": "openDLC2",
           "condition": [
             [ "item", "Full Rhombus Pass", 1 ],

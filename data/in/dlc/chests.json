@@ -1,4 +1,106 @@
 {
 	"chests": {
+		"Homestedt: Entrance Left": {
+			"location": {
+				"area": "evo-village",
+				"map": "evo-village.entrance",
+				"mapId": 44
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "openDLC1"
+			},
+			"reward": [
+				[ "item", "Emerald", 4 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
+			]
+		},
+		"Homestedt: Entrance Upper": {
+			"location": {
+				"area": "evo-village",
+				"map": "evo-village.entrance",
+				"mapId": 26
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "openDLC1"
+			},
+			"reward": [
+				[ "item", "Amethyst", 4 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
+			]
+		},
+		"Homestedt: Center Upper Right": {
+			"location": {
+				"area": "evo-village",
+				"map": "evo-village.center",
+				"mapId": 213
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "openDLC1"
+			},
+			"reward": [
+				[ "item", "Topaz", 4 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
+			]
+		},
+		"Homestedt: Center Upper Left": {
+			"location": {
+				"area": "evo-village",
+				"map": "evo-village.center",
+				"mapId": 839
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "openDLC1"
+			},
+			"reward": [
+				[ "item", "Citrine", 4 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
+			]
+		},
+		"Homestedt: Center Bottom Right": {
+			"location": {
+				"area": "evo-village",
+				"map": "evo-village.center",
+				"mapId": 26
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "openDLC1"
+			},
+			"reward": [
+				[ "item", "Goose", 1 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
+			]
+		},
+		"Homestedt: Center Bottom Left": {
+			"location": {
+				"area": "evo-village",
+				"map": "evo-village.center",
+				"mapId": 1086
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "openDLC1"
+			},
+			"reward": [
+				[ "item", "Ruby", 4 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
+			]
+		}
 	}
 }

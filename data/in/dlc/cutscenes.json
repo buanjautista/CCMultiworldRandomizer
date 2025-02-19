@@ -2,13 +2,12 @@
 	"cutscenes": {
 		"Full Rhombus Pass cutscene": {
 			"location": {
-				"area": "tree-dng",
-				"map": "jungle.dng.tree-expo-space",
-				"mapId": 60,
-				"path": ".settings.event.44" 
+				"area": "evo-village",
+				"map": "evo-village.entrance",
+				"mapId": 428,
+				"path": ".settings.event.31" 
 			},
 			"region": {
-				"linear": "30",
 				"open": "openDLC2" 
 			},
 			"reward": [
@@ -17,32 +16,44 @@
 		},
 		"Ancient Shade SP Upgrade": {
 			"location": {
-				"area": "tree-dng",
-				"map": "jungle.dng.tree-expo-space",
-				"mapId": 60,
-				"path": ".settings.event.44" 
+				"area": "beach",
+				"map": "beach.expo-space",
+				"mapId": 4,
+				"path": ".settings.event.36" 
 			},
 			"region": {
-				"linear": "30",
 				"open": "openDLC2" 
 			},
 			"reward": [
 				[ "sp" ]
 			]
 		},
-		"Ancient Shade": {
+		"Ancient Shade Pickup": {
 			"location": {
-				"area": "rookie-harbor",
-				"map": "rookie-harbor.expo-space",
-				"mapId": 136,
-				"path": ".settings.event.74" 
+				"area": "beach",
+				"map": "beach.expo-space",
+				"mapId": 4,
+				"path": ".settings.event.18" 
 			},
 			"region": {
-				"linear": "2",
 				"open": "openDLC2" 
 			},
 			"reward": [
 				[ "item", "Ancient Shade", 1 ]
+			]
+		},
+		"Ancient Shade Circuit Override": {
+			"location": {
+				"area": "rookie-harbor",
+				"map": "rookie-harbor.expo-space",
+				"mapId": 17,
+				"path": ".settings.event.44" 
+			},
+			"region": {
+				"open": "openDLC2" 
+			},
+			"reward": [
+				[ "item", "Circuit Override", 3 ]
 			]
 		}
 	}
