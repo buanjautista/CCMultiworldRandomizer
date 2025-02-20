@@ -101,6 +101,307 @@
 			"condition": [
 				[ "item", "Wave", 1 ]
 			]
+		},
+		"Archipelago: Sandy Bar Lower": {
+			"location": {
+				"area": "beach",
+				"map": "beach.path-01-entrance",
+				"mapId": 17
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "openDLC2"
+			},
+			"reward": [
+				[ "item", "Chunky", 1 ]
+			]
+		},
+		"Archipelago: Sandy Bar Upper Right": {
+			"location": {
+				"area": "beach",
+				"map": "beach.path-01-entrance",
+				"mapId": 18
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "openDLC2"
+			},
+			"reward": [
+				[ "item", "MacGuffin's Coin", 1 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
+			]
+		},
+		"Archipelago: Isle of Legend Left": {
+			"location": {
+				"area": "beach",
+				"map": "beach.path-02",
+				"mapId": 12
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "openDLC2"
+			},
+			"reward": [
+				[ "item", "Mellow Water", 5 ]
+			]
+		},
+		"Archipelago: Isle of Legend MacGuffin": {
+			"location": {
+				"area": "beach",
+				"map": "beach.path-02",
+				"mapId": 13
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "openDLC2"
+			},
+			"reward": [
+				[ "item", "Ancient Cups", 1 ]
+			],
+			"condition": [
+				[ "item", "MacGuffin's Coin", 3 ]
+			]
+		},
+		"Archipelago: UFO Island": {
+			"location": {
+				"area": "beach",
+				"map": "beach.path-03",
+				"mapId": 10
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "openDLC2"
+			},
+			"reward": [
+				[ "item", "Durian", 2 ]
+			]
+		},
+		"Archipelago: Rough Lagoon": {
+			"location": {
+				"area": "beach",
+				"map": "beach.path-04",
+				"mapId": 16
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "openDLC2"
+			},
+			"reward": [
+				[ "item", "Shell Nut", 5 ]
+			]
+		},
+		"Archipelago: Shallow Shore Left": {
+			"location": {
+				"area": "beach",
+				"map": "beach.path-05",
+				"mapId": 730
+			},
+			"clearance": "Bronze",
+			"region": {
+				"open": "openDLC2"
+			},
+			"reward": [
+				[ "item", "Ember Sack", 5 ]
+			]
+		},
+		"Archipelago: Shallow Shore Right": {
+			"location": {
+				"area": "beach",
+				"map": "beach.path-05",
+				"mapId": 8
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "openDLC2"
+			},
+			"reward": [
+				[ "item", "MacGuffin's Coin", 1 ]
+			]
+		},
+		"Archipelago: Calm Pocket": {
+			"location": {
+				"area": "beach",
+				"map": "beach.path-06",
+				"mapId": 31
+			},
+			"clearance": "Bronze",
+			"region": {
+				"open": "openDLC2"
+			},
+			"reward": [
+				[ "item", "Core Stone", 5 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
+			]
+		},
+		"Archipelago: Bird Skull Approach Left": {
+			"location": {
+				"area": "beach",
+				"map": "beach.path-07",
+				"mapId": 1
+			},
+			"clearance": "Bronze",
+			"region": {
+				"open": "openDLC2"
+			},
+			"reward": [
+				[ "item", "Yellow Sponge", 5 ]
+			]
+		},
+		"Archipelago: Bird Skull Approach Right": {
+			"location": {
+				"area": "beach",
+				"map": "beach.path-07",
+				"mapId": 13
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "openDLC2"
+			},
+			"reward": [
+				[ "item", "Worm Band", 3 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
+			]
+		},
+		"Archipelago: Dover's Cliffs": {
+			"location": {
+				"area": "beach",
+				"map": "beach.path-08",
+				"mapId": 44
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "openDLC2"
+			},
+			"reward": [
+				[ "item", "Razor Tip", 3 ]
+			]
+		},
+		"Archipelago: Altar of the Key": {
+			"location": {
+				"area": "beach",
+				"map": "beach.temple",
+				"mapId": 249
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "openDLC2"
+			},
+			"reward": [
+				[ "item", "Baby of the East", 1 ]
+			]
+		},
+		"Square: South Arch Left": {
+			"location": {
+				"area": "rhombus-sqr",
+				"map": "rhombus-sqr.center-s",
+				"mapId": 678
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "open20"
+			},
+			"reward": [
+				[ "item", "Seedling", 1 ]
+			]
+		},
+		"Square: SW Beach": {
+			"location": {
+				"area": "rhombus-sqr",
+				"map": "rhombus-sqr.beach-sw",
+				"mapId": 817
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "open20"
+			},
+			"reward": [
+				[ "item", "Antique Token", 1 ]
+			]
+		},
+		"Square: Garden Terrace": {
+			"location": {
+				"area": "rhombus-sqr",
+				"map": "rhombus-sqr.center-w",
+				"mapId": 228
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "open20"
+			},
+			"reward": [
+				[ "item", "Meteor Chunk", 1 ]
+			]
+		},
+		"Square: Open PVP Fields": {
+			"location": {
+				"area": "rhombus-sqr",
+				"map": "rhombus-sqr.center-nw",
+				"mapId": 206
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "open20"
+			},
+			"reward": [
+				[ "item", "Burned Ash", 2 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
+			]
+		},
+		"Square: North Arch": {
+			"location": {
+				"area": "rhombus-sqr",
+				"map": "rhombus-sqr.center-n",
+				"mapId": 174
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "open20"
+			},
+			"reward": [
+				[ "item", "Nuclear Roach", 1 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
+			]
+		},
+		"Square: Cliff Exhibition Upper": {
+			"location": {
+				"area": "rhombus-sqr",
+				"map": "rhombus-sqr.center-ne",
+				"mapId": 4
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "openDLC2"
+			},
+			"reward": [
+				[ "item", "Focus Shard", 5 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
+			]
+		},
+		"Square: Cliff Exhibition Right": {
+			"location": {
+				"area": "rhombus-sqr",
+				"map": "rhombus-sqr.center-ne",
+				"mapId": 336
+			},
+			"clearance": "Bronze",
+			"region": {
+				"open": "open20"
+			},
+			"reward": [
+				[ "item", "Antique Token", 1 ]
+			]
 		}
 	}
 }
