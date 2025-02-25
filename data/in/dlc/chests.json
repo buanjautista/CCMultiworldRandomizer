@@ -106,7 +106,7 @@
 			"location": {
 				"area": "beach",
 				"map": "beach.path-01-entrance",
-				"mapId": 17
+				"mapId": 20
 			},
 			"clearance": "Gold",
 			"region": {
@@ -120,7 +120,7 @@
 			"location": {
 				"area": "beach",
 				"map": "beach.path-01-entrance",
-				"mapId": 18
+				"mapId": 21
 			},
 			"clearance": "Gold",
 			"region": {
@@ -137,7 +137,7 @@
 			"location": {
 				"area": "beach",
 				"map": "beach.path-02",
-				"mapId": 12
+				"mapId": 50
 			},
 			"clearance": "Gold",
 			"region": {
@@ -151,7 +151,7 @@
 			"location": {
 				"area": "beach",
 				"map": "beach.path-02",
-				"mapId": 13
+				"mapId": 51
 			},
 			"clearance": "Gold",
 			"region": {
@@ -168,7 +168,7 @@
 			"location": {
 				"area": "beach",
 				"map": "beach.path-03",
-				"mapId": 10
+				"mapId": 80
 			},
 			"clearance": "Silver",
 			"region": {
@@ -182,7 +182,7 @@
 			"location": {
 				"area": "beach",
 				"map": "beach.path-04",
-				"mapId": 16
+				"mapId": 97
 			},
 			"clearance": "Silver",
 			"region": {
@@ -196,7 +196,7 @@
 			"location": {
 				"area": "beach",
 				"map": "beach.path-05",
-				"mapId": 730
+				"mapId": 796
 			},
 			"clearance": "Bronze",
 			"region": {
@@ -210,7 +210,7 @@
 			"location": {
 				"area": "beach",
 				"map": "beach.path-05",
-				"mapId": 8
+				"mapId": 20
 			},
 			"clearance": "Gold",
 			"region": {
@@ -224,7 +224,7 @@
 			"location": {
 				"area": "beach",
 				"map": "beach.path-06",
-				"mapId": 31
+				"mapId": 42
 			},
 			"clearance": "Bronze",
 			"region": {
@@ -241,7 +241,7 @@
 			"location": {
 				"area": "beach",
 				"map": "beach.path-07",
-				"mapId": 1
+				"mapId": 2
 			},
 			"clearance": "Bronze",
 			"region": {
@@ -255,7 +255,7 @@
 			"location": {
 				"area": "beach",
 				"map": "beach.path-07",
-				"mapId": 13
+				"mapId": 16
 			},
 			"clearance": "Silver",
 			"region": {
@@ -272,7 +272,7 @@
 			"location": {
 				"area": "beach",
 				"map": "beach.path-08",
-				"mapId": 44
+				"mapId": 83
 			},
 			"clearance": "Silver",
 			"region": {
@@ -286,7 +286,7 @@
 			"location": {
 				"area": "beach",
 				"map": "beach.temple",
-				"mapId": 249
+				"mapId": 1463
 			},
 			"clearance": "Gold",
 			"region": {
@@ -296,11 +296,11 @@
 				[ "item", "Baby of the East", 1 ]
 			]
 		},
-		"Square: South Arch Left": {
+		"Rhombus: South Arch Left": {
 			"location": {
 				"area": "rhombus-sqr",
 				"map": "rhombus-sqr.center-s",
-				"mapId": 678
+				"mapId": 888
 			},
 			"clearance": "Gold",
 			"region": {
@@ -310,11 +310,11 @@
 				[ "item", "Seedling", 1 ]
 			]
 		},
-		"Square: SW Beach": {
+		"Rhombus: SW Beach": {
 			"location": {
 				"area": "rhombus-sqr",
 				"map": "rhombus-sqr.beach-sw",
-				"mapId": 817
+				"mapId": 1096
 			},
 			"clearance": "Silver",
 			"region": {
@@ -324,11 +324,11 @@
 				[ "item", "Antique Token", 1 ]
 			]
 		},
-		"Square: Garden Terrace": {
+		"Rhombus: Garden Terrace": {
 			"location": {
 				"area": "rhombus-sqr",
 				"map": "rhombus-sqr.center-w",
-				"mapId": 228
+				"mapId": 305
 			},
 			"clearance": "Gold",
 			"region": {
@@ -338,11 +338,11 @@
 				[ "item", "Meteor Chunk", 1 ]
 			]
 		},
-		"Square: Open PVP Fields": {
+		"Rhombus: Open PVP Fields": {
 			"location": {
 				"area": "rhombus-sqr",
 				"map": "rhombus-sqr.center-nw",
-				"mapId": 206
+				"mapId": 251
 			},
 			"clearance": "Gold",
 			"region": {
@@ -355,11 +355,11 @@
 				[ "item", "Wave", 1 ]
 			]
 		},
-		"Square: North Arch": {
+		"Rhombus: North Arch": {
 			"location": {
 				"area": "rhombus-sqr",
 				"map": "rhombus-sqr.center-n",
-				"mapId": 174
+				"mapId": 197
 			},
 			"clearance": "Gold",
 			"region": {
@@ -372,11 +372,11 @@
 				[ "item", "Wave", 1 ]
 			]
 		},
-		"Square: Cliff Exhibition Upper": {
+		"Rhombus: Cliff Exhibition Upper": {
 			"location": {
 				"area": "rhombus-sqr",
 				"map": "rhombus-sqr.center-ne",
-				"mapId": 4
+				"mapId": 5
 			},
 			"clearance": "Silver",
 			"region": {
@@ -389,11 +389,11 @@
 				[ "item", "Wave", 1 ]
 			]
 		},
-		"Square: Cliff Exhibition Right": {
+		"Rhombus: Cliff Exhibition Right": {
 			"location": {
 				"area": "rhombus-sqr",
 				"map": "rhombus-sqr.center-ne",
-				"mapId": 336
+				"mapId": 437
 			},
 			"clearance": "Bronze",
 			"region": {

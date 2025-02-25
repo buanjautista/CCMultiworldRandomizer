@@ -4,7 +4,7 @@
 			"location": {
 				"area": "evo-village",
 				"map": "evo-village.entrance",
-				"mapId": 428,
+				"mapId": 582,
 				"path": ".settings.event.31" 
 			},
 			"region": {
@@ -18,7 +18,7 @@
 			"location": {
 				"area": "beach",
 				"map": "beach.expo-space",
-				"mapId": 4,
+				"mapId": 138,
 				"path": ".settings.event.36" 
 			},
 			"region": {
@@ -32,7 +32,7 @@
 			"location": {
 				"area": "beach",
 				"map": "beach.expo-space",
-				"mapId": 4,
+				"mapId": 138,
 				"path": ".settings.event.18" 
 			},
 			"region": {
@@ -46,7 +46,7 @@
 			"location": {
 				"area": "rookie-harbor",
 				"map": "rookie-harbor.expo-space",
-				"mapId": 17,
+				"mapId": 144,
 				"path": ".settings.event.44" 
 			},
 			"region": {

@@ -1,0 +1,18 @@
+{
+	"itemPools": {
+		"required": [
+      {
+				"item": ["item", "Full Rhombus Pass"],
+				"quantity": 1
+			},
+      {
+				"item": ["item", "Ancient Shade"],
+				"quantity": 1
+			},
+      {
+				"item": ["item", "MacGuffin's Coin"],
+				"quantity": 1
+			}
+    ]
+  }
+}

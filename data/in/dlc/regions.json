@@ -18,6 +18,7 @@
           "from": "open3",
           "to": "openDLC1",
           "condition": [
+            [ "item", "Guild Pass", 1 ],
             [ "var", "dlcActive" ]
           ]
         },
