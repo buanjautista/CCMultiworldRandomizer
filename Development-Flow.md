@@ -34,29 +34,6 @@ in [the Data-Format wiki page](./Data-Format),
 although that page is
 a work in progress.
 
-* `master.json` is a lynchpin file,
-  pulling in each other json file
-  in the directory.
-* `chests.json`, `cutscenes.json`, `elements.json`,
-  `quests-always.json`, `quests-qr.json`, and `shops.json`
-  contain their respective types of locations.
-* `items.json` contains information
-  on each item that can appear in the game,
-  including items from the base game
-  and items created for the randomizer.
-* `regions.json` contains logical regions;
-  that is to say, groups of locations
-  that share a set of access conditions.
-* `vars.json` contains definitions
-  for variable conditions,
-  conditions that can change
-  based on different input.
-* `prog-items/*.json` contains information
-  about progressive item chains.
-* `item-pools/*.json` defines item pools,
-  groups of items that can be pulled from
-  for different purposes.
-
 ### Output data
 
 The output data, `data/out`,
