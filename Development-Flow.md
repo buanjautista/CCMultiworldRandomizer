@@ -278,6 +278,8 @@ mentioned in the command.
 zip -r crosscode.apworld crosscode/{*.py,codegen,docs,test,types} --exclude '*.py[oc]'
 ```
 
+**Note**: You will need to delete `crosscode.apworld` before running anything else. Archipelago will prefer to use `crosscode.apworld` over the `crosscode` folder, and this will cause issues if you've made your own modifications.
+
 ### Template YAML
 
 To create a template YAML
