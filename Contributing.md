@@ -6,8 +6,9 @@ job, I sometimes don't even want to write any code. When I do feel up to it, I d
 interested in, and I don't have to since no one is paying me to do this work.
 
 That means that my limited time is spent on, in decreasing order of importance, fixing bugs, working on features that I
-think would make the randomizer more fun, and working on features that would improve my personal experience with the
-randomizer. I will not work on features that I don't have faith in to improve the experience.
+think would make the randomizer broadly more fun to the most people, and working on features that would improve my
+personal experience with the randomizer. I will not work on features that I don't believe are likely to improve the
+experience substantially compared to the effort put in.
 
 But hope is not lost. I consider the active and interested community surrounding this project to be its single most
 important aspect. If you have a feature that you think other people would like, or if you have something that only
@@ -20,7 +21,7 @@ I am of the opinion that CrossCode AP is fairly easy to contribute to. There are
 what exactly you want to achieve.
 
 I am more than willing to help you out as well to explain anything that's not clear and even change the randomizer
-itself to accomodate your changes better. Please reach out if this interests you.
+itself to accommodate your changes better. Please reach out if this interests you.
 
 ### Logic Contributions
 
@@ -32,6 +33,8 @@ If you're interested in adding new logic or fixing logic bugs, it can all be don
 Please discuss new logic in the **#logic** channel of the Discord.
 
 ### Code Contributions
+
+For more detailed information, see the [Development-Flow wiki page](Development-Flow).
 
 #### CCMultiworldRandomizer
 
@@ -53,7 +56,7 @@ Python, a language which is very easy to learn. Unfortunately, in CrossCode's ca
 parts to modify yourself because large portions of the code, especially the code describing the logic, is generated from
 the input data. As long as you're not touching logic, it should be possible to change things with no additional setup;
 however, if you'll be working with logic in any form, you will also need to take some additional steps. Documentation on
-that process will be forthcoming.
+that process is available [here](Development-Flow#generate-logic).
 
 ## Ongoing Community Projects
 
