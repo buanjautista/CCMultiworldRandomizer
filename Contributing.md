@@ -27,7 +27,7 @@ itself to accommodate your changes better. Please reach out if this interests yo
 
 All logic for CrossCode Archipelago is stored in the [`data/in/`](https://github.com/CodeTriangle/CCMultiworldRandomizer/tree/master/data/in)
 directory in the CCMultiworldRandomizer repository as JSON files. It should be pretty easy to make whatever changes that
-you need. Ongoing documentation of the JSON format used by these files is stored on the [Data Format](Data-Format] page.
+you need. Ongoing documentation of the JSON format used by these files is stored on the [Data Format](Data-Format) page.
 If you're interested in adding new logic or fixing logic bugs, it can all be done through this.
 
 Please discuss new logic in the **#logic** channel of the Discord.
