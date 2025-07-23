@@ -3,12 +3,57 @@ import {WorldData, ItemInfo} from './item-data.model';
 import {readJsonFromFile} from './utils';
 import {applyPatches} from "./patches/index";
 
-import type * as _ from 'nax-module-cache/src/headers/nax/moduleCache.d.ts'
+import type {} from 'nax-module-cache/src/headers/nax/moduleCache.d.ts'
+
+// install a bunch of polyfills for archipelago.js
+require('iterator-polyfill');
 
 declare global {
 	namespace sc {
 		var randoData: WorldData;
 		var multiWorldHud: sc.MultiWorldHudBox;
+	}
+}
+
+// BEHOLD... THE UNIFILLS
+// They're not polyfills because they are only guaranteed to work in this one particular environment lol
+// The polyfill for this added 87 (!) dependencies
+declare global {
+	interface Array<T> {
+		toSorted(comparefn?: (a: any, b: any) => number): Array<T>;
+	}
+}
+if (!Array.prototype.toSorted) {
+	Array.prototype.toSorted = function<T extends Array<E>, E>(this: T, comparefn?: (a: any, b: any) => number) {
+		let result = [...this];
+		result.sort(comparefn);
+		return result;
+	};
+}
+
+// This one would probably be similar but I did not even download it
+Object.fromEntries = function(iterable: Iterable<[key: any, value: any]>) {
+	let result: Record<any, any> = {};
+	for (const [key, value] of iterable) {
+		result[key] = value;
+	}
+	return result;
+};
+
+import structuredClone from "@ungap/structured-clone";
+if (!("structuredClone" in globalThis)) {
+	// @ts-expect-error
+	globalThis.structuredClone = structuredClone;
+}
+
+declare global {
+	namespace ig.Input {
+		interface KnownActions {
+			pgdn: true;
+			pgup: true;
+			home: true;
+			end: true;
+		}
 	}
 }
 
@@ -23,67 +68,13 @@ export default class MwRandomizer {
 
 	getColoredStatus(status: string) {
 		switch (status.toLowerCase()) {
-			case ap.CONNECTION_STATUS.CONNECTED.toLowerCase():
+			case sc.MULTIWORLD_CONNECTION_STATUS.CONNECTED.toLowerCase():
 				return `\\c[2]${status}\\c[0]`;
-			case ap.CONNECTION_STATUS.DISCONNECTED.toLowerCase():
+			case sc.MULTIWORLD_CONNECTION_STATUS.DISCONNECTED.toLowerCase():
 				return `\\c[1]${status}\\c[0]`;
-			case ap.CONNECTION_STATUS.WAITING_FOR_AUTH.toLowerCase():
-			case ap.CONNECTION_STATUS.CONNECTING.toLowerCase():
+			case sc.MULTIWORLD_CONNECTION_STATUS.CONNECTING.toLowerCase():
 				return `\\c[3]${status}\\c[0]`;
 		}
-	}
-
-	getItemInfo(item: ap.NetworkItem): ItemInfo {
-		let gameName: string = sc.multiworld.client.data.players[item.player].game;
-		let gameInfo: ap.GamePackage = sc.multiworld.client.data.package.get(gameName)!;
-		if (gameInfo == undefined || gameInfo.item_id_to_name[item.item] == undefined) {
-			gameInfo = sc.multiworld.gamepackage;
-			gameName = "CrossCode";
-		}
-
-		if (gameInfo.item_id_to_name[item.item] == undefined) {
-			return {icon: "ap-item-default", label: "Unknown", player: "Archipelago", level: 0, isScalable: false};
-		}
-
-		const playerId = sc.multiworld.client.players.get(item.player);
-		const playerName = playerId?.alias ?? playerId?.name;
-
-		let label = gameInfo.item_id_to_name[item.item];
-		let player = playerName ? playerName : "Archipelago";
-
-		if (gameName == "CrossCode") {
-			const comboId: number = item.item;
-			let level = 0;
-			let icon = "item-default";
-			let isScalable = false;
-			if (comboId >= sc.multiworld.baseNormalItemId && comboId < sc.multiworld.baseDynamicItemId) {
-				const [itemId, _] = sc.multiworld.getItemDataFromComboId(item.item);
-				const dbEntry = sc.inventory.getItem(itemId);
-				if (dbEntry) {
-					icon = dbEntry.icon + sc.inventory.getRaritySuffix(dbEntry.rarity);
-					isScalable = dbEntry.isScalable || false;
-					if (dbEntry.type == sc.ITEMS_TYPES.EQUIP) {
-						level = dbEntry.level;
-					}
-				}
-			}
-
-			return {icon, label, player, level, isScalable};
-		}
-
-		let cls = "unknown";
-		if (item.flags & ap.ITEM_FLAGS.PROGRESSION) {
-			cls = "prog";
-		} else if (item.flags & ap.ITEM_FLAGS.NEVER_EXCLUDE) {
-			cls = "useful";
-		} else if (item.flags & ap.ITEM_FLAGS.TRAP) {
-			cls = "trap";
-		} else if (item.flags == 0) {
-			cls = "filler";
-		}
-
-		let icon = `ap-item-${cls}`;
-		return {icon, label, player, level: 0, isScalable: false};
 	}
 
 	getGuiString(item: {icon: string; label: string}): string {
@@ -91,9 +82,6 @@ export default class MwRandomizer {
 	}
 
 	async prestart() {
-		window.moduleCache.registerModPrefix("mw-rando", this.baseDirectory.substring(7));
-		ig.lib = this.baseDirectory.substring(7);
-
 		let randoData: WorldData = await readJsonFromFile(this.baseDirectory + "data/out/data.json");
 		this.randoData = randoData;
 		sc.randoData = randoData;
@@ -134,14 +122,11 @@ export default class MwRandomizer {
 				this.parent();
 				sc.multiWorldHud = new sc.MultiWorldHudBox();
 				sc.gui.rightHudPanel.addHudBox(sc.multiWorldHud);
-			},
 
-			gotoTitle(...args) {
-				if (sc.multiworld.client.status == ap.CONNECTION_STATUS.CONNECTED) {
-					sc.multiworld.client.disconnect();
-					// sc.multiworld.updateConnectionStatus();
-				}
-				this.parent(...args);
+				ig.input.bind(ig.KEY.PAGE_DOWN, "pgdn");
+				ig.input.bind(ig.KEY.PAGE_UP, "pgup");
+				ig.input.bind(ig.KEY.HOME, "home");
+				ig.input.bind(ig.KEY.END, "end");
 			},
 		});
 	}
