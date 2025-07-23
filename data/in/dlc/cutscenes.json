@@ -55,6 +55,132 @@
 			"reward": [
 				[ "item", "Circuit Override", 3 ]
 			]
+		},
+		"Ku'lero GF Elevator Left": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.bridge",
+				"mapId": 139,
+				"path": ".settings.event.0.13" 
+			},
+			"region": {
+				"open": "openDLC-DungeonGF-L" 
+			},
+			"reward": [
+				[ "item", "Mega-Sandwich", 3 ]
+			]
+		},
+		"Ku'lero GF Elevator Right": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.bridge",
+				"mapId": 140,
+				"path": ".settings.event.0.13" 
+			},
+			"region": {
+				"open": "openDLC-DungeonGF-R" 
+			},
+			"reward": [
+				[ "item", "Mega-Sandwich", 3 ]
+			]
+		},
+		"Gynthar Boss Fight": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.",
+				"mapId": 42,
+				"path": ".settings.event.21" 
+			},
+			"region": {
+				"open": "openDLC-DungeonFull" 
+			},
+			"reward": [
+				[ "item", "Circuit Override", 2 ]
+			]
+		},
+		"Ku'lero B2 Elevator Left": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.",
+				"mapId": 69,
+				"path": ".settings.event.0.13" 
+			},
+			"region": {
+				"open": "openDLC-DungeonB2-L" 
+			},
+			"reward": [
+				[ "item", "Mega-Sandwich", 3 ]
+			]
+		},
+		"Ku'lero B2 Elevator Right": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.",
+				"mapId": 71,
+				"path": ".settings.event.0.13" 
+			},
+			"region": {
+				"open": "openDLC-DungeonB2-R" 
+			},
+			"reward": [
+				[ "item", "Mega-Sandwich", 3 ]
+			]
+		},
+		"Ku'lero B2 Birds Left": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.b2.room-w4-battle",
+				"mapId": 247,
+				"path": ".settings.event.10" 
+			},
+			"region": {
+				"open": "openDLC-DungeonB2-L" 
+			},
+			"reward": [
+				[ "item", "Mega-Sandwich", 3 ]
+			]
+		},
+		"Ku'lero B2 Birds Right": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.",
+				"mapId": 111,
+				"path": ".settings.event.10" 
+			},
+			"region": {
+				"open": "openDLC-DungeonB2-R" 
+			},
+			"reward": [
+				[ "item", "Mega-Sandwich", 3 ]
+			]
+		},
+		"Ku'lero B3 Elevator Left": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.",
+				"mapId": 42,
+				"path": ".settings.event.0.13" 
+			},
+			"region": {
+				"open": "openDLC-DungeonB3-L" 
+			},
+			"reward": [
+				[ "item", "Mega-Sandwich", 3 ]
+			]
+		},
+		"Ku'lero B3 Elevator Right": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.",
+				"mapId": 43,
+				"path": ".settings.event.0.13" 
+			},
+			"region": {
+				"open": "openDLC-DungeonB3-R" 
+			},
+			"reward": [
+				[ "item", "Mega-Sandwich", 3 ]
+			]
 		}
 	}
 }

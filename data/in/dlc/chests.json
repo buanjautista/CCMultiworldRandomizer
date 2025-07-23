@@ -402,6 +402,230 @@
 			"reward": [
 				[ "item", "Antique Token", 1 ]
 			]
+		},
+		"Ku'lero: Comet Trail Right": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-01",
+				"mapId": 256
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "openDLC-DungeonEntry.1"
+			},
+			"reward": [
+				[ "item", "Antique Ore", 2 ]
+			]
+		},
+		"Ku'lero: Comet Trail Left": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-01",
+				"mapId": 17
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "openDLC-DungeonEntry.1"
+			},
+			"reward": [
+				[ "item", "Rumble Hive", 2 ]
+			]
+		},
+		"Ku'lero: Outlook": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-02-center",
+				"mapId": 42
+			},
+			"clearance": "Bronze",
+			"region": {
+				"open": "openDLC-DungeonEntry"
+			},
+			"reward": [
+				[ "item", "Barrel Beak", 3 ]
+			]
+		},
+		"Ku'lero: Longleg Vale Upper": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-03-south-west",
+				"mapId": 11
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "openDLC-DungeonB2-L"
+			},
+			"reward": [
+				[ "item", "Rift Spore", 1 ]
+			]
+		},
+		"Ku'lero: Longleg Vale Right": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-03-south-west",
+				"mapId": 12
+			},
+			"clearance": "Bronze",
+			"region": {
+				"open": "openDLC-DungeonEntry"
+			},
+			"reward": [
+				[ "item", "Lapis Lazuli", 4 ]
+			]
+		},
+		"Ku'lero: Crystal Den Right": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-04-north-west",
+				"mapId": 11
+			},
+			"clearance": "Bronze",
+			"region": {
+				"open": "openDLC-DungeonB2-L"
+			},
+			"reward": [
+				[ "item", "Moonstone", 4 ]
+			]
+		},
+		"Ku'lero: Crystal Den Key Chest": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-04-north-west",
+				"mapId": 421
+			},
+			"clearance": "Default",
+			"region": {
+				"open": "openDLC-DungeonB2-L"
+			},
+			"reward": [
+				[ "item", "Ku'lero Key", 1 ]
+			]
+		},
+		"Ku'lero: Crystal Den Left": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-04-north-west",
+				"mapId": 10
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "openDLC-DungeonB2-L.1"
+			},
+			"reward": [
+				[ "item", "Batboy", 1 ]
+			]
+		},
+		"Ku'lero: Cracked Pillars Right": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-03-south-east",
+				"mapId": 53
+			},
+			"clearance": "Bronze",
+			"region": {
+				"open": "openDLC-DungeonB2-R"
+			},
+			"reward": [
+				[ "item", "Focus Shard", 3 ]
+			]
+		},
+		"Ku'lero: Cracked Pillars Key Chest": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-03-south-east",
+				"mapId": 770
+			},
+			"clearance": "Default",
+			"region": {
+				"open": "openDLC-DungeonB2-R"
+			},
+			"reward": [
+				[ "item", "Ku'lero Key", 1 ]
+			]
+		},
+		"Ku'lero: Cracked Pillars Left": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-03-south-east",
+				"mapId": 3
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "openDLC-DungeonEntry.1"
+			},
+			"reward": [
+				[ "item", "Diamond", 4 ]
+			]
+		},
+		"Ku'lero: Water Grave Right": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-04-north-east",
+				"mapId": 50
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "openDLC-DungeonB2-R.1"
+			},
+			"reward": [
+				[ "item", "Butterfliege", 1 ]
+			]
+		},
+		"Ku'lero: Water Grave Left": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-04-north-east",
+				"mapId": 86
+			},
+			"clearance": "Bronze",
+			"region": {
+				"open": "openDLC-DungeonEntry"
+			},
+			"reward": [
+				[ "item", "Burned Ash", 3 ]
+			]
+		},
+		"Ku'lero: Shard Trial West Key Chest": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.b2.room-w7-battle",
+				"mapId": 83
+			},
+			"clearance": "Default",
+			"region": {
+				"open": "openDLC-DungeonB2-L"
+			},
+			"reward": [
+				[ "item", "Ku'lero Key", 1 ]
+			]
+		},
+		"Ku'lero: Master Key Chest": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.b3.room-c1",
+				"mapId": 85
+			},
+			"clearance": "Default",
+			"region": {
+				"open": "openDLC-DungeonMain"
+			},
+			"reward": [
+				[ "item", "Ku'lero Master Key", 1 ]
+			]
+		},
+		"Ku'lero: Mac Guffin Coin": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.center-ne",
+				"mapId": 305
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "openDLC-DungeonBoss"
+			},
+			"reward": [
+				[ "item", "MacGuffin's Coin", 1 ]
+			]
 		}
 	}
 }
