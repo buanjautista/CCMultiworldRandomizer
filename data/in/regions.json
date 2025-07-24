@@ -436,6 +436,55 @@
 				},
 				{
 					"from": "open10",
+					"to": "open10.Left",
+					"condition": [
+						["or", 
+							[ "var", "closedGaia", "false" ], 
+							["and", [ "item", "West Gaia Pass", 1 ], [ "var", "closedGaia", "true" ]]
+						]
+
+					]
+				},
+				{
+					"from": "open10",
+					"to": "open10.Right",
+					"condition": [
+						["or", 
+							[ "var", "closedGaia", "false" ], 
+							["and", [ "item", "East Gaia Pass", 1 ], [ "var", "closedGaia", "true" ]]
+						]
+					]
+				},
+				{
+					"from": "open10",
+					"to": "open10.Mid",
+					"condition": [
+						["or", [ "item", "East Gaia Pass", 1 ], [ "item", "West Gaia Pass", 1 ]],
+						[ "var", "closedGaia", "true" ]
+					]
+				},
+				{
+					"from": "open10.Left",
+					"to": "open10.Grove",
+					"condition": [
+						["or", 
+							[ "var", "closedGaia", "false" ], 
+							["and", [ "item", "Azure Drop Shade", 1 ], [ "var", "closedGaia", "true" ]]
+						]
+					]
+				},
+				{
+					"from": "open10.Right",
+					"to": "open10.Infested",
+					"condition": [
+						["or", 
+							[ "var", "closedGaia", "false" ], 
+							["and", [ "item", "Purple Bolt Shade", 1 ], [ "var", "closedGaia", "true" ]]
+						]
+					]
+				},
+				{
+					"from": "open10.Right",
 					"to": "open13.1",
 					"condition": [
 						[ "item", "Zir'vitar Key", 2 ],
@@ -450,7 +499,7 @@
 					]
 				},
 				{
-					"from": "open10",
+					"from": "open10.Left",
 					"to": "open14.1",
 					"condition": [
 						[ "item", "So'najiz Key", 1 ],
