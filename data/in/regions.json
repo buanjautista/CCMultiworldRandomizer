@@ -438,20 +438,19 @@
 					"from": "open10",
 					"to": "open10.Left",
 					"condition": [
-						["or", 
-							[ "var", "closedGaia", "false" ], 
-							["and", [ "item", "West Gaia Pass", 1 ], [ "var", "closedGaia", "true" ]]
+							[ "or", 
+								[ "var", "closedGaia", "on", false ], 
+								[ "and", [ "item", "West Gaia Pass", 1 ], [ "var", "closedGaia", "on" ]]
+							]
 						]
-
-					]
 				},
 				{
 					"from": "open10",
 					"to": "open10.Right",
 					"condition": [
-						["or", 
-							[ "var", "closedGaia", "false" ], 
-							["and", [ "item", "East Gaia Pass", 1 ], [ "var", "closedGaia", "true" ]]
+						[ "or", 
+							[ "var", "closedGaia", "on", false ], 
+							[ "and", [ "item", "East Gaia Pass", 1 ], [ "var", "closedGaia", "on" ]]
 						]
 					]
 				},
@@ -459,17 +458,22 @@
 					"from": "open10",
 					"to": "open10.Mid",
 					"condition": [
-						["or", [ "item", "East Gaia Pass", 1 ], [ "item", "West Gaia Pass", 1 ]],
-						[ "var", "closedGaia", "true" ]
+						[ "or", 
+							[ "and", 
+								[ "or", [ "item", "East Gaia Pass", 1 ], [ "item", "West Gaia Pass", 1 ]],
+								[ "var", "closedGaia", "on" ]
+							],
+							[ "var", "closedGaia", "on", false ] 
+						]
 					]
 				},
 				{
 					"from": "open10.Left",
 					"to": "open10.Grove",
 					"condition": [
-						["or", 
-							[ "var", "closedGaia", "false" ], 
-							["and", [ "item", "Azure Drop Shade", 1 ], [ "var", "closedGaia", "true" ]]
+						[ "or", 
+							[ "var", "closedGaia", "full", false ], 
+							[ "and", [ "item", "Azure Drop Shade", 1 ], [ "var", "closedGaia", "full" ]]
 						]
 					]
 				},
@@ -477,9 +481,9 @@
 					"from": "open10.Right",
 					"to": "open10.Infested",
 					"condition": [
-						["or", 
-							[ "var", "closedGaia", "false" ], 
-							["and", [ "item", "Purple Bolt Shade", 1 ], [ "var", "closedGaia", "true" ]]
+						[ "or", 
+							[ "var", "closedGaia", "full", false ], 
+							[ "and", [ "item", "Purple Bolt Shade", 1 ], [ "var", "closedGaia", "full"  ]]
 						]
 					]
 				},
@@ -507,7 +511,7 @@
 					]
 				},
 				{
-					"from": "open10",
+					"from": "open10.Left",
 					"to": "open14.2",
 					"condition": [
 						[ "item", "So'najiz Key", 3 ],
