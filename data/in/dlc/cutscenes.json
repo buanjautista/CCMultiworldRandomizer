@@ -8,7 +8,7 @@
 				"path": ".settings.event.31" 
 			},
 			"region": {
-				"open": "openDLC2" 
+				"open": "openDLC1" 
 			},
 			"reward": [
 				[ "item", "Full Rhombus Pass", 1 ]
@@ -22,7 +22,7 @@
 				"path": ".settings.event.36" 
 			},
 			"region": {
-				"open": "openDLC2" 
+				"open": "openDLC_Beach" 
 			},
 			"reward": [
 				[ "sp" ]
@@ -36,7 +36,7 @@
 				"path": ".settings.event.18" 
 			},
 			"region": {
-				"open": "openDLC2" 
+				"open": "openDLC_Beach" 
 			},
 			"reward": [
 				[ "item", "Ancient Shade", 1 ]
@@ -50,7 +50,7 @@
 				"path": ".settings.event.44" 
 			},
 			"region": {
-				"open": "openDLC2" 
+				"open": "openDLC_Beach" 
 			},
 			"reward": [
 				[ "item", "Circuit Override", 3 ]
@@ -64,7 +64,7 @@
 				"path": ".settings.event.0.13" 
 			},
 			"region": {
-				"open": "openDLC-DungeonGF-L" 
+				"open": "openDLC_DungeonGF_L" 
 			},
 			"reward": [
 				[ "item", "Mega-Sandwich", 3 ]
@@ -78,7 +78,7 @@
 				"path": ".settings.event.0.13" 
 			},
 			"region": {
-				"open": "openDLC-DungeonGF-R" 
+				"open": "openDLC_DungeonGF_R" 
 			},
 			"reward": [
 				[ "item", "Mega-Sandwich", 3 ]
@@ -92,7 +92,7 @@
 				"path": ".settings.event.21" 
 			},
 			"region": {
-				"open": "openDLC-DungeonFull" 
+				"open": "openDLC_DungeonFull" 
 			},
 			"reward": [
 				[ "item", "Circuit Override", 2 ]
@@ -101,12 +101,12 @@
 		"Ku'lero B2 Elevator Left": {
 			"location": {
 				"area": "final-dng",
-				"map": "final-dng.",
+				"map": "final-dng.b2.bridge",
 				"mapId": 69,
 				"path": ".settings.event.0.13" 
 			},
 			"region": {
-				"open": "openDLC-DungeonB2-L" 
+				"open": "openDLC_DungeonB2_L" 
 			},
 			"reward": [
 				[ "item", "Mega-Sandwich", 3 ]
@@ -115,12 +115,12 @@
 		"Ku'lero B2 Elevator Right": {
 			"location": {
 				"area": "final-dng",
-				"map": "final-dng.",
+				"map": "final-dng.b2.bridge",
 				"mapId": 71,
 				"path": ".settings.event.0.13" 
 			},
 			"region": {
-				"open": "openDLC-DungeonB2-R" 
+				"open": "openDLC_DungeonB2_R" 
 			},
 			"reward": [
 				[ "item", "Mega-Sandwich", 3 ]
@@ -134,7 +134,7 @@
 				"path": ".settings.event.10" 
 			},
 			"region": {
-				"open": "openDLC-DungeonB2-L" 
+				"open": "openDLC_DungeonB2_L" 
 			},
 			"reward": [
 				[ "item", "Mega-Sandwich", 3 ]
@@ -143,12 +143,12 @@
 		"Ku'lero B2 Birds Right": {
 			"location": {
 				"area": "final-dng",
-				"map": "final-dng.",
+				"map": "final-dng.b2.room-e2-battle",
 				"mapId": 111,
 				"path": ".settings.event.10" 
 			},
 			"region": {
-				"open": "openDLC-DungeonB2-R" 
+				"open": "openDLC_DungeonB2_R" 
 			},
 			"reward": [
 				[ "item", "Mega-Sandwich", 3 ]
@@ -157,12 +157,12 @@
 		"Ku'lero B3 Elevator Left": {
 			"location": {
 				"area": "final-dng",
-				"map": "final-dng.",
+				"map": "final-dng.b3.bridge",
 				"mapId": 42,
 				"path": ".settings.event.0.13" 
 			},
 			"region": {
-				"open": "openDLC-DungeonB3-L" 
+				"open": "openDLC_DungeonB3_L" 
 			},
 			"reward": [
 				[ "item", "Mega-Sandwich", 3 ]
@@ -171,12 +171,12 @@
 		"Ku'lero B3 Elevator Right": {
 			"location": {
 				"area": "final-dng",
-				"map": "final-dng.",
+				"map": "final-dng.b3.bridge",
 				"mapId": 43,
 				"path": ".settings.event.0.13" 
 			},
 			"region": {
-				"open": "openDLC-DungeonB3-R" 
+				"open": "openDLC_DungeonB3_R" 
 			},
 			"reward": [
 				[ "item", "Mega-Sandwich", 3 ]
