@@ -994,8 +994,7 @@
 				"open": "open10"
 			},
 			"condition": [
-				[ "item", "Broken Deck", 1 ],
-				[ "region", "open", "open10.Grove" ]
+				[ "item", "Broken Deck", 1 ]
 			]
 		},
 		"Gaia's Garden Trailblazing": {
