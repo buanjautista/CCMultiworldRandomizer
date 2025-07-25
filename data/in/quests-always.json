@@ -33,6 +33,59 @@
 			"reward": [
 				[ "item", "Pond Slums Pass", 1 ]
 			]
+		},
+		"Trials of the Golden Bugs": {
+			"questid": "bug-hunting",
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"condition": [
+				[ "item", "Golden Bug", 4 ]
+			],
+			"reward": [
+				[ "item", "Old Dojo Key", 1 ]
+			]
+		},
+		"Trial of Insight": {
+			"questid": "bug-hunting-wave",
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[ "item", "Golden Bug", 1 ]
+			]
+		},
+		"Trial of Agility": {
+			"questid": "bug-hunting-shock",
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[ "item", "Golden Bug", 1 ]
+			]
+		},
+		"Trial of Patience": {
+			"questid": "bug-hunting-cold",
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[ "item", "Golden Bug", 1 ]
+			]
+		},
+		"Trial of Vigor": {
+			"questid": "bug-hunting-heat",
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[ "item", "Golden Bug", 1 ]
+			]
 		}
 	}
 }

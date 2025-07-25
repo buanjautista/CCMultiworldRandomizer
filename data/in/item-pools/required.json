@@ -138,6 +138,10 @@
 				"quantity": 1
 			},
 			{
+				"item": ["item", "Golden Bug"],
+				"quantity": 4
+			},
+			{
 				"item": ["item", "Broken Gauntlet"],
 				"quantity": 1
 			},
