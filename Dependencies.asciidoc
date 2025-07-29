@@ -1,3 +1,8 @@
+WARNING: If you're just here to try to install the mod, you're in the wrong place!
+This page is technical documentation for the backend of the mod
+Please use https://github.com/CodeTriangle/CCMultiworldRandomizer/wiki/Setup#how-to-join-a-multiworld-with-crosscode-seeds[this page]
+for setup instructions.
+
 This page lists the dependencies of the mod, in case you want to do a manual installation.
 It also serves to honor those without whom this project would not be possible.
 
