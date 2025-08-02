@@ -62,21 +62,12 @@ Open CrossCode and do the following:
 * Select the mod and install it using the button listed at the bottom of the screen.
 * You will be prompted to restart the game. Do that.
 
-Now, assuming you don't get any errors in the top-right corner, you can start a new save file. Either:
-* Use the Archipelago Start option. You will be prompted for details, then, upon a successful server connection, you
-  will be brought to the New Game+ tab to pick perks.
-* Use the New Game+ Start option. Select your perks and then, once you're in game, pause and click the "Archipelago
-  Options" button and put in your connection details there. Once the pause menu screen says "AP: CONNECTED", you can
-  start playing.
-  * If the New Game+ Start option is not available, this is because you do not have a completed CrossCode save file.
-    Please read [the first section on this page](#important-complete-crosscode-first) to learn why. Then, if you're
-    still sure you want to play, ask us for help acquiring a completed save file.
-
-If you're unfamiliar with the terminology, here's a quick guide:
-* "Hostname" is the computer where the host is running (for example `archipelago.gg`).
-* "Port" is a number that specifies where on the server Archipelago is running. The server should tell you the port
-  pretty plainly.
-* "Slot" is your player name. This is not the name of your YAML, it is the `name` field inside of your YAML file.
+Now, assuming you don't get any errors in the top-right corner, you can start a new save file.
+* Use the Game Start option. This should bring you to the Archipelago console screen.
+* On the right of this menu, select the topmost button to set your connection details. Follow the tooltips if the
+  terminology confuses you.
+* After connecting, return to the Archipelago console and enter the New Game+ menu. Select your perks.
+* Exit the menu to start playing.
 
 You will know if the mod is working when you get to space for the first time and you don't recieve the Disc of Insight
 and Green Leaf Shade as expected. Instead, you should see a prompt in the top-right notifying you of what was actually
@@ -159,7 +150,8 @@ be sure I'll see it.
 
 ## A note on versions
 
-Every `x.0.0` version and every `0.y.0` version defines a new connection interface between client and server. In other
-words, You can use any mod with version `0.1.a` to talk to any server with an APWorld of version `0.1.b` server,
-regardless of what `a` and `b` are, but a client with version `0.2.a` and a server with version `0.1.b` will not be
-able to talk to each other. Similarly, `1.a.b` can talk to `1.c.d` but `2.a.b` cannot talk to `1.c.d`.
+As of 0.5, different versions of CCMultiworldRandomizer are intended to be *fully compatibile* with games generated and
+played on previous versions of the mod and APWorld. The mod failing after an update should be reported as a bug.
+
+The only catch is that upgrading multiple versions at a time *may* not be as well-tested. You should still try report
+these issues as bugs.
