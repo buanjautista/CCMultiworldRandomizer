@@ -41,13 +41,6 @@ Depending on the value of that option, you need to search for different things:
 | Meteor Shade      | Meteor Shade     | Progressive Overworld Area Unlock | Progressive Overworld Area Unlock | Progressive Area Unlock |
 | Green Leaf Shade  | Green Leaf Shade | Progressive Overworld Area Unlock | Progressive Overworld Area Unlock | Progressive Area Unlock |
 
-## Why aren't New Game+ options available?
-
-Because you don't have a completed save file. New Game+ options are not enabled if you have not completed the game
-because I don't want you to play randomized before completing the game normally. Please read [this section of the setup
-guide](https://github.com/CodeTriangle/CCMultiworldRandomizer/wiki/Setup#important-complete-crosscode-first) and then,
-if you're still sure you want to play, ask us for help acquiring a completed save file.
-
 ## Is glitched logic supported?
 
 No, and it probably will never be.
