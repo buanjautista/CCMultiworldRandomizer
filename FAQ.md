@@ -11,9 +11,9 @@ Because CrossCode is such a long game, it has proven to be very helpful for the 
 between chests that should be prioritized and chests that are not as relevant to logic. Therefore, chests are
 color-coded and given symbols according to what kinds of items they contain. Green chests with the `!!` symbol are
 progression items and should probably be opened if possible. Deep blue chests with the `+` symbol are useful items. They
-are not relevant to logic, but they might help another player to finish their game easier. Light blue chests (the ones
-that appear as if they were vanilla) contain filler items. Their contents are often less than helpful. Chests containing
-traps appear as if they contained useful items.
+are not relevant to logic, but they might help another player to finish their game easier. Light blue chests with the
+Archipelago logo contain filler items. Their contents are often less than helpful. Light blue chests with no logo (the
+kind that look like vanilla chests) are not shuffled. Chests containing traps appear as if they contained useful items.
 
 ## Is there a way to figure out which chest is which?
 
