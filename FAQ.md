@@ -41,6 +41,13 @@ Depending on the value of that option, you need to search for different things:
 | Meteor Shade      | Meteor Shade     | Progressive Overworld Area Unlock | Progressive Overworld Area Unlock | Progressive Area Unlock |
 | Green Leaf Shade  | Green Leaf Shade | Progressive Overworld Area Unlock | Progressive Overworld Area Unlock | Progressive Area Unlock |
 
+## The mod won't update past 0.7.0. What do I do?
+
+This is due to a change in the mod repositories. In fact, no mods will update in this state. The simplest solution to
+this is to simply reinstall CCLoader. Simply follow the [installation instructions](https://wiki.c2dl.info/CCLoader)
+once again. You can also change the repositories manually, but this is more manual a process. Ask for help on the
+Discord if you are interested in doing this.
+
 ## Is glitched logic supported?
 
 No, and it probably will never be.
