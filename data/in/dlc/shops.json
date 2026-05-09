@@ -9,21 +9,21 @@
 				"open": "openDLC1"
 			},
 			"slots": [
-                "Sandwich",
-                "Hi-Sandwich",
-                "Green Leaf Tea",
-                "Just Water",
-                "Kebab Roll",
-                "Meaty Risotto",
-                "Spicy Bun",
-                "Fruit Drink",
-                "Rice Cracker",
-                "Veggie Sticks",
-                "Bergen Ice Cream",
-                "Sweet Lemonjuice",
-                "Cup o' Coffee",
-                "Salted Peanuts",
-                "Snack Mix"
+					"Sandwich",
+					"Hi-Sandwich",
+					"Green Leaf Tea",
+					"Just Water",
+					"Kebab Roll",
+					"Meaty Risotto",
+					"Spicy Bun",
+					"Fruit Drink",
+					"Rice Cracker",
+					"Veggie Sticks",
+					"Bergen Ice Cream",
+					"Sweet Lemonjuice",
+					"Cup o' Coffee",
+					"Salted Peanuts",
+					"Snack Mix"
 			]
 		},
 		"Homestedt Weapons": {
@@ -35,10 +35,29 @@
 				"open": "openDLC1"
 			},
 			"slots": [
-                "Laser Goggles",
-                "Laser Edge",
-                "Laser Mail",
-                "Laser Boots"
+				"Laser Goggles",
+				"Laser Edge",
+				"Laser Mail",
+				"Laser Boots"
+			]
+		},
+		"Homestedt Weapons + Azure A. Pass": {
+			"location": {
+				"shop": "homestedtWeapons",
+				"area": "evo-village"
+			},
+			"region": {
+				"open": "openDLC1"
+			},
+			"condition": [
+				[ "var", "canGrind" ],
+				[ "item", "Azure Archipelago Pass" ]
+			],
+			"slots": [
+				"Cross Googles",
+				"Cross Edge",
+				"Cross Mail",
+				"Cross Boots"
 			]
 		},
 		"Beach Weapons": {
@@ -50,10 +69,10 @@
 				"open": "openDLC_Beach"
 			},
 			"slots": [
-                "Cross Goggles",
-                "Cross Edge",
-                "Cross Mail",
-                "Cross Boots"
+				"Cross Goggles",
+				"Cross Edge",
+				"Cross Mail",
+				"Cross Boots"
 			]
 		},
 		"Goat Zira's Shop": {
@@ -65,19 +84,19 @@
 				"open": "open20"
 			},
 			"condition": [
-                [ "quest", "Wrath of Goat" ],
+				[ "quest", "Wrath of Goat" ],
 				[ "var", "canGrind" ]
 			],
 			"slots": [
-                "Sandwich",
-                "Hi-Sandwich",
-                "Green Leaf Tea",
-                "Just Water",
-                "Goat Cheese",
-                "Goat Milk"
+					"Sandwich",
+					"Hi-Sandwich",
+					"Green Leaf Tea",
+					"Just Water",
+					"Goat Cheese",
+					"Goat Milk"
 			]
 		},
-		"Rhombus Weapons + DLC": {
+		"Rhombus Weapons + Azure A. Pass": {
 			"location": {
 				"shop": "rhombusWeapons1",
 				"area": "rhombus-sqr"
@@ -87,13 +106,14 @@
 				"open": "open20"
 			},
 			"condition": [
-				[ "var", "canGrind" ]
+				[ "var", "canGrind" ],
+				[ "item", "Azure Archipelago Pass" ]
 			],
 			"slots": [
-                "Cross Goggles",
-                "Cross Edge",
-                "Cross Mail",
-                "Cross Boots"
+				"Cross Goggles",
+				"Cross Edge",
+				"Cross Mail",
+				"Cross Boots"
 			]
 		}
 	}
