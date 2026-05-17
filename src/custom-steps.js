@@ -62,27 +62,57 @@ export function assignSteps() {
   });
 
   
-  // New event step to sync specific party member's SP level 
+  // New event step to sync specific party member's SP level and level
   ig.module("game.feature.party.party-steps2") .requires( "impact.base.action", "impact.base.event", "game.feature.party.party-steps", "game.feature.model.model-steps").defines(function () {
-        ig.EVENT_STEP.SYNC_PARTY_MEMBER_SP_LEVEL = ig.EventStepBase.extend({
-          _wm: new ig.Config({
-            attributes: {
-              member: {
-                _type: "String",
-                _info: "Party member to add",
-                _select: sc.PARTY_OPTIONS,
-              },
+      ig.EVENT_STEP.SYNC_PARTY_MEMBER_SP_LEVEL = ig.EventStepBase.extend({
+        _wm: new ig.Config({
+          attributes: {
+            member: {
+              _type: "String",
+              _info: "Party member to add",
+              _select: sc.PARTY_OPTIONS,
             },
-          }),
-          init: function (a) {
-            this.member = a.member;
-            // console.log(a)
           },
-          start: function () {
-            sc.party.getPartyMemberModel(this.member).setSpLevel(sc.model.player.spLevel);
+        }),
+        init: function (a) {
+          this.member = a.member;
+          // console.log(a)
+        },
+        start: function () {
+          sc.party.getPartyMemberModel(this.member).setSpLevel(sc.model.player.spLevel);
+        },
+      });
+      ig.EVENT_STEP.SYNC_PARTY_MEMBER_LEVEL = ig.EventStepBase.extend({
+        member: null,
+        level: null,
+        exp: null,
+        updateEquipment: false,
+        _wm: new ig.Config({
+          attributes: {
+            member: {
+              _type: "String",
+              _info: "Party member to add",
+              _select: sc.PARTY_OPTIONS,
+            },
+            updateEquipment: {
+              _type: "Boolean",
+              _info: "If true, also update equipment of party member",
+            },
           },
-        });
-      }
+        }),
+        init: function (a) {
+          this.member = a.member;
+          this.level = sc.model.player.level || 1;
+          this.exp = sc.model.player.exp || 0;
+          this.updateEquipment = a.updateEquipment || false;
+        },
+        start: function () {
+          sc.party
+            .getPartyMemberModel(this.member)
+            .setLevel(this.level, sc.model.player.exp, this.updateEquipment, true);
+        },
+      });
+    }
   );
   
   // A tweak to ARBox so it doesn't overlap with chest detector for Open World tips
@@ -234,4 +264,43 @@ export function assignSteps() {
       return this.parent(model, event, data);
     }
   });
+  ig.module("game.feature.quest.quest-steps-rando")
+    .requires(
+      "game.feature.quest.quest-steps"
+    )
+    .defines(function () {
+      ig.EVENT_STEP.CREATE_QUEST_GOAL = ig.EventStepBase.extend({
+        settings: null,
+        quest: null,
+        taskList: [],
+        questNames: [],
+      
+        init: function (b) {
+          this.taskList = []
+          this.questNames = []
+          for (let i of b.subgoals) {
+            let currentTask
+            if (ig.vars.get(i.questCondition)) {
+              currentTask = new sc.QUEST_SUB_TASK.QUEST({type: "QUEST", quest: i.quest, text: i.text})
+              // currentTask.type = "QUEST"
+              // currentTask.quest = i.quest;
+              // currentTask.text = i.text;
+              this.taskList.push(currentTask);
+              this.questNames.push(i.quest);
+            }
+          }
+          this.quest = new sc.Quest(b, "goal-randomizer")
+          // console.log(taskList, this.quest);
+          this.quest.tasks[0].subTasks = this.taskList;
+          this.quest.tasks[0].subQuests = this.questNames;
+        },
+        start: function () {
+          sc.quests.staticQuests[this.quest.id] = this.quest;
+          sc.quests.staticQuests[this.quest.id].id = this.quest.id;
+          sc.quests.staticQuests[this.quest.id].tasks[0].subTasks = this.taskList;
+          sc.quests.staticQuests[this.quest.id].tasks[0].subQuests = this.questNames;
+        },
+      });
+  });
 }
+
