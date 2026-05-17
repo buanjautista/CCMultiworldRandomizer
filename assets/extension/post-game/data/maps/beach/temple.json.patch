@@ -5,10 +5,15 @@
         "index": [914, "settings"]
     },
     {
-        "_comment": "Remove the Apollo plot sequence",
+        "_comment": "Remove Apollo and change the event",
         "type": "SET_KEY",
         "index": "startCondition",
         "content": "plot.ancientShadeFight"
+    },
+    {
+        "type": "SET_KEY",
+        "index": "endCondition",
+        "content": "map.metApollo"
     },
     
     {
