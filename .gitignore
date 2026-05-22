@@ -1,6 +1,6 @@
 # ccmwr
 node_modules
-*.js
+mw-rando/*.js
 *.ccmod
 
 # ccow
