@@ -40,16 +40,16 @@ Open CrossCode and do the following:
 * Select the mod and install it using the button listed at the bottom of the screen.
 * You will be prompted to restart the game. Do that.
 
-## Generating a Multiworld Seed
+## Generating a Multiworld
 
 First, you need a local installation of Archipelago itself. It should be as simple as downloading a release from [this
 page](https://github.com/ArchipelagoMW/Archipelago/releases/latest) and either unzipping it or running the installer,
 depending on your operating system.
 
 Next, download the APWorld file and the template YAML from the [releases page of the CrossCode Archipelago
-project](https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/latest) and put it into `custom_worlds` in your
-Archipelago installation folder (if you have installed an old version previously in `lib/worlds`, delete it before
-attempting to generate).
+project](https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/latest). Place the APWorld into the
+`custom_worlds` in your Archipelago installation folder (if you have installed an old version previously in
+`lib/worlds`, delete it before attempting to generate).
 
 Make sure to customize the template YAML following the guides that Archipelago provides. The options should be
 self-explanatory, but if they are not, feel free to ask.
@@ -64,7 +64,7 @@ up-to-date to support CrossCode.
 
 ## Joining a Multiworld
 
-Nowthat you have a multiworld generated and hosted, you can start a new save file.
+Now that you have a multiworld generated and hosted, you can start a new save file.
 * Use the Game Start option. This should bring you to the Archipelago console screen.
 * On the right of this menu, select the topmost button to set your connection details. Follow the tooltips if the
   terminology confuses you.
