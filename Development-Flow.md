@@ -249,36 +249,26 @@ you will need to generate them.
 ### Bundled ccmod
 
 To create a ccmod,
-I built a `bundle.sh` script
-in `CCMultiworldRandomizer`.
-If you don't have
-a POSIX-shell compliant environment
-(i.e. if you are running Windows
-without WSL)
-you will need to create a zip
-that includes all of the files
-that `bundle.sh` does.
-`bundle.sh` uses the version number
-listed in `ccmod.json`.
-You may have to modify that.
-You can also add a bit of metadata
-to the end of the name
-by giving `bundle.sh` an argument.
+run the following:
+```javascript
+npm run bundle
+```
+
+You can also give it a flag
+to include in the version name
+as an additional suffix
+by pasing an additional string argument.
 
 ### Bundled apworld
 
 To create the APWorld,
 run the following
-in `Archipelago/worlds`
-or create a zip file by hand
-that includes everything
-mentioned in the command.
+in the root of
+your clone of Archipelago:
 
 ```sh
-zip -r crosscode.apworld crosscode/{*.py,codegen,docs,test,types} --exclude '*.py[oc]'
+python -m worlds.crosscode.bundle
 ```
-
-**Note**: You will need to delete `crosscode.apworld` before running anything else. Archipelago will prefer to use `crosscode.apworld` over the `crosscode` folder, and this will cause issues if you've made your own modifications.
 
 ### Template YAML
 

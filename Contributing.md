@@ -73,13 +73,3 @@ Discuss this project in **#development-general** or **#logic**.
 **Contributors:**
 
 * @sterlia (Discord) / @TheShadowOfLight (GitHub)
-
-### DLC Areas
-
-Ever wanted to play the DLC **A New Home** randomized? You might be able to soon.
-
-Discuss this project in **#development-general** or **#logic**.
-
-**Contributors:**
-
-* @buanjautista (Discord/GitHub)

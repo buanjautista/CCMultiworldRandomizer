@@ -1,4 +1,4 @@
-*This guide has been updated 08 November 2024 and is accurate as of version 0.6.1.*
+*This guide has been updated 28 May 2026 and is accurate as of version 0.9.0.*
 
 CrossCode is an "unsupported" Archipelago game, meaning it is not distributed with the main Archipelago installation.
 Fortunately, it is easy to run unsupported games even with stock Archipelago.
@@ -27,7 +27,20 @@ it was meant to be experienced.
 You may choose for yourself whether you want to continue. If you do, know that support for issues stemming from this
 choice will be limited.
 
-## How to generate your own multiworld with CrossCode seeds
+## Installing the Randomizer Mod
+
+Install [CCLoader2](https://wiki.c2dl.info/CCLoader). CCLoader comes with a custom and versatile mod manager which can
+be used to install CCMultiworldRandomizer and its dependencies.
+
+Open CrossCode and do the following:
+* Enter the Options menu.
+* Press the "mods" hotkey (listed in the top bar of the menu).
+* Search or scroll through the mod list until you find the mod labeled **Multiworld randomizer by CodeTriangle** with
+  the Archipelago logo as its icon.
+* Select the mod and install it using the button listed at the bottom of the screen.
+* You will be prompted to restart the game. Do that.
+
+## Generating a Multiworld Seed
 
 First, you need a local installation of Archipelago itself. It should be as simple as downloading a release from [this
 page](https://github.com/ArchipelagoMW/Archipelago/releases/latest) and either unzipping it or running the installer,
@@ -49,32 +62,18 @@ This file can then be either self-hosted with the `ArchipelagoServer` program or
 (or any of the third-party Archipelago host sites) so long as the server's Archipelago version is sufficiently
 up-to-date to support CrossCode.
 
-## How to join a multiworld with CrossCode seeds
+## Joining a Multiworld
 
-Install [CCLoader2](https://wiki.c2dl.info/CCLoader). CCLoader comes with a custom and versatile mod manager which can
-be used to install CCMultiworldRandomizer and its dependencies.
-
-Open CrossCode and do the following:
-* Enter the Options menu.
-* Press the "mods" hotkey (listed in the top bar of the menu).
-* Search or scroll through the mod list until you find the mod labeled **Multiworld randomizer by CodeTriangle** with
-  the Archipelago logo as its icon.
-* Select the mod and install it using the button listed at the bottom of the screen.
-* You will be prompted to restart the game. Do that.
-
-Now, assuming you don't get any errors in the top-right corner, you can start a new save file.
+Nowthat you have a multiworld generated and hosted, you can start a new save file.
 * Use the Game Start option. This should bring you to the Archipelago console screen.
 * On the right of this menu, select the topmost button to set your connection details. Follow the tooltips if the
   terminology confuses you.
 * After connecting, return to the Archipelago console and enter the New Game+ menu. Select your perks.
-* Exit the menu to start playing.
+* Click "Begin Adventure" to start.
 
 You will know if the mod is working when you get to space for the first time and you don't recieve the Disc of Insight
 and Green Leaf Shade as expected. Instead, you should see a prompt in the top-right notifying you of what was actually
 found.
-
-Alternatively, manual installation is supported, but not recommended. At this point, if you want to do a manual setup,
-skip the first bulleted list of this section guide and use [this page](Dependencies#manual-installation) instead.
 
 ### What New Game+ perks should I use?
 
