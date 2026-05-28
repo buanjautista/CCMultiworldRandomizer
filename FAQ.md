@@ -39,8 +39,10 @@ Depending on the value of that option, you need to search for different things:
 | Azure Drop Shade  | Progressive Dungeon Unlock | Azure Drop Shade  | Progressive Dungeon Unlock | Progressive Area Unlock |
 | Star Shade        | Star Shade       | Progressive Overworld Area Unlock | Progressive Overworld Area Unlock | Progressive Area Unlock |
 | Meteor Shade      | Meteor Shade     | Progressive Overworld Area Unlock | Progressive Overworld Area Unlock | Progressive Area Unlock |
-| Azure A. Pass     | Azure A. Pass    | Progressive Overworld Area Unlock | Progressive Overworld Area Unlock | Progressive Area Unlock |
-| Ancient Shade     | Progressive Dungeon Unlock | Ancient Shade     | Progressive Dungeon Unlock | Progressive Area Unlock |
+| Azure A. Pass\*   | Azure A. Pass    | Progressive Overworld Area Unlock | Progressive Overworld Area Unlock | Progressive Area Unlock |
+| Ancient Shade\*   | Progressive Dungeon Unlock | Ancient Shade     | Progressive Dungeon Unlock | Progressive Area Unlock |
+
+\* Only shuffled when DLC is enabled
 
 ## The mod won't update past 0.7.0. What do I do?
 
