@@ -14,6 +14,16 @@
         "type": "INCLUDE",
         "src": "mod:patches/database/extra-commonEvents.json"
     },
+    { 
+        "type": "IF", 
+        "_comment": "Adds corresponding patch if DLC is active", 
+        "cond": "ig.vars.get('extension.post-game.active') >= 1", 
+        "thenSteps": [
+        {
+        "type": "INCLUDE",
+        "src": "mod:patches/database/dlc/remove-party-blocks.json"
+        }] 
+    },
     {
         "type": "EXIT"
     },
@@ -36,6 +46,10 @@
     {
         "type": "INCLUDE",
         "src": "mod:patches/database/shop-conditions.json"
+    },
+        {
+        "type": "INCLUDE",
+        "src": "mod:patches/database/dlc/shop-conditions.json"
     },
     {
         "type": "EXIT"

@@ -5,11 +5,39 @@
         "index": [914, "settings"]
     },
     {
-        "_comment": "Remove the Apollo plot sequence",
+        "_comment": "Remove Apollo and change the event",
         "type": "SET_KEY",
         "index": "startCondition",
-        "content": "false"
+        "content": "plot.ancientShadeFight"
     },
+    {
+        "type": "SET_KEY",
+        "index": "endCondition",
+        "content": "map.metApollo"
+    },
+    
+    {
+        "_comment": "Change the event so the music resumes",
+        "type": "SET_KEY",
+        "index": "event",
+        "content": [{
+            "member": "Apollo",
+            "updateEquipment": true,
+            "type": "SYNC_PARTY_MEMBER_LEVEL"
+        },
+        {
+            "changeType": "set",
+            "type": "CHANGE_VAR_BOOL",
+            "varName": "map.metApollo",
+            "value": true
+        },
+        {
+            "mode": "SLOW_OUT",
+            "delayed": false,
+            "type": "RESUME_DEFAULT_BGM"
+        }]
+    },
+
     { "type": "EXIT", "count": 2 },
 
     {
