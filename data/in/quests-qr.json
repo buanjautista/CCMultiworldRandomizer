@@ -73,13 +73,13 @@
 				"area": "jungle",
 				"map": "jungle.lab.room-final",
 				"mapId": 60,
+				"extension": "fish-gear",
 				"path": ".settings.condAnims.0.interact.event.8.thenStep.0"
 			},
 			"region": {
 				"linear": "23",
 				"open": "open10.Right"
 			},
-			"extension": "fish-gear",
 			"condition": [
 				[ "quest", "Foul Play" ]
 			],
@@ -92,18 +92,18 @@
 				"area": "autumn-area",
 				"map": "autumn.lab.room-final",
 				"mapId": 40,
+				"extension": "flying-hedgehag",
 				"path": ".settings.condAnims.0.interact.event.8.thenStep.0"
 			},
 			"region": {
 				"linear": "3",
 				"open": "open3"
 			},
-			"extension": "flying-hedgehag",
 			"condition": [
 				[ "quest", "A Switch in Altitude" ]
 			],
 			"reward": [
-				[ "item", "Encrypted Key", 1 ]
+				[ "item", "Encrypted Key" ]
 			]
 		},
 		"Encrypted Key: Best in the West": {
@@ -111,18 +111,18 @@
 				"area": "heat-area",
 				"map": "heat.lab.room-final",
 				"mapId": 141,
+				"extension": "scorpion-robo",
 				"path": ".settings.condAnims.0.interact.event.8.thenStep.0"
 			},
 			"region": {
 				"linear": "11",
 				"open": "open5"
 			},
-			"extension": "scorpion-robo",
 			"condition": [
 				[ "quest", "Best in the West" ]
 			],
 			"reward": [
-				[ "item", "Encrypted Key", 1 ]
+				[ "item", "Encrypted Key" ]
 			]
 		},
 		"Encrypted Key: Out of the Box": {
@@ -130,18 +130,18 @@
 				"area": "bergen-trails",
 				"map": "bergen-trail.lab.room-final",
 				"mapId": 55,
+				"extension": "snowman-tank",
 				"path": ".settings.condAnims.0.interact.event.8.thenStep.0"
 			},
 			"region": {
 				"linear": "3",
 				"open": "open3"
 			},
-			"extension": "snowman-tank",
 			"condition": [
 				[ "quest", "Out of the Box" ]
 			],
 			"reward": [
-				[ "item", "Encrypted Key", 1 ]
+				[ "item", "Encrypted Key" ]
 			]
 		}
 	},
@@ -262,6 +262,7 @@
 			"location": {
 				"area": "autumn-fall",
 				"map": "autumn.lab.room-final",
+				"extension": "flying-hedgehag",
 				"mapId": 55
 			},
 			"clearance": "Default",
@@ -269,7 +270,6 @@
 				"linear": "10",
 				"open": "open9"
 			},
-			"extension": "flying-hedgehag",
 			"condition": [
 				[ "quest", "A Switch in Altitude" ]
 			],
@@ -281,6 +281,7 @@
 			"location": {
 				"area": "heat-area",
 				"map": "heat.lab.room-final",
+				"extension": "scorpion-robo",
 				"mapId": 89
 			},
 			"clearance": "Default",
@@ -288,7 +289,6 @@
 				"linear": "12",
 				"open": "open5"
 			},
-			"extension": "scorpion-robo",
 			"condition": [
 				[ "quest", "Best in the West" ]
 			],
@@ -300,6 +300,7 @@
 			"location": {
 				"area": "bergen-trails",
 				"map": "bergen-trail.lab.room-final",
+				"extension": "snowman-tank",
 				"mapId": 54
 			},
 			"clearance": "Default",
@@ -307,7 +308,6 @@
 				"linear": "3",
 				"open": "open3"
 			},
-			"extension": "snowman-tank",
 			"condition": [
 				[ "quest", "Out of the Box" ]
 			],
@@ -319,6 +319,7 @@
 			"location": {
 				"area": "jungle",
 				"map": "jungle.lab.room-final",
+				"extension": "fish-gear",
 				"mapId": 59
 			},
 			"clearance": "Default",
@@ -326,7 +327,6 @@
 				"linear": "23",
 				"open": "open10.Right"
 			},
-			"extension": "fish-gear",
 			"condition": [
 				[ "quest", "Foul Play" ]
 			],

@@ -637,6 +637,34 @@
 					"condition": [
 						[ "location", "The Observatory" ]
 					]
+				},
+				"dungeon_shades": {
+					"region": "open2",
+					"condition": [
+						[ "item", "Blue Ice Shade" ],
+						[ "item", "Red Flame Shade" ],
+						[ "item", "Purple Bolt Shade" ],
+						[ "item", "Azure Drop Shade" ]
+					]
+				},
+				"dungeon_bosses": {
+					"region": "open2",
+					"condition": [
+						[ "location", "Temple Mine Shade Statue"],
+						[ "location", "Faj'ro Shade Statue"],
+						[ "location", "Zir'vitar Shade Statue"],
+						[ "location", "So'najiz Shade Statue"]
+					]
+				},
+				"facility_x": {
+					"region": "open16.1",
+					"condition": [
+						[ "item", "Encrypted Key", 4 ],
+						[ "region", "open", "open3" ],
+						[ "region", "open", "open5" ],
+						[ "region", "open", "open9" ],
+						[ "region", "open", "open10.Right" ]
+					]
 				}
 			}
 		}
