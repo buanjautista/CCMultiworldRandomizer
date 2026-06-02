@@ -67,6 +67,82 @@
 			"reward": [
 				[ "item", "Strawberry Hat", 1 ]
 			]
+		},
+		"Encrypted Key: Foul Play": {
+			"location": {
+				"area": "jungle",
+				"map": "jungle.lab.room-final",
+				"mapId": 60,
+				"path": ".settings.condAnims.0.interact.event.8.thenStep.0"
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10.Right"
+			},
+			"extension": "fish-gear",
+			"condition": [
+				[ "quest", "Foul Play" ]
+			],
+			"reward": [
+				[ "item", "Encrypted Key", 1 ]
+			]
+		},
+		"Encrypted Key: A Switch in Altitude": {
+			"location": {
+				"area": "autumn-area",
+				"map": "autumn.lab.room-final",
+				"mapId": 40,
+				"path": ".settings.condAnims.0.interact.event.8.thenStep.0"
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"extension": "flying-hedgehag",
+			"condition": [
+				[ "quest", "A Switch in Altitude" ]
+			],
+			"reward": [
+				[ "item", "Encrypted Key", 1 ]
+			]
+		},
+		"Encrypted Key: Best in the West": {
+			"location": {
+				"area": "heat-area",
+				"map": "heat.lab.room-final",
+				"mapId": 141,
+				"path": ".settings.condAnims.0.interact.event.8.thenStep.0"
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"extension": "scorpion-robo",
+			"condition": [
+				[ "quest", "Best in the West" ]
+			],
+			"reward": [
+				[ "item", "Encrypted Key", 1 ]
+			]
+		},
+		"Encrypted Key: Out of the Box": {
+			"location": {
+				"area": "bergen-trails",
+				"map": "bergen-trail.lab.room-final",
+				"mapId": 55,
+				"path": ".settings.condAnims.0.interact.event.8.thenStep.0"
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"extension": "snowman-tank",
+			"condition": [
+				[ "quest", "Out of the Box" ]
+			],
+			"reward": [
+				[ "item", "Encrypted Key", 1 ]
+			]
 		}
 	},
 	"chests": {
@@ -180,6 +256,82 @@
 			],
 			"reward": [
 				[ "item", "Perforated Tophat", 5 ]
+			]
+		},
+		"Fall: Lead Office": {
+			"location": {
+				"area": "autumn-fall",
+				"map": "autumn.lab.room-final",
+				"mapId": 55
+			},
+			"clearance": "Default",
+			"region": {
+				"linear": "10",
+				"open": "open9"
+			},
+			"extension": "flying-hedgehag",
+			"condition": [
+				[ "quest", "A Switch in Altitude" ]
+			],
+			"reward": [
+				[ "item", "Shy Fly" ]
+			]
+		},
+		"Valley: Lead Office": {
+			"location": {
+				"area": "heat-area",
+				"map": "heat.lab.room-final",
+				"mapId": 89
+			},
+			"clearance": "Default",
+			"region": {
+				"linear": "12",
+				"open": "open5"
+			},
+			"extension": "scorpion-robo",
+			"condition": [
+				[ "quest", "Best in the West" ]
+			],
+			"reward": [
+				[ "item", "Cool Bar" ]
+			]
+		},
+		"Trail: Lead Office": {
+			"location": {
+				"area": "bergen-trails",
+				"map": "bergen-trail.lab.room-final",
+				"mapId": 54
+			},
+			"clearance": "Default",
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"extension": "snowman-tank",
+			"condition": [
+				[ "quest", "Out of the Box" ]
+			],
+			"reward": [
+				[ "item", "T.A.N.K." ]
+			]
+		},
+		"Garden: Lead Office": {
+			"location": {
+				"area": "jungle",
+				"map": "jungle.lab.room-final",
+				"mapId": 59
+			},
+			"clearance": "Default",
+			"region": {
+				"linear": "23",
+				"open": "open10.Right"
+			},
+			"extension": "fish-gear",
+			"condition": [
+				[ "quest", "Foul Play" ]
+			],
+			"reward": [
+				[ "item", "Micro Crawler" ]
 			]
 		}
 	},
@@ -1346,18 +1498,45 @@
 				[ "item", "Steak, rare", 5 ]
 			]
 		},
-		"Raising the Steaks": {
-			"questid": "steaks_3",
+		"Foul Play": {
+			"questid": "console-playstation-1",
 			"region": {
 				"linear": "21",
-				"open": "open10"
+				"open": "open10.Right"
 			},
 			"condition": [
-				[ "region", "open", "open9" ],
-				[ "quest", "Meating Expectations" ]
-			],
-			"reward": [
-				[ "item", "Gourmet Steak", 3 ]
+				[ "item", "Meteor Shade" ],
+				[ "item", "Pond Slums Pass" ]
+			]
+		},
+		"A Switch in Altitude": {
+			"questid": "console-switch-1",
+			"region": {
+				"linear": "14",
+				"open": "open9"
+			},
+			"condition": [
+				[ "item", "Meteor Shade" ]
+			]
+		},
+		"Out of the Box": {
+			"questid": "console-xbox-1",
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"condition": [
+				[ "item", "Meteor Shade" ]
+			]
+		},
+		"Best in the West": {
+			"questid": "console-pc-1",
+			"region": {
+				"linear": "21",
+				"open": "open5"
+			},
+			"condition": [
+				[ "item", "Meteor Shade" ]
 			]
 		}
 	}
