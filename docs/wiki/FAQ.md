@@ -64,4 +64,4 @@ Glitched logic in CrossCode, as far as anyone has been able to think to implemen
 ## Will you support *X*?
 
 Maybe. Before asking us on Discord, you may want to search for previous conversations on the topic. You're free to bring
-it up again with your own spin on the idea. Or, if you're interested, you can also [work on it yourself](Contributing).
+it up again with your own spin on the idea. Or, if you're interested, you can also [work on it yourself](Contributing.md).

@@ -27,14 +27,14 @@ itself to accommodate your changes better. Please reach out if this interests yo
 
 All logic for CrossCode Archipelago is stored in the [`data/in/`](https://github.com/CodeTriangle/CCMultiworldRandomizer/tree/master/data/in)
 directory in the CCMultiworldRandomizer repository as JSON files. It should be pretty easy to make whatever changes that
-you need. Ongoing documentation of the JSON format used by these files is stored on the [Data Format](Data-Format) page.
-If you're interested in adding new logic or fixing logic bugs, it can all be done through this.
+you need. Ongoing documentation of the JSON format used by these files is stored on the [Data Format](Data-Format.md)
+page. If you're interested in adding new logic or fixing logic bugs, it can all be done through this.
 
 Please discuss new logic in the **#logic** channel of the Discord.
 
 ### Code Contributions
 
-For more detailed information, see the [Development-Flow wiki page](Development-Flow).
+For more detailed information, see the [Development-Flow wiki page](Development-Flow.md).
 
 #### CCMultiworldRandomizer
 
@@ -56,7 +56,7 @@ Python, a language which is very easy to learn. Unfortunately, in CrossCode's ca
 parts to modify yourself because large portions of the code, especially the code describing the logic, is generated from
 the input data. As long as you're not touching logic, it should be possible to change things with no additional setup;
 however, if you'll be working with logic in any form, you will also need to take some additional steps. Documentation on
-that process is available [here](Development-Flow#generate-logic).
+that process is available [here](Development-Flow.md#generate-logic).
 
 ## Ongoing Community Projects
 

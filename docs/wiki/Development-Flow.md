@@ -30,7 +30,7 @@ It contains the logic for the randomizer
 and some information on items
 and other random details.
 This is documented in more detail
-in [the Data-Format wiki page](./Data-Format),
+in [the Data-Format wiki page](Data-Format.md),
 although that page is
 a work in progress.
 
