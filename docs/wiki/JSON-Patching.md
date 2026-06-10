@@ -1,6 +1,6 @@
-If you want to contribute to the project, you'll need some basic knowledge of how to read/manipulate JSON, and take a read if you can from [this page](https://wiki.c2dl.info/Patching#Patch_Steps). Can also analyze some of the already existing patches for more info. 
-[Example Patch](https://github.com/buanjautista/cc-open-world/blob/main/assets/data/maps/forest/path-10-hidden.json.patch). 
-[Another Example Patch](https://github.com/buanjautista/cc-open-world/blob/main/assets/data/maps/jungle/dng/dng-crossing.json.patch).
+If you want to contribute to the open world/map patching side of this project, you'll need some basic knowledge of how to read/manipulate JSON, and take a read if you can from [this page](https://wiki.c2dl.info/Patching#Patch_Steps). Can also analyze some of the already existing patches for more info.
+* [Example Patch](https://github.com/CodeTriangle/CCMultiworldRandomizer/blob/main/assets/data/maps/forest/path-10-hidden.json.patch).
+* [Another Example Patch](https://github.com/CodeTriangle/CCMultiworldRandomizer/blob/main/assets/data/maps/jungle/dng/dng-crossing.json.patch).
 
 
 # What does it do
