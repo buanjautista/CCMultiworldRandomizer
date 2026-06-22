@@ -33,8 +33,7 @@ Install [CCLoader2](https://wiki.c2dl.info/CCLoader). CCLoader comes with a cust
 be used to install CCMultiworldRandomizer and its dependencies.
 
 Open CrossCode and do the following:
-* Enter the Options menu.
-* Press the "mods" hotkey (listed in the top bar of the menu).
+* Open the Mod Manager menu from the title screen.
 * Search or scroll through the mod list until you find the mod labeled **Multiworld randomizer by CodeTriangle** with
   the Archipelago logo as its icon.
 * Select the mod and install it using the button listed at the bottom of the screen.
