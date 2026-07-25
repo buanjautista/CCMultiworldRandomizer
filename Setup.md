@@ -93,8 +93,8 @@ If you are looking for some more quirky options, you can install the **New Game+
 provides [these features](https://github.com/CCDirectLink/CCNewGamePP/blob/master/readme.md#features), though
 I do not guarantee compatibility or fun.
 
-If you do find yourself regretting your NG+ perk choices, you can also install **New game+ Cheats** from CCModManager,
-which will allow you to switch out perks on the fly.
+If you do find yourself regretting your NG+ perk choices, you can change these at any time in **Pause Screen > Archipelago >
+New Game+**.
 
 ## Poptracker Pack
 
