@@ -1629,7 +1629,9 @@
 				"map": "cold-dng.b2.room5",
 				"mapId": 66
 			},
-			"visualClearance": "Bronze",
+			"markerOverrides": {
+				"clearance": "Bronze"
+			},
 			"region": {
 				"open": "open4.6"
 			},
@@ -3061,7 +3063,9 @@
 				"map": "heat-dng.f3.room-05",
 				"mapId": 79
 			},
-			"visualClearance": "Silver",
+			"markerOverrides": {
+				"clearance": "Silver"
+			},
 			"region": {
 				"linear": "17.5",
 				"open": "open7.6"
@@ -4994,7 +4998,9 @@
 				"map": "wave-dng.b1.center-04-long",
 				"mapId": 671
 			},
-			"visualClearance": "Gold",
+			"markerOverrides": {
+				"clearance": "Gold"
+			},
 			"region": {
 				"linear": "26.5",
 				"open": "open14.3"
