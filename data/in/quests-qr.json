@@ -1418,7 +1418,9 @@
 			},
 			"condition": [
 				[ "item", "Meteor Shade" ],
-				[ "item", "Pond Slums Pass" ]
+				[ "item", "Pond Slums Pass" ],
+				[ "item", "Cold" ],
+				[ "item", "Wave" ]
 			]
 		},
 		"A Switch in Altitude": {
@@ -1428,7 +1430,10 @@
 				"open": "open9"
 			},
 			"condition": [
-				[ "item", "Meteor Shade" ]
+				[ "item", "Meteor Shade" ],
+				[ "item", "Green Leaf Shade" ],
+				[ "item", "Heat" ],
+				[ "item", "Wave" ]
 			]
 		},
 		"Out of the Box": {
@@ -1438,7 +1443,9 @@
 				"open": "open3"
 			},
 			"condition": [
-				[ "item", "Meteor Shade" ]
+				[ "item", "Meteor Shade" ],
+				[ "item", "Heat" ],
+				[ "item", "Shock" ]
 			]
 		},
 		"Best in the West": {
@@ -1448,7 +1455,9 @@
 				"open": "open5"
 			},
 			"condition": [
-				[ "item", "Meteor Shade" ]
+				[ "item", "Meteor Shade" ],
+				[ "item", "Cold" ],
+				[ "item", "Shock" ]
 			]
 		}
 	}
