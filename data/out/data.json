@@ -7686,7 +7686,7 @@
 				"map": "cold-dng.b2.room5",
 				"mwid": 3235824114,
 				"settings": {
-					"defaultClearance": "Default"
+					"defaultClearance": "Bronze"
 				}
 			},
 			{
@@ -8768,7 +8768,7 @@
 				"map": "heat-dng.f3.room-05",
 				"mwid": 3235824211,
 				"settings": {
-					"defaultClearance": "Default"
+					"defaultClearance": "Silver"
 				}
 			},
 			{
@@ -10359,7 +10359,7 @@
 				"map": "wave-dng.b1.center-04-long",
 				"mwid": 3235824338,
 				"settings": {
-					"defaultClearance": "Default"
+					"defaultClearance": "Gold"
 				}
 			},
 			{
