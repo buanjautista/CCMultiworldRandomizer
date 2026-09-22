@@ -8862,6 +8862,28 @@
 			{
 				"type": "Chest",
 				"level": 0,
+				"x": 110.44444444444444,
+				"y": 159.5909090909091,
+				"map": "heat-dng.g.room-02-cross",
+				"mwid": 3235825016,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 122.66666666666667,
+				"y": 159.5909090909091,
+				"map": "heat-dng.g.room-02-cross",
+				"mwid": 3235825017,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
 				"x": 64.25806451612902,
 				"y": 148.25,
 				"map": "heat-dng.g.room-03",
@@ -10177,6 +10199,28 @@
 			}
 		],
 		"tree-dng": [
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 140.96,
+				"y": 104.88888888888889,
+				"map": "tree-dng.g.center-02-connect",
+				"mwid": 3235825018,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 170.07999999999998,
+				"y": 104.88888888888889,
+				"map": "tree-dng.g.center-02-connect",
+				"mwid": 3235825019,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
 			{
 				"type": "Chest",
 				"level": 3,

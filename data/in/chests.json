@@ -3211,6 +3211,15 @@
 				"mapId": 1276
 			},
 			"clearance": "Default",
+			"markerOverrides": {
+				"entity": {
+					"type": "Chest",
+					"x": 368,
+					"y": 455,
+					"level": 3
+				},
+				"offsetX": 2
+			},
 			"region": {
 				"linear": "14",
 				"open": "open7.3"
@@ -3230,6 +3239,15 @@
 				"mapId": 1277
 			},
 			"clearance": "Default",
+			"markerOverrides": {
+				"entity": {
+					"type": "Chest",
+					"x": 480,
+					"y": 455,
+					"level": 3
+				},
+				"offsetX": 8
+			},
 			"region": {
 				"linear": "14",
 				"open": "open7.3"
@@ -4768,6 +4786,14 @@
 				"mapId": 1270
 			},
 			"clearance": "Bronze",
+			"markerOverrides": {
+				"entity": {
+					"type": "Chest",
+					"x": 216,
+					"y": 208,
+					"level": 4
+				}
+			},
 			"region": {
 				"linear": "28",
 				"open": "open15.1"
@@ -4787,6 +4813,15 @@
 				"mapId": 1271
 			},
 			"clearance": "Bronze",
+			"markerOverrides": {
+				"entity": {
+					"type": "Chest",
+					"x": 568,
+					"y": 208,
+					"level": 4
+				},
+				"offsetX": 8
+			},
 			"region": {
 				"linear": "28",
 				"open": "open15.1"
