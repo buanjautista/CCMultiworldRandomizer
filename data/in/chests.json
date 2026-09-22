@@ -1117,7 +1117,7 @@
 			},
 			"clearance": "Default",
 			"markerOverrides": {
-				"offsetX": 8
+				"offsetX": 6
 			},
 			"region": {
 				"open": "open3"
@@ -1310,6 +1310,10 @@
 				"mapId": 1015
 			},
 			"clearance": "Gold",
+			"markerOverrides": {
+				"offsetX": -8,
+				"offsetY": -5
+			},
 			"region": {
 				"open": "open3"
 			},

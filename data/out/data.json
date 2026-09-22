@@ -7283,7 +7283,7 @@
 			{
 				"type": "Chest",
 				"level": 0,
-				"x": 410.51428571428573,
+				"x": 408.51428571428573,
 				"y": 328.08,
 				"map": "bergen-trail.cave.cave-4-1-1",
 				"mwid": 3235824079,
@@ -7426,12 +7426,12 @@
 			{
 				"type": "Chest",
 				"level": 0,
-				"x": 401.04,
-				"y": 324.8,
+				"x": 393.04,
+				"y": 319.8,
 				"map": "bergen-trail.path-4-1-1",
 				"mwid": 3235824092,
 				"settings": {
-					"defaultClearance": "Gold"
+					"defaultClearance": "Default"
 				}
 			},
 			{
