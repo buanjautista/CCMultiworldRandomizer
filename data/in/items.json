@@ -63,6 +63,103 @@
 				"en_US": "Grants access to the eastern regions of \\c[2]Gaia's Garden\\c[0]."
 			}
 		},
+		"Laser Of Doom Trap": {
+			"reserved": true,
+			"id": 7,
+			"classification": "trap",
+			"description": {
+				"en_US": "DOOM? DID YOU SAY DOOM?"
+			}
+		},
+		"Drunk Trap": {
+			"reserved": true,
+			"id": 8,
+			"classification": "trap",
+			"description": {
+				"en_US": "Anti-Scope"
+			}
+		},
+		"Naked Trap": {
+			"reserved": true,
+			"id": 9,
+			"classification": "trap",
+			"description": {
+				"en_US": "Unequips your Lea."
+			}
+		},
+		"Override Trap": {
+			"reserved": true,
+			"id": 10,
+			"classification": "trap",
+			"description": {
+				"en_US": "Full circuit reset."
+			}
+		},
+		"Forgetfulness Trap": {
+			"reserved": true,
+			"id": 11,
+			"classification": "trap",
+			"description": {
+				"en_US": "Level XP resets to 0."
+			}
+		},
+		"Bomb Trap": {
+			"reserved": true,
+			"id": 12,
+			"classification": "trap",
+			"description": {
+				"en_US": "Explodes"
+			}
+		},
+		"Overload Trap": {
+			"reserved": true,
+			"id": 13,
+			"classification": "trap",
+			"description": {
+				"en_US": "Enter circuit overload."
+			}
+		},
+		"Ice Cage Trap": {
+			"reserved": true,
+			"id": 14,
+			"classification": "trap",
+			"description": {
+				"en_US": "Get stuck in an ice cage."
+			}
+		},
+		"Poverty Trap": {
+			"reserved": true,
+			"id": 15,
+			"classification": "trap",
+			"description": {
+				"en_US": "Your wallet feels lighter suddenly."
+			}
+		},
+		"Element Swap Trap": {
+			"reserved": true,
+			"id": 16,
+			"classification": "trap",
+			"description": {
+				"en_US": "Elemental roulette."
+			}
+		},
+		"Combo Breaker Trap": {
+			"reserved": true,
+			"id": 17,
+			"classification": "trap",
+			"description": {
+				"en_US": "Say goodbye to your combo streak."
+			}
+		},
+		"Zoom Trap": {
+			"reserved": true,
+			"id": 18,
+			"classification": "trap",
+			"description": {
+				"en_US": "Microscope simulator."
+			}
+		},
+		
 		"Golden Triangle": {
 			"id": 0
 		},

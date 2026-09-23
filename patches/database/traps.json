@@ -1,0 +1,276 @@
+[
+  {
+    "type": "ENTER",
+    "index": "commonEvents"
+  },
+  {
+    "type": "SET_KEY",
+    "index": "laser-of-doom-trap",
+    "content": {
+      "frequency": "ALWAYS",
+      "repeat": "REPEAT",
+      "condition": "false",
+      "eventType": "PARALLEL",
+      "overrideSideMessage": false,
+      "event": [
+        {
+          "type": "SPAWN_ENEMY",
+          "enemyInfo": {
+            "type": "trap-dummy",
+            "party": "ENEMY",
+            "face": "NORTH"
+          },
+          "name": "global.laserOfDoom",
+          "position": {
+            "x": 350,
+            "y": 250,
+            "lvl": 0
+          }
+        },
+        {
+          "type": "DO_ENEMY_ACTION",
+          "enemy": {
+            "global": true,
+            "name": "global.laserOfDoom"
+          },
+          "actionName": "Laser"
+        }
+      ],
+      "type": {
+        "type": "CALL"
+      }
+    }
+  },
+	{
+    "type": "SET_KEY",
+    "index": "bomb-trap",
+    "content": {
+      "frequency": "ALWAYS",
+      "repeat": "REPEAT",
+      "condition": "false",
+      "eventType": "PARALLEL",
+      "overrideSideMessage": false,
+      "event": [
+        {
+          "type": "SPAWN_ENEMY",
+          "enemyInfo": {
+            "type": "trap-dummy",
+            "party": "ENEMY",
+            "face": "NORTH"
+          },
+          "name": "global.bombTrap",
+          "position": {
+            "x": 350,
+            "y": 250,
+            "lvl": 0
+          }
+        },
+        {
+          "type": "DO_ENEMY_ACTION",
+          "enemy": {
+            "global": true,
+            "name": "global.bombTrap"
+          },
+          "actionName": "Bombing"
+        }
+      ],
+			"type": {
+				"type": "CALL"
+			}
+    }
+  },
+	{
+    "type": "SET_KEY",
+    "index": "sergey-trap",
+    "content": {
+			"frequency": "ALWAYS",
+			"repeat": "REPEAT",
+			"eventType": "PARALLEL",
+			"overrideSideMessage": false,
+			"event": [
+				{
+					"ignoreSlowDown": false,
+					"time": 0.8,
+					"type": "WAIT"
+				},
+				{
+					"message": {
+						"en_US": "Lea!",
+						"de_DE": "Lea!",
+						"fr_FR": "fr_FR",
+						"langUid": 4059,
+						"zh_CN": "\u770b\u6837\u5b50\u8fd9\u4e9b\u666e\u901a\u7684\u4efb\u52a1NPC\u8fd8\u6ca1\u6709\u66f4\u52a0\u7ec6\u81f4\u7684\u53cd\u5e94\u3002",
+						"ja_JP": "\u3069\u3046\u3084\u3089\u904b\u55b6\u306f\u307e\u3060\u3001\u6a19\u6e96\u7684\u306a\u30af\u30a8\u30b9\u30c8\u7528NPC\u306b\n\u7e4a\u7d30\u306a\u53d7\u3051\u7b54\u3048\u306f\u5b9f\u88c5\u3057\u3066\u306a\u3044\u307f\u305f\u3044\u3060\u306d\u3002",
+						"ko_KR": "\uc544\uc9c1 \uc77c\ubc18 \ud018\uc2a4\ud2b8 NPC\ub4e4\uc5d0\uac8c \ub354 \uadf8\ub7f4\uc2f8\ud55c \ub300\uc751\uc744 \uc785\ub825\ud558\uc9c0 \uc54a\uc740 \uac83 \uac19\uad70.",
+						"zh_TW": "\u770b\u6a23\u5b50\u9019\u4e9b\u666e\u901a\u7684\u4efb\u52d9NPC\u9084\u6c92\u6709\u66f4\u52a0\u7d30\u7dfb\u7684\u53cd\u61c9\u3002"
+					},
+					"person": {
+						"person": "main.sergey",
+						"expression": "JOKING"
+					},
+					"type": "SHOW_SIDE_MSG"
+				},
+				{
+					"message": {
+						"en_US": "...",
+						"de_DE": "...",
+						"fr_FR": "fr_FR",
+						"langUid": 4131,
+						"zh_CN": "\u2026",
+						"ja_JP": "...",
+						"ko_KR": "...",
+						"zh_TW": "\u2026"
+					},
+					"person": {
+						"person": "main.lea",
+						"expression": "SHOCKED"
+					},
+					"type": "SHOW_SIDE_MSG"
+				},
+				{
+					"message": {
+						"en_US": "I've got good news for you.",
+						"de_DE": "Als h\u00e4tten diese einfachen Quest-NPCs immer noch keine ausgefeilteren Antworttexte bekommen.",
+						"fr_FR": "fr_FR",
+						"langUid": 4059,
+						"zh_CN": "\u770b\u6837\u5b50\u8fd9\u4e9b\u666e\u901a\u7684\u4efb\u52a1NPC\u8fd8\u6ca1\u6709\u66f4\u52a0\u7ec6\u81f4\u7684\u53cd\u5e94\u3002",
+						"ja_JP": "\u3069\u3046\u3084\u3089\u904b\u55b6\u306f\u307e\u3060\u3001\u6a19\u6e96\u7684\u306a\u30af\u30a8\u30b9\u30c8\u7528NPC\u306b\n\u7e4a\u7d30\u306a\u53d7\u3051\u7b54\u3048\u306f\u5b9f\u88c5\u3057\u3066\u306a\u3044\u307f\u305f\u3044\u3060\u306d\u3002",
+						"ko_KR": "\uc544\uc9c1 \uc77c\ubc18 \ud018\uc2a4\ud2b8 NPC\ub4e4\uc5d0\uac8c \ub354 \uadf8\ub7f4\uc2f8\ud55c \ub300\uc751\uc744 \uc785\ub825\ud558\uc9c0 \uc54a\uc740 \uac83 \uac19\uad70.",
+						"zh_TW": "\u770b\u6a23\u5b50\u9019\u4e9b\u666e\u901a\u7684\u4efb\u52d9NPC\u9084\u6c92\u6709\u66f4\u52a0\u7d30\u7dfb\u7684\u53cd\u61c9\u3002"
+					},
+					"person": {
+						"person": "main.sergey",
+						"expression": "JOKING"
+					},
+					"type": "SHOW_SIDE_MSG"
+				},
+				{
+					"message": {
+						"en_US": "Seems I was able to prevent a really inconvenient trap from happening.",
+						"de_DE": "Na ja, das kommt uns gelegen.",
+						"fr_FR": "fr_FR",
+						"langUid": 4129,
+						"zh_CN": "\u55ef\uff0c\u8fd9\u5bf9\u6211\u4eec\u6765\u8bf4\u662f\u597d\u6d88\u606f\u3002",
+						"ja_JP": "\u307e\u3042\u3001\u50d5\u3089\u306b\u3068\u3063\u3066\u306f\u3044\u3044\u30cb\u30e5\u30fc\u30b9\u3060\u3088\u3002",
+						"ko_KR": "\ubb50, \uc6b0\ub9ac\uc5d0\uac90 \uc88b\uc740 \uc77c\uc774\uc9c0\ub9cc.",
+						"zh_TW": "\u55ef\uff0c\u9019\u5c0d\u6211\u5011\u4f86\u8aaa\u662f\u597d\u6d88\u606f\u3002"
+					},
+					"person": {
+						"person": "main.sergey",
+						"expression": "AWAY"
+					},
+					"type": "SHOW_SIDE_MSG"
+				},
+				{
+					"message": {
+						"en_US": "...",
+						"de_DE": "...",
+						"fr_FR": "fr_FR",
+						"langUid": 5402,
+						"zh_CN": "\u2026",
+						"ja_JP": "...",
+						"ko_KR": "...",
+						"zh_TW": "\u2026"
+					},
+					"person": {
+						"person": "main.lea",
+						"expression": "ANNOYED"
+					},
+					"type": "SHOW_SIDE_MSG"
+				},
+				{
+					"message": {
+						"en_US": "Yes, I am sorry.\\.",
+						"de_DE": "Ja, es tut mir leid.\\.",
+						"fr_FR": "fr_FR",
+						"langUid": 4132,
+						"zh_CN": "\u597d\u5427\uff0c\u5bf9\u4e0d\u8d77\u3002\\.\u6211\u4f1a\u52aa\u529b\u89e3\u51b3\u8fd9\u4e2a\u95ee\u9898\u7684\u3002",
+						"ja_JP": "\u3042\u3042\u3001\u3054\u3081\u3093\u306d\u3002\n\\.\u305d\u306e\u4ef6\u306b\u3064\u3044\u3066\u306f\u4eca\u3082\u9811\u5f35\u3063\u3066\u308b\u3088\u3002",
+						"ko_KR": "\uadf8\ub798, \ubbf8\uc548\ud574.\\. \uacc4\uc18d \uc791\uc5c5\ud574 \ubcfc\uac8c.",
+						"zh_TW": "\u597d\u5427\uff0c\u5c0d\u4e0d\u8d77\u3002\\.\u6211\u6703\u52aa\u529b\u89e3\u6c7a\u9019\u500b\u554f\u984c\u7684\u3002"
+					},
+					"person": {
+						"person": "main.sergey",
+						"expression": "ROLL_EYES"
+					},
+					"type": "SHOW_SIDE_MSG"
+				}
+			],
+			"type": {
+				"type": "CALL"
+			},
+			"loopCount": 1
+		}
+  },
+  {
+    "type": "EXIT"
+  },
+  {
+    "type": "ENTER",
+		"index": "enemies"
+  },
+	{
+		"type": "SET_KEY",
+		"index": "trap-dummy",
+		"content": {
+			"name": {
+				"en_US": "Trap Master",
+				"de_DE": "Trap Master",
+				"zh_CN": "Trap Master",
+				"zh_TW": "Trap Master",
+				"ja_JP": "Trap Master",
+				"ko_KR": "Trap Master",
+				"langUid": 14209
+			},
+			"track": false,
+			"order": 5142,
+			"area": "rookie-harbor",
+			"kills": 1,
+			"anim": false,
+			"extra": false,
+			"category": "ABSTRACT",
+			"species": {
+				"en_US": "Trap Master",
+				"de_DE": "Trap Master",
+				"zh_CN": "Trap Master",
+				"zh_TW": "Trap Master",
+				"ja_JP": "Trap Master",
+				"ko_KR": "Trap Master",
+				"langUid": -1
+			},
+			"level": 47,
+			"boostedLevel": 0,
+			"params": {
+				"hp": 35000,
+				"attack": 252,
+				"defense": 228,
+				"focus": 249,
+				"elemFactor": [ 1.4, 0.25, 1.2, 1 ],
+				"statusInflict": [ 0.75, 0, 0.75, 1 ],
+				"statusEffect": [ 0.5, 1, 0.75, 1 ]
+			},
+			"credit": 2222,
+			"exp": 250,
+			"itemDrops": [],
+			"boss": true,
+			"descriptions": [
+				{
+					"text": {
+						"en_US": "Trap Master",
+						"de_DE": "Trap Master",
+						"zh_CN": "Trap Master",
+						"zh_TW": "Trap Master",
+						"ja_JP": "Trap Master",
+						"ko_KR": "Trap Master",
+						"langUid": -17
+					},
+					"condition": ""
+				}
+			]
+		}
+	},
+  {
+    "type": "EXIT"
+  }
+
+]

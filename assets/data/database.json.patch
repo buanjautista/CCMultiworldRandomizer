@@ -1,4 +1,5 @@
 [
+    { "type": "INCLUDE", "src": "mod:patches/database/traps.json" },
     { "type": "ENTER", "index": ["traders"] },
 
     {
