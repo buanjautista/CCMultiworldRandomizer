@@ -3,7 +3,7 @@
 	"params": {
 		"hp": 999999,
 		"attack": 365,
-		"defense": 365,
+		"defense": 999,
 		"focus": 365,
 		"elemFactor": [1, 1, 1, 1]
 	},
@@ -19,17 +19,14 @@
 	"aiGroup": "",
 	"aiLearnType": "IMMEDIATELY",
 	"ignoreTaunts": true,
-	"itemDrops": [
-		{ "item": "81", "prob": 0.12, "min": 1, "max": 1, "rank": "" },
-		{ "item": "1", "prob": 0.08, "min": 1, "max": 1, "rank": "B" }
-	],
+	"itemDrops": [],
 	"targetDetect": {
-		"detectDistance": 120,
+		"detectDistance": 360,
 		"loseDistance": 100000,
 		"notifyNeighbourRadius": 100
 	},
 	"hpBreaks": [],
-	"size": { "x": 48, "y": 48, "z": 160 },
+	"size": { "x": 2, "y": 2, "z": 2 },
 	"anims": "enemies.mega-laser",
 	"defaultState": "IDLE",
 	"walkConfigs": { "normal": { "idle": "idle", "move": "idle" } },
@@ -39,7 +36,7 @@
 	"weight": -1,
 	"maxVel": 180,
 	"jumpingEnabled": true,
-	"collType": "BLOCK",
+	"collType": "NONE",
 	"shadow": 20,
 	"damageFactor": 0,
 	"hitStable": "LIGHT",
@@ -54,21 +51,6 @@
 	"hpBar": "HIDDEN",
 	"DOCTYPE": "ENEMY",
 	"trackers": {
-		"weakRegen": {
-			"target": 3,
-			"initRandom": 0,
-			"resetRandom": 0,
-			"noStateReset": false,
-			"noAssist": false,
-			"type": "TIME"
-		},
-		"aoeAttack": {
-			"target": 15,
-			"initRandom": 0,
-			"resetRandom": 0,
-			"noStateReset": false,
-			"type": "TIME"
-		}
 	},
 	"states": {
 		"IDLE": {
@@ -270,6 +252,26 @@
 				"type": "RAIN_BOMB",
 				"offset": { "x": 0, "y": 0, "z": 500 }
 			}]
+		},
+		"iceCage": {
+			"copyOwnerAnims": false,
+			"breakType": "ACTION",
+			"invisible": false,
+			"hp": 0,
+			"stickToSource": "NONE",
+			"stickFaceAlign": false,
+			"group": "",
+			"startAnim": "",
+			"size": { "x": 32, "y": 32, "z": 32 },
+			"config": {},
+			"type": "GENERIC",
+			"action": [{
+				"align": "BOTTOM",
+				"area": { "x": 64, "y": 64 },
+				"zVary": 0,
+				"type": "ICE_CAGE",
+				"offset": { "x": 0, "y": 0, "z": 100 }
+			}]
 		}
 	},
 	"actions": {
@@ -377,23 +379,13 @@
 			}
 		],
 		"Bombing": [
-			{
-				"type": "SET_TEMP_TARGET",
-				"kind": "PLAYER",
-				"key": { "player": true }
-			},
-			{
-				"type": "SET_VAR_ENTITY_STAT",
-				"name": "tmp.player-pos",
-				"entity": { "player": true },
-				"stat": "BOTTOM_POS"
-			},
+			{ "type": "SET_TEMP_TARGET", "kind": "PLAYER" },
 			{
 				"align": "BOTTOM",
 				"posType": "TARGET",
 				"type": "SHOOT_PROXY",
 				"proxy": "bombRain",
-				"offset": { "x": 0, "y": 0, "z": 400 }
+				"offset": { "x": 0, "y": 0, "z": 100 }
 			},
 			{ "type": "WAIT_UNTIL_PROXIES_DONE" },
 			{ "time": 5, "type": "WAIT" },
@@ -406,6 +398,22 @@
 		"BattleIdle": [
 			{ "value": true, "type": "FACE_TO_TARGET" },
 			{ "minTime": 0.2, "maxTime": 0.4, "type": "WAIT_RANDOM" }
+		],
+		"IceCage": [
+			{ "kind": "PLAYER", "type": "SET_TEMP_TARGET" },
+			{
+				"align": "BOTTOM",
+				"posType": "TARGET",
+				"type": "SHOOT_PROXY",
+				"proxy": "iceCage",
+				"offset": { "x": 0, "y": 0, "z": 100 }
+			},
+			{ "type": "WAIT_UNTIL_PROXIES_DONE" },
+			{ "time": 5, "type": "WAIT" },
+			{
+				"type": "SELF_DESTRUCT",
+				"noReward": true
+			}
 		]
 	},
 	"reactions": {

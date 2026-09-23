@@ -159,15 +159,54 @@
 				"en_US": "Microscope simulator."
 			}
 		},
-		"SP Trap": {
+		"Zoom Out Trap": {
 			"reserved": true,
 			"id": 19,
+			"classification": "trap",
+			"description": {
+				"en_US": "Telescope simulator."
+			}
+		},
+		"SP Trap": {
+			"reserved": true,
+			"id": 20,
 			"classification": "trap",
 			"description": {
 				"en_US": "Consumes all your SP."
 			}
 		},
-		
+		"Landmark Trap": {
+			"reserved": true,
+			"id": 21,
+			"classification": "trap",
+			"description": {
+				"en_US": "Blocks all your landmarks."
+			}
+		},
+		"Artless Trap": {
+			"reserved": true,
+			"id": 22,
+			"classification": "trap",
+			"description": {
+				"en_US": "Your SP Regen feels heavier."
+			}
+		},
+		"Winded Trap": {
+			"reserved": true,
+			"id": 23,
+			"classification": "trap",
+			"description": {
+				"en_US": "You lost one of your dashes."
+			}
+		},
+		"Clumsy Trap": {
+			"reserved": true,
+			"id": 24,
+			"classification": "trap",
+			"description": {
+				"en_US": "Forgot how to dash correctly."
+			}
+		},
 		"Golden Triangle": {
 			"id": 0
 		},
