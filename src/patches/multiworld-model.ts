@@ -2,6 +2,7 @@ import { defineVarProperty } from "../utils";
 import { saveDataPackage, loadDataPackage } from "../package-utils";
 import * as ap from "archipelago.js";
 import MwRandomizer from "../plugin";
+import { sendTrap } from "./traps";
 import { ItemInfo } from "../item-data.model";
 
 export function patch(plugin: MwRandomizer) {
@@ -298,64 +299,11 @@ export function patch(plugin: MwRandomizer) {
 				} else if (item.id < this.baseNormalItemId) {
 					if (item.name.includes("Trap")) {
 						if(!this.trapsReceived.includes(index)) {
-							switch(item.name) {
-								case "Forgetfulness Trap":
-									sc.model.player.exp = 0
-									break;
-								case "Naked Trap":
-									sc.model.player.setEquipment(1,-1)
-									sc.model.player.setEquipment(2,-1)
-									sc.model.player.setEquipment(3,-1)
-									sc.model.player.setEquipment(4,-1)
-									sc.model.player.setEquipment(5,-1)
-									break;
-								case "Bomb Trap":
-									sc.commonEvents._forcedTriggerEvent("FORCE_UPDATE",sc.commonEvents.events["bombTrap"])
-									// new cc.ig.events.SPAWN_BOMB({"point": {"x":ig.game.playerEntity.getAlignedPos().x, "y": ig.game.playerEntity.getAlignedPos().y, "lvl": ig.game.playerEntity.getAlignedPos().z}, zHeight: 32}).start()
-									break;
-								case "Overload Trap":
-									sc.model.player.addElementLoad(100);
-									break;
-								case "Poverty Trap":
-									sc.model.player.credit = Math.floor(sc.model.player.credit * 0.8);
-									break;
-								case "Override Trap":
-									sc.model.player.resetSkillTree(0);
-									sc.model.player.resetSkillTree(1);
-									sc.model.player.resetSkillTree(2);
-									sc.model.player.resetSkillTree(3);
-									sc.model.player.resetSkillTree(4);
-									break;
-								case "Laser Of Doom Trap":
-									sc.commonEvents._forcedTriggerEvent("FORCE_UPDATE",sc.commonEvents.events["laser-of-doom-trap"])
-									break;
-								case "Zoom Trap":
-									break;
-								case "Winded Trap":
-									// Reduce max dashes
-									break;
-								case "Clumsy Trap":
-									// Remove ability to dash temporarily
-									break;
-								case "Artless Trap":
-									// SP regens slower
-									break;
-								case "Combo Breaker Trap":
-									break;
-								case "Drunk Trap":
-									// Negative Scope 
-									break;
-								case "Ice Cage Trap":
-									// Spawn 4 ice blocks nearby, not enough to cage the player, or make them despawn
-									break;
-								case "Element Swap Trap":
-									sc.model.player.scrollElementMode(Math.floor(Math.random()*3-1),false,false);
-									break;
-							}
+							sendTrap(item)
 							this.trapsReceived.push(index);
 						}
 						else {
-							console.log("Already sent trap: ", item.name);
+							// console.log("Already sent trap: ", item.name);
 							displayMessage = false;
 						}
 					}
@@ -721,3 +669,6 @@ export function patch(plugin: MwRandomizer) {
 			return (sc.multiworld = new sc.MultiWorldModel());
 		});
 }
+
+
+

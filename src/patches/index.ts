@@ -15,6 +15,7 @@ import { patch as patchTextClient } from "./text-client";
 import { patch as patchMenus } from "./menus";
 import { patch as patchLogin } from "./login";
 import { patch as patchMap } from "./map";
+import { patch as patchTraps } from "./traps";
 import { patch as patchDeathLink } from "./deathlink.ts";
 
 export function applyPatches(plugin: MwRandomizer) {
@@ -33,5 +34,6 @@ export function applyPatches(plugin: MwRandomizer) {
 	patchMenus(plugin);
 	patchLogin(plugin);
 	patchMap(plugin);
+	patchTraps(plugin)
 	patchDeathLink(plugin);
 }

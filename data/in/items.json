@@ -76,7 +76,7 @@
 			"id": 8,
 			"classification": "trap",
 			"description": {
-				"en_US": "Anti-Scope"
+				"en_US": "It's hard to aim straight."
 			}
 		},
 		"Naked Trap": {
@@ -157,6 +157,14 @@
 			"classification": "trap",
 			"description": {
 				"en_US": "Microscope simulator."
+			}
+		},
+		"SP Trap": {
+			"reserved": true,
+			"id": 19,
+			"classification": "trap",
+			"description": {
+				"en_US": "Consumes all your SP."
 			}
 		},
 		
