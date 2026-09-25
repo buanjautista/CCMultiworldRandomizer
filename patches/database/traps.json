@@ -3,89 +3,14 @@
     "type": "ENTER",
     "index": "commonEvents"
   },
-  {
-    "type": "SET_KEY",
-    "index": "laser-of-doom-trap",
-    "content": {
-      "frequency": "ALWAYS",
-      "repeat": "REPEAT",
-      "condition": "false",
-      "eventType": "PARALLEL",
-      "overrideSideMessage": false,
-      "event": [
-        {
-          "type": "SPAWN_ENEMY",
-          "enemyInfo": {
-            "type": "trap-dummy",
-            "party": "ENEMY",
-            "face": "NORTH"
-          },
-          "name": "global.laserOfDoom",
-          "position": {
-            "x": 350,
-            "y": 250,
-            "lvl": 0
-          }
-        },
-        {
-          "type": "DO_ENEMY_ACTION",
-          "enemy": {
-            "global": true,
-            "name": "global.laserOfDoom"
-          },
-          "actionName": "Laser"
-        }
-      ],
-      "type": {
-        "type": "CALL"
-      }
-    }
-  },
-	{
-    "type": "SET_KEY",
-    "index": "bomb-trap",
-    "content": {
-      "frequency": "ALWAYS",
-      "repeat": "REPEAT",
-      "condition": "false",
-      "eventType": "PARALLEL",
-      "overrideSideMessage": false,
-      "event": [
-        {
-          "type": "SPAWN_ENEMY",
-          "enemyInfo": {
-            "type": "trap-dummy",
-            "party": "ENEMY",
-            "face": "NORTH"
-          },
-          "name": "global.bombTrap",
-          "position": {
-            "x": 350,
-            "y": 250,
-            "lvl": 0
-          }
-        },
-        {
-          "type": "DO_ENEMY_ACTION",
-          "enemy": {
-            "global": true,
-            "name": "global.bombTrap"
-          },
-          "actionName": "Bombing"
-        }
-      ],
-			"type": {
-				"type": "CALL"
-			}
-    }
-  },
 	{
     "type": "SET_KEY",
     "index": "sergey-trap",
     "content": {
 			"frequency": "ALWAYS",
-			"repeat": "REPEAT",
+			"repeat": "ONCE",
 			"eventType": "PARALLEL",
+			"condition": "events.blockedTrap",
 			"overrideSideMessage": false,
 			"event": [
 				{
@@ -194,6 +119,12 @@
 						"expression": "ROLL_EYES"
 					},
 					"type": "SHOW_SIDE_MSG"
+				},
+				{
+					"type": "SET_VAR_BOOL",
+					"varName":"events.blockedTrap",
+					"changeType": "set",
+					"value": true
 				}
 			],
 			"type": {

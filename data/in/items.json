@@ -207,6 +207,46 @@
 				"en_US": "Forgot how to dash correctly."
 			}
 		},
+		"Burglar's Rope Trap": {
+			"reserved": true,
+			"id": 25,
+			"classification": "trap",
+			"description": {
+				"en_US": "Randomizer leveling experience."
+			}
+		},
+		"Full Course Trap": {
+			"reserved": true,
+			"id": 26,
+			"classification": "trap",
+			"description": {
+				"en_US": "Eating for ages."
+			}
+		},
+		"Blocked Trap": {
+			"reserved": true,
+			"id": 27,
+			"classification": "trap",
+			"description": {
+				"en_US": "Thank you Sergey."
+			}
+		},
+		"Death Trap": {
+			"reserved": true,
+			"id": 28,
+			"classification": "trap",
+			"description": {
+				"en_US": "Dies."
+			}
+		},
+		"Prepare to Hi Trap": {
+			"reserved": true,
+			"id": 29,
+			"classification": "trap",
+			"description": {
+				"en_US": "Maybe dies."
+			}
+		},
 		"Golden Triangle": {
 			"id": 0
 		},
