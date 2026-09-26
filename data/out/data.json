@@ -7283,7 +7283,7 @@
 			{
 				"type": "Chest",
 				"level": 0,
-				"x": 402.51428571428573,
+				"x": 408.51428571428573,
 				"y": 328.08,
 				"map": "bergen-trail.cave.cave-4-1-1",
 				"mwid": 3235824079,
@@ -7426,12 +7426,12 @@
 			{
 				"type": "Chest",
 				"level": 0,
-				"x": 401.04,
-				"y": 324.8,
+				"x": 393.04,
+				"y": 319.8,
 				"map": "bergen-trail.path-4-1-1",
 				"mwid": 3235824092,
 				"settings": {
-					"defaultClearance": "Gold"
+					"defaultClearance": "Default"
 				}
 			},
 			{
@@ -7670,12 +7670,12 @@
 			{
 				"type": "Chest",
 				"level": -2,
-				"x": 148.48,
+				"x": 144.48,
 				"y": 179.67567567567568,
 				"map": "cold-dng.b2.room5",
 				"mwid": 3235824113,
 				"settings": {
-					"defaultClearance": "Bronze"
+					"defaultClearance": "Default"
 				}
 			},
 			{
@@ -7686,7 +7686,7 @@
 				"map": "cold-dng.b2.room5",
 				"mwid": 3235824114,
 				"settings": {
-					"defaultClearance": "Default"
+					"defaultClearance": "Bronze"
 				}
 			},
 			{
@@ -8752,23 +8752,23 @@
 			{
 				"type": "Chest",
 				"level": 3,
-				"x": 108.26666666666667,
+				"x": 104.26666666666667,
 				"y": 60.6,
 				"map": "heat-dng.f3.room-05",
 				"mwid": 3235824210,
 				"settings": {
-					"defaultClearance": "Bronze"
+					"defaultClearance": "Default"
 				}
 			},
 			{
 				"type": "Chest",
 				"level": 3,
-				"x": 115.73333333333333,
+				"x": 119.73333333333333,
 				"y": 60.6,
 				"map": "heat-dng.f3.room-05",
 				"mwid": 3235824211,
 				"settings": {
-					"defaultClearance": "Default"
+					"defaultClearance": "Silver"
 				}
 			},
 			{
@@ -8855,6 +8855,28 @@
 				"y": 135.84615384615384,
 				"map": "heat-dng.f4.room-12",
 				"mwid": 3235824219,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 110.44444444444444,
+				"y": 159.5909090909091,
+				"map": "heat-dng.g.room-02-cross",
+				"mwid": 3235825016,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 122.66666666666667,
+				"y": 159.5909090909091,
+				"map": "heat-dng.g.room-02-cross",
+				"mwid": 3235825017,
 				"settings": {
 					"defaultClearance": "Default"
 				}
@@ -10179,6 +10201,28 @@
 		"tree-dng": [
 			{
 				"type": "Chest",
+				"level": 0,
+				"x": 140.96,
+				"y": 104.88888888888889,
+				"map": "tree-dng.g.center-02-connect",
+				"mwid": 3235825018,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 170.07999999999998,
+				"y": 104.88888888888889,
+				"map": "tree-dng.g.center-02-connect",
+				"mwid": 3235825019,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
 				"level": 3,
 				"x": 255.4,
 				"y": 130.82666666666665,
@@ -10310,8 +10354,8 @@
 			{
 				"type": "Chest",
 				"level": -1,
-				"x": 265.6,
-				"y": 147.45454545454544,
+				"x": 257.6,
+				"y": 155.45454545454544,
 				"map": "wave-dng.b1.center-04-long",
 				"mwid": 3235824334,
 				"settings": {
@@ -10321,8 +10365,8 @@
 			{
 				"type": "Chest",
 				"level": -1,
-				"x": 265.6,
-				"y": 144.54545454545456,
+				"x": 257.6,
+				"y": 140.54545454545456,
 				"map": "wave-dng.b1.center-04-long",
 				"mwid": 3235824335,
 				"settings": {
@@ -10332,7 +10376,7 @@
 			{
 				"type": "Chest",
 				"level": -1,
-				"x": 267.73333333333335,
+				"x": 271.73333333333335,
 				"y": 146.0,
 				"map": "wave-dng.b1.center-04-long",
 				"mwid": 3235824336,
@@ -10344,22 +10388,22 @@
 				"type": "Chest",
 				"level": -1,
 				"x": 115.2,
-				"y": 143.8181818181818,
+				"y": 139.8181818181818,
 				"map": "wave-dng.b1.center-04-long",
 				"mwid": 3235824337,
 				"settings": {
-					"defaultClearance": "Silver"
+					"defaultClearance": "Default"
 				}
 			},
 			{
 				"type": "Chest",
 				"level": -1,
 				"x": 115.2,
-				"y": 148.1818181818182,
+				"y": 156.1818181818182,
 				"map": "wave-dng.b1.center-04-long",
 				"mwid": 3235824338,
 				"settings": {
-					"defaultClearance": "Default"
+					"defaultClearance": "Gold"
 				}
 			},
 			{
