@@ -100,7 +100,7 @@ New Game+**.
 
 Courtesy of Lurch9229, you can have a fancier interface for tracking your progress. This is optional but extremely
 helpful, especially if you don't have a solid mental model of the world. [See here for
-information](https://github.com/lurch9229/CrossCode-Poptracker-AP).
+information](https://github.com/FuyumiSogeki/CrossCode-Poptracker-AP/releases/tag/latest).
 
 Other tracking solutions are available, but the poptracker pack is developed by a trusted member and moderator of the
 community, and is therefore more likely to give accurate results.
