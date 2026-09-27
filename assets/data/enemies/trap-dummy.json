@@ -1,5 +1,5 @@
 {
-	"level": 60,
+	"level": 99,
 	"params": {
 		"hp": 999999,
 		"attack": 365,
@@ -21,7 +21,7 @@
 	"ignoreTaunts": true,
 	"itemDrops": [],
 	"targetDetect": {
-		"detectDistance": 360,
+		"detectDistance": 1060,
 		"loseDistance": 100000,
 		"notifyNeighbourRadius": 100
 	},
@@ -37,7 +37,7 @@
 	"maxVel": 180,
 	"jumpingEnabled": true,
 	"collType": "NONE",
-	"shadow": 20,
+	"shadow": 0,
 	"damageFactor": 0,
 	"hitStable": "LIGHT",
 	"hitIgnore": true,
@@ -275,10 +275,10 @@
 		}
 	},
 	"actions": {
-		"Idle": [{ "time": 0.3, "type": "WAIT" }],
+		"Idle": [{"type": "SET_Z_GRAVITY_FACTOR", "value": 0},{"type": "SET_FLOAT_HEIGHT", "value": 0},{ "time": 0.3, "type": "WAIT" }],
 		"Laser": [
 			{ "value": "MASSIVE", "type": "SET_HIT_STABLE" },
-			{ "kind": "PLAYER", "type": "SET_TEMP_TARGET" },
+			{ "kind": "PLAYER", "type": "SET_TEMP_TARGET", "key": { "player": true } },
 			{
 				"wait": true,
 				"viaWalkConfig": false,
@@ -372,14 +372,14 @@
 			},
 			{ "type": "WAIT_UNTIL_PROXIES_DONE" },
 			{ "type": "CLEAR_EFFECTS" },
-			{ "time": 0.5, "type": "WAIT" },
+			{ "time": 15, "type": "WAIT" },
 			{
 				"type": "SELF_DESTRUCT",
 				"noReward": true
 			}
 		],
 		"Bombing": [
-			{ "type": "SET_TEMP_TARGET", "kind": "PLAYER" },
+			{ "kind": "PLAYER", "type": "SET_TEMP_TARGET", "key": { "player": true } },
 			{
 				"align": "BOTTOM",
 				"posType": "TARGET",
@@ -400,7 +400,7 @@
 			{ "minTime": 0.2, "maxTime": 0.4, "type": "WAIT_RANDOM" }
 		],
 		"IceCage": [
-			{ "kind": "PLAYER", "type": "SET_TEMP_TARGET" },
+			{ "kind": "PLAYER", "type": "SET_TEMP_TARGET", "key": { "player": true } },
 			{
 				"align": "BOTTOM",
 				"posType": "TARGET",

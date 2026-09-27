@@ -247,6 +247,46 @@
 				"en_US": "Maybe dies."
 			}
 		},
+		"Failed Hack Trap": {
+			"reserved": true,
+			"id": 30,
+			"classification": "trap",
+			"description": {
+				"en_US": "Stomps."
+			}
+		},
+		"Rotate Trap": {
+			"reserved": true,
+			"id": 31,
+			"classification": "trap",
+			"description": {
+				"en_US": "Get rotated."
+			}
+		},
+		"Full Rotate Trap": {
+			"reserved": true,
+			"id": 32,
+			"classification": "trap",
+			"description": {
+				"en_US": "Get more rotated."
+			}
+		},
+		"Slip Trap": {
+			"reserved": true,
+			"id": 33,
+			"classification": "trap",
+			"description": {
+				"en_US": "Forgets how to jump."
+			}
+		},
+		"Voidout Trap": {
+			"reserved": true,
+			"id": 34,
+			"classification": "trap",
+			"description": {
+				"en_US": "Don't fall."
+			}
+		},
 		"Golden Triangle": {
 			"id": 0
 		},
