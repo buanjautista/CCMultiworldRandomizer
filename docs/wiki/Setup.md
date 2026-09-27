@@ -93,14 +93,14 @@ If you are looking for some more quirky options, you can install the **New Game+
 provides [these features](https://github.com/CCDirectLink/CCNewGamePP/blob/master/readme.md#features), though
 I do not guarantee compatibility or fun.
 
-If you do find yourself regretting your NG+ perk choices, you can also install **New game+ Cheats** from CCModManager,
-which will allow you to switch out perks on the fly.
+If you do find yourself regretting your NG+ perk choices, you can change these at any time in **Pause Screen > Archipelago >
+New Game+**.
 
 ## Poptracker Pack
 
 Courtesy of Lurch9229, you can have a fancier interface for tracking your progress. This is optional but extremely
 helpful, especially if you don't have a solid mental model of the world. [See here for
-information](https://github.com/lurch9229/CrossCode-Poptracker-AP).
+information](https://github.com/FuyumiSogeki/CrossCode-Poptracker-AP/releases/tag/latest).
 
 Other tracking solutions are available, but the poptracker pack is developed by a trusted member and moderator of the
 community, and is therefore more likely to give accurate results.
