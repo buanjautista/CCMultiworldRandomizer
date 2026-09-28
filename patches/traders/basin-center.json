@@ -54,7 +54,6 @@
 		"content":  "item.231.amount >= 1"
 	},
 	{ "type": "EXIT", "count": 1 },  
-	{ "type": "EXIT", "count": 3 }, 
 
 	{ "type": "EXIT", "count": 3 }
 ]
