@@ -75,9 +75,7 @@ export function sendTrap(item: ap.Item){
       sc.model.increaseCombatRank(0);
       break;
     case "Ice Cage Trap":
-      trapenemy = ig.game.spawnEntity(ig.ENTITY.Enemy, -150,-150,0, {enemyInfo: trapenemy_settings});
-      // trapenemy.setTarget(ig.game.playerEntity, true);
-      // trapenemy.doEnemyAction("IceCage")
+      
       break;
     case "Element Swap Trap":
       sc.model.player.scrollElementMode(Math.floor(Math.random()*3-1),false,false);
@@ -180,61 +178,6 @@ export function patch(plugin: MwRandomizer) {
     grade: "stat-rank-down-3",
   };
 
-  ig.module("game.feature.puzzle.trap-puzzle-steps") .requires("game.feature.puzzle.puzzle-steps") .defines(function () { 
-    var b = Vec3.create();
-    ig.ACTION_STEP.ICE_CAGE = ig.ActionStepBase.extend({
-      gfx: null,
-      count: null,
-      offset: null,
-      align: null,
-      area: null,
-      zVary: null,
-      _wm: new ig.Config({
-        attributes: {
-          offset: {
-            _type: "Offset",
-            _info:
-              "Offset relative to entity ground center from which to shoot",
-          },
-          align: {
-            _type: "String",
-            _info: "Alignment relative to entity from which to shoot",
-            _select: ig.ENTITY_ALIGN,
-          },
-          area: {
-            _type: "Vec2",
-            _info: "Area on which to rain the ice pillars randomly",
-          },
-          zVary: { _type: "Number", _info: "Value to +- vary the z height" },
-        },
-      }),
-      init: function (a) {
-        this.offset = a.offset;
-        this.align = a.align;
-        this.area = a.area;
-        this.zVary = a.zVary || 0;
-        a = {sheet: "media/entity/style/cold-dng-destruct.png"}
-        this.gfx = new ig.Image(a.sheet);
-      },
-      clearCached: function () {
-        this.gfx.decreaseRef();
-      },
-      start: function (a) {
-        a = a.getAlignedPos(this.align, b);
-        this.offset && Vec3.add(a, this.offset);
-        var h = 5;
-        var j
-        j = ig.game.spawnEntity( ig.ENTITY.Destructible, a.x + this.area.x, a.y + this.area.y, a.z + h, { desType: sc.DESTRUCTIBLE_TYPE["iceBlock"], permaDestruct: true, blockNavMap: true }, false );
-        j = ig.game.spawnEntity( ig.ENTITY.Destructible, a.x + this.area.x, a.y + this.area.y, a.z + h, { desType: sc.DESTRUCTIBLE_TYPE["iceBlock"], permaDestruct: true, blockNavMap: true }, false );
-        j = ig.game.spawnEntity( ig.ENTITY.Destructible, a.x - this.area.x, a.y + this.area.y, a.z + h, { desType: sc.DESTRUCTIBLE_TYPE["iceBlock"], permaDestruct: true, blockNavMap: true }, false );
-        j = ig.game.spawnEntity( ig.ENTITY.Destructible, a.x - this.area.x, a.y - this.area.y, a.z + h, { desType: sc.DESTRUCTIBLE_TYPE["iceBlock"], permaDestruct: true, blockNavMap: true }, false );
-        j = ig.game.spawnEntity( ig.ENTITY.Destructible, a.x, a.y + this.area.y, a.z + h, { desType: sc.DESTRUCTIBLE_TYPE["iceBlock"], permaDestruct: true, blockNavMap: true }, false );
-        j = ig.game.spawnEntity( ig.ENTITY.Destructible, a.x, a.y - this.area.y, a.z + h, { desType: sc.DESTRUCTIBLE_TYPE["iceBlock"], permaDestruct: true, blockNavMap: true }, false );
-        j = ig.game.spawnEntity( ig.ENTITY.Destructible, a.x + this.area.x, a.y, a.z + h, { desType: sc.DESTRUCTIBLE_TYPE["iceBlock"], permaDestruct: true, blockNavMap: true }, false );
-        j = ig.game.spawnEntity( ig.ENTITY.Destructible, a.x - this.area.x, a.y, a.z + h, { desType: sc.DESTRUCTIBLE_TYPE["iceBlock"], permaDestruct: true, blockNavMap: true }, false );
-      },
-    });
-  });
   //thank you epicyoshimaster
   ig.ActorEntity.inject({
     update(...args) {
