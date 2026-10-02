@@ -3030,6 +3030,86 @@
 				}
 			}
 		},
+		"autumn.lab.room-final": {
+			"chests": {
+				"55": {
+					"name": "Fall: Lead Office",
+					"mwids": [
+						3235825020
+					]
+				}
+			},
+			"cutscenes": {
+				"40": [
+					{
+						"mwids": [
+							3235825025
+						],
+						"path": ".settings.condAnims.0.interact.event.8.thenStep.0"
+					}
+				]
+			}
+		},
+		"heat.lab.room-final": {
+			"chests": {
+				"89": {
+					"name": "Valley: Lead Office",
+					"mwids": [
+						3235825021
+					]
+				}
+			},
+			"cutscenes": {
+				"141": [
+					{
+						"mwids": [
+							3235825026
+						],
+						"path": ".settings.condAnims.0.interact.event.8.thenStep.0"
+					}
+				]
+			}
+		},
+		"bergen-trail.lab.room-final": {
+			"chests": {
+				"54": {
+					"name": "Trail: Lead Office",
+					"mwids": [
+						3235825022
+					]
+				}
+			},
+			"cutscenes": {
+				"55": [
+					{
+						"mwids": [
+							3235825027
+						],
+						"path": ".settings.condAnims.0.interact.event.8.thenStep.0"
+					}
+				]
+			}
+		},
+		"jungle.lab.room-final": {
+			"chests": {
+				"59": {
+					"name": "Garden: Lead Office",
+					"mwids": [
+						3235825023
+					]
+				}
+			},
+			"cutscenes": {
+				"60": [
+					{
+						"mwids": [
+							3235825024
+						],
+						"path": ".settings.condAnims.0.interact.event.8.thenStep.0"
+					}
+				]
+			}
+		},
 		"evo-village.entrance": {
 			"chests": {
 				"44": {
@@ -4311,6 +4391,26 @@
 				3235824521
 			]
 		},
+		"console-playstation-1": {
+			"mwids": [
+				3235825028
+			]
+		},
+		"console-switch-1": {
+			"mwids": [
+				3235825029
+			]
+		},
+		"console-xbox-1": {
+			"mwids": [
+				3235825030
+			]
+		},
+		"console-pc-1": {
+			"mwids": [
+				3235825031
+			]
+		},
 		"ape-battle": {
 			"mwids": [
 				3235824847,
@@ -5267,7 +5367,7 @@
 			"en_US": "The element of electricity, associated with the Focus stat and Dashing."
 		},
 		"3235824003": {
-			"en_US": "The element of ice, associated with Hit Points and Ranged combat."
+			"en_US": "The element of wave, associated with Hit Points and Ranged combat."
 		},
 		"3235824004": {
 			"en_US": "Boosts your combat capabilities, allowing you to perform more arts."
@@ -5277,6 +5377,90 @@
 		},
 		"3235824006": {
 			"en_US": "Grants access to the eastern regions of \\c[2]Gaia's Garden\\c[0]."
+		},
+		"3235824007": {
+			"en_US": "DOOM? DID YOU SAY DOOM?"
+		},
+		"3235824008": {
+			"en_US": "It's hard to aim straight."
+		},
+		"3235824009": {
+			"en_US": "Unequips your Lea."
+		},
+		"3235824010": {
+			"en_US": "Full circuit reset."
+		},
+		"3235824011": {
+			"en_US": "Level XP resets to 0."
+		},
+		"3235824012": {
+			"en_US": "Explodes"
+		},
+		"3235824013": {
+			"en_US": "Enter circuit overload."
+		},
+		"3235824014": {
+			"en_US": "Get stuck in an ice cage."
+		},
+		"3235824015": {
+			"en_US": "Your wallet feels lighter suddenly."
+		},
+		"3235824016": {
+			"en_US": "Elemental roulette."
+		},
+		"3235824017": {
+			"en_US": "Say goodbye to your combo streak."
+		},
+		"3235824018": {
+			"en_US": "Microscope simulator."
+		},
+		"3235824019": {
+			"en_US": "Telescope simulator."
+		},
+		"3235824020": {
+			"en_US": "Consumes all your SP."
+		},
+		"3235824021": {
+			"en_US": "Blocks all your landmarks."
+		},
+		"3235824022": {
+			"en_US": "Your SP Regen feels heavier."
+		},
+		"3235824023": {
+			"en_US": "You lost one of your dashes."
+		},
+		"3235824024": {
+			"en_US": "Forgot how to dash correctly."
+		},
+		"3235824025": {
+			"en_US": "Randomizer leveling experience."
+		},
+		"3235824026": {
+			"en_US": "Eating for ages."
+		},
+		"3235824027": {
+			"en_US": "Thank you Sergey."
+		},
+		"3235824028": {
+			"en_US": "Dies."
+		},
+		"3235824029": {
+			"en_US": "Maybe dies."
+		},
+		"3235824030": {
+			"en_US": "Stomps."
+		},
+		"3235824031": {
+			"en_US": "Get rotated."
+		},
+		"3235824032": {
+			"en_US": "Get more rotated."
+		},
+		"3235824033": {
+			"en_US": "Forgets how to jump."
+		},
+		"3235824034": {
+			"en_US": "Don't fall."
 		},
 		"3235924225": {
 			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Rookie's Best\\c[0]."
@@ -6784,6 +6968,15 @@
 				"map": "autumn.path-3-1",
 				"mwid": 3235824346,
 				"settings": {}
+			},
+			{
+				"type": "Prop",
+				"level": -2,
+				"x": 457.12,
+				"y": 165.8,
+				"map": "autumn.lab.room-final",
+				"mwid": 3235825025,
+				"settings": {}
 			}
 		],
 		"autumn-fall": [
@@ -7091,6 +7284,17 @@
 				"y": 290.1714285714286,
 				"map": "autumn-fall.raid.raid-01",
 				"mwid": 3235824064,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -2,
+				"x": 468.8,
+				"y": 176.4,
+				"map": "autumn.lab.room-final",
+				"mwid": 3235825020,
 				"settings": {
 					"defaultClearance": "Default"
 				}
@@ -7576,6 +7780,26 @@
 				"settings": {
 					"defaultClearance": "Default"
 				}
+			},
+			{
+				"type": "Chest",
+				"level": -2,
+				"x": 314.6666666666667,
+				"y": 79.94285714285715,
+				"map": "bergen-trail.lab.room-final",
+				"mwid": 3235825022,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Prop",
+				"level": -2,
+				"x": 296.0,
+				"y": 68.97142857142858,
+				"map": "bergen-trail.lab.room-final",
+				"mwid": 3235825027,
+				"settings": {}
 			}
 		],
 		"cold-dng": [
@@ -8724,6 +8948,26 @@
 				"settings": {
 					"defaultClearance": "Default"
 				}
+			},
+			{
+				"type": "Chest",
+				"level": -2,
+				"x": 370.4,
+				"y": 454.3,
+				"map": "heat.lab.room-final",
+				"mwid": 3235825021,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Prop",
+				"level": -2,
+				"x": 359.9,
+				"y": 455.3,
+				"map": "heat.lab.room-final",
+				"mwid": 3235825026,
+				"settings": {}
 			}
 		],
 		"heat-dng": [
@@ -9791,6 +10035,17 @@
 				}
 			},
 			{
+				"type": "Chest",
+				"level": -2,
+				"x": 532.8,
+				"y": 412.6857142857143,
+				"map": "jungle.lab.room-final",
+				"mwid": 3235825023,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
 				"type": "EventTrigger",
 				"level": 0,
 				"x": 319.2,
@@ -9806,6 +10061,15 @@
 				"y": 732.0,
 				"map": "jungle.path-01-entrance",
 				"mwid": 3235824791,
+				"settings": {}
+			},
+			{
+				"type": "Prop",
+				"level": -2,
+				"x": 540.12,
+				"y": 405.65714285714284,
+				"map": "jungle.lab.room-final",
+				"mwid": 3235825024,
 				"settings": {}
 			}
 		],
