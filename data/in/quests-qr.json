@@ -18,7 +18,7 @@
 				"path": ".settings.npcStates.0.event.quest.14"
 			},
 			"region": {
-				"open": "open3"
+				"open": "bergen"
 			},
 			"condition": [
 				[ "cutscene", "Talatu Introductions" ],
@@ -37,7 +37,7 @@
 				"path": ".settings.npcStates.0.event.quest.11"
 			},
 			"region": {
-				"open": "open5"
+				"open": "bakii"
 			},
 			"condition": [
 				[ "cutscene", "Talatu Bergen 25%" ],
@@ -55,7 +55,7 @@
 				"path": ".settings.npcStates.0.event.quest.11"
 			},
 			"region": {
-				"open": "open10"
+				"open": "basin"
 			},
 			"condition": [
 				[ "cutscene", "Talatu Ba'kii 50%" ],
@@ -74,8 +74,7 @@
 				"path": ".settings.condAnims.0.interact.event.8.thenStep.0"
 			},
 			"region": {
-				"linear": "23",
-				"open": "open10.Right"
+				"open": "garden.east"
 			},
 			"condition": [
 				[ "quest", "Foul Play" ]
@@ -93,8 +92,7 @@
 				"path": ".settings.condAnims.0.interact.event.8.thenStep.0"
 			},
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"open": "fall"
 			},
 			"condition": [
 				[ "quest", "A Switch in Altitude" ]
@@ -112,8 +110,7 @@
 				"path": ".settings.condAnims.0.interact.event.8.thenStep.0"
 			},
 			"region": {
-				"linear": "11",
-				"open": "open5"
+				"open": "valley"
 			},
 			"condition": [
 				[ "quest", "Best in the West" ]
@@ -131,8 +128,7 @@
 				"path": ".settings.condAnims.0.interact.event.8.thenStep.0"
 			},
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"open": "trail"
 			},
 			"condition": [
 				[ "quest", "Out of the Box" ]
@@ -151,18 +147,15 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"open": "open4.1"
+				"open": "bergen"
 			},
 			"condition": [
+				[ "region", "open", "mine.1" ],
 				[ "or", [ "item", "Heat" ], [ "item", "Mine Key", 1 ] ],
 				[ "quest","The Legendary Bunny" ]
 			],
 			"reward": [
-				[
-					"item",
-					"Prickly Bracer",
-					1
-				]
+				[ "item", "Prickly Bracer", 1 ]
 			]
 		},
 		"Trail: Horncave": {
@@ -173,7 +166,7 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			},
 			"condition": [
 				[ "quest", "The Goatfather" ]
@@ -190,21 +183,13 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"open": "open10.Infested"
+				"open": "garden.infested"
 			},
 			"reward": [
-				[
-					"item",
-					"Golden Ticket",
-					1
-				]
+				[ "item", "Golden Ticket", 1 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				]
+				[ "item", "Wave", 1 ]
 			]
 		},
 		"Garden: Infested Cavern Right": {
@@ -215,21 +200,13 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"open": "open10.Infested"
+				"open": "garden.infested"
 			},
 			"reward": [
-				[
-					"item",
-					"Stout Backplate",
-					3
-				]
+				[ "item", "Stout Backplate", 3 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				]
+				[ "item", "Wave", 1 ]
 			]
 		},
 		"Garden: Chilled Den": {
@@ -240,7 +217,7 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"open": "open10.Right"
+				"open": "garden.east"
 			},
 			"condition": [
 				[ "item", "Heat" ],
@@ -259,8 +236,7 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "10",
-				"open": "open9"
+				"open": "fall"
 			},
 			"condition": [
 				[ "quest", "A Switch in Altitude" ]
@@ -278,8 +254,7 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "12",
-				"open": "open5"
+				"open": "valley"
 			},
 			"condition": [
 				[ "quest", "Best in the West" ]
@@ -297,8 +272,7 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"open": "trail"
 			},
 			"condition": [
 				[ "quest", "Out of the Box" ]
@@ -316,8 +290,7 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
-				"open": "open10.Right"
+				"open": "garden.east"
 			},
 			"condition": [
 				[ "quest", "Foul Play" ]
@@ -331,7 +304,7 @@
 		"First Steps": {
 			"questid": "my-first-quest",
 			"region": {
-				"open": "open3"
+				"open": "rise"
 			},
 			"reward": [
 				[ "item", "Edge o' All", 1 ],
@@ -341,7 +314,7 @@
 		"A Few More Steps": {
 			"questid": "my-first-quest_2",
 			"region": {
-				"open": "open3"
+				"open": "rise"
 			},
 			"condition": [
 				[ "quest", "First Steps" ]
@@ -354,7 +327,7 @@
 		"Autumn's Rise Trailblazing": {
 			"questid": "trailblaze-autumn",
 			"region": {
-				"open": "open3"
+				"open": "rise"
 			},
 			"condition": [
 				[ "quest", "Autumn's Rise Collect" ],
@@ -366,31 +339,31 @@
 		"Autumn's Rise Collect": {
 			"questid": "trailblaze-autumn-1",
 			"region": {
-				"open": "open3"
+				"open": "rise"
 			}
 		},
 		"Autumn's Rise Defeat": {
 			"questid": "trailblaze-autumn-2",
 			"region": {
-				"open": "open3"
+				"open": "rise"
 			}
 		},
 		"Autumn's Rise Landmarks": {
 			"questid": "trailblaze-autumn-3",
 			"region": {
-				"open": "open3"
+				"open": "rise"
 			}
 		},
 		"Autumn's Rise Data Probe": {
 			"questid": "trailblaze-autumn-4",
 			"region": {
-				"open": "open3"
+				"open": "rise"
 			}
 		},
 		"Round and Round": {
 			"questid": "round-and-round",
 			"region": {
-				"open": "open3"
+				"open": "rise"
 			},
 			"reward": [
 				[ "item", "Sandwich", 1 ],
@@ -401,7 +374,7 @@
 		"Crocus Pocus": {
 			"questid": "botanics",
 			"region": {
-				"open": "open3"
+				"open": "harbor"
 			},
 			"condition": [
 				[ "item", "Disc of Flora", 1 ],
@@ -416,7 +389,7 @@
 		"The Observatory": {
 			"questid": "observatory",
 			"region": {
-				"open": "open18"
+				"open": "rise"
 			},
 			"condition": [
 				[ "quest", "A Promise is a Promise 5" ],
@@ -427,7 +400,7 @@
 		"Bergen Trailblazing": {
 			"questid": "trailblaze-bergen",
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			},
 			"condition": [
 				[ "quest", "Bergen Trailblazing Collect" ],
@@ -439,26 +412,26 @@
 		"Bergen Trailblazing Collect": {
 			"questid": "trailblaze-bergen-1",
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			}
 		},
 		"Bergen Trailblazing Defeat": {
 			"questid": "trailblaze-bergen-2",
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			}
 		},
 		"Bergen Trailblazing Landmarks": {
 			"questid": "trailblaze-bergen-3",
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			}
 		},
 		"Bergen Trailblazing Data Probe": {
 			"questid": "trailblaze-bergen-4",
 			"amount": 0,
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			},
 			"condition": [
 				[ "item", "Heat" ]
@@ -467,11 +440,10 @@
 		"You've Got Mail": {
 			"questid": "you-got-mail",
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			},
 			"condition": [
-				[
-					"or",
+				[ "or",
 					[ "item", "Bronze Mail" ],
 					[ "shop_slot", "rookieHarborWeapons", 30 ]
 				]
@@ -484,13 +456,17 @@
 		"The Legendary Bunny": {
 			"questid": "legend-bunny",
 			"region": {
-				"open": "open3"
-			}
+				"open": "trail"
+			},
+			"condition": [
+				[ "region", "open", "harbor" ],
+				[ "region", "open", "rise" ]
+			]
 		},
 		"Round and Round 2": {
 			"questid": "round-and-round-2",
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			},
 			"condition": [
 				[ "quest", "Round and Round" ]
@@ -504,9 +480,10 @@
 		"Digging Up the Past": {
 			"questid": "bergen-mining_tools",
 			"region": {
-				"open": "open4.7"
+				"open": "bergen"
 			},
 			"condition": [
+				[ "region", "open", "mine.7" ],
 				[ "item", "Heat", 1 ],
 				[ "item", "Mine Detector", 1 ]
 			],
@@ -515,8 +492,11 @@
 		"Filthy Frobbits": {
 			"questid": "miners-1-dirtbunnies",
 			"region": {
-				"open": "open3"
+				"open": "bergen"
 			},
+			"condition": [
+				[ "region", "open", "trail" ]
+			],
 			"reward": [
 				[ "item", "Metal Gears", 2 ],
 				[ "item", "Purple Ore Lump", 4 ]
@@ -525,7 +505,7 @@
 		"Explosive Debugging": {
 			"questid": "miners-2-mine_bombing_1",
 			"region": {
-				"open": "open3"
+				"open": "bergen"
 			},
 			"condition": [
 				[ "quest", "Filthy Frobbits" ],
@@ -540,7 +520,7 @@
 		"Preemptive Debugging": {
 			"questid": "miners-2-mine_challenge-1",
 			"region": {
-				"open": "open3"
+				"open": "bergen"
 			},
 			"condition": [
 				[ "quest", "Explosive Debugging" ]
@@ -553,8 +533,11 @@
 		"Kidding Around": {
 			"questid": "bg-1-lost_pet",
 			"region": {
-				"open": "open3"
+				"open": "bergen"
 			},
+			"condition": [
+				[ "region", "open", "trail" ]
+			],
 			"reward": [
 				[ "item", "Frosted Carrot", 2 ],
 				[ "item", "Winter Thorn", 4 ]
@@ -563,7 +546,7 @@
 		"The Goatfather": {
 			"questid": "bg-2-goat_cave_1",
 			"region": {
-				"open": "open3"
+				"open": "bergen"
 			},
 			"condition": [
 				[ "quest", "Kidding Around" ],
@@ -578,7 +561,7 @@
 		"Fancy Tophat": {
 			"questid": "bergen-fancy-tophat",
 			"region": {
-				"open": "open3"
+				"open": "bergen"
 			},
 			"reward": [
 				[ "item", "Solid Bubble", 4 ],
@@ -588,10 +571,12 @@
 		"Heating the Hermit": {
 			"questid": "bergtraders-2-hermit_materials",
 			"region": {
-				"open": "open4.1"
+				"open": "bergen"
 			},
 			"condition": [
 				[ "quest", "Fancy Tophat" ],
+				[ "region", "open", "trail" ],
+				[ "region", "open", "mine.2" ],
 				[ "item", "Blue Ice Shade", 1 ],
 				[ "item", "Heat", 1 ]
 			],
@@ -604,7 +589,7 @@
 		"Trial of Aspiration": {
 			"questid": "monks-1-jump_challenge",
 			"region": {
-				"open": "open3"
+				"open": "bergen"
 			},
 			"reward": [
 				[ "item", "Rock Beak", 4 ],
@@ -614,7 +599,7 @@
 		"Trial of Progression": {
 			"questid": "monks-2-jump_challenge_2",
 			"region": {
-				"open": "open3"
+				"open": "bergen"
 			},
 			"condition": [
 				[ "quest", "Trial of Aspiration" ],
@@ -630,7 +615,7 @@
 		"Challenge of Aspiration": {
 			"questid": "monks-jump_1_bonus",
 			"region": {
-				"open": "open3"
+				"open": "bergen"
 			},
 			"condition": [
 				[ "quest", "Trial of Aspiration" ]
@@ -642,7 +627,7 @@
 		"Aspiration Timed Challenge": {
 			"questid": "monks-jump_1_time",
 			"region": {
-				"open": "open3"
+				"open": "bergen"
 			},
 			"condition": [
 				[ "quest", "Challenge of Aspiration" ]
@@ -651,7 +636,7 @@
 		"Aspiration No Shield Challenge": {
 			"questid": "monks-jump_1_noShield",
 			"region": {
-				"open": "open3"
+				"open": "bergen"
 			},
 			"condition": [
 				[ "quest", "Challenge of Aspiration" ]
@@ -660,7 +645,7 @@
 		"Challenge of Progression": {
 			"questid": "monks-jump_2_bonus",
 			"region": {
-				"open": "open3"
+				"open": "bergen"
 			},
 			"condition": [
 				[ "quest", "Trial of Progression" ]
@@ -672,7 +657,7 @@
 		"Progression Timed Challenge": {
 			"questid": "monks-jump_2_time",
 			"region": {
-				"open": "open3"
+				"open": "bergen"
 			},
 			"condition": [
 				[ "quest", "Challenge of Progression" ]
@@ -681,7 +666,7 @@
 		"Progression Frosty Challenge": {
 			"questid": "monks-jump_2_frosty",
 			"region": {
-				"open": "open3"
+				"open": "bergen"
 			},
 			"condition": [
 				[ "quest", "Challenge of Progression" ]
@@ -690,16 +675,16 @@
 		"Building a Base": {
 			"questid": "omni-1",
 			"region": {
-				"open": "open4.1"
+				"open": "bergen"
 			},
 			"condition": [
-				[ "item", "Heat", 1 ]
+				[ "region", "open", "mine.4" ]
 			]
 		},
 		"Pushing Bases": {
 			"questid": "omni-2",
 			"region": {
-				"open": "open4.1"
+				"open": "bergen"
 			},
 			"condition": [
 				[ "quest", "Building a Base" ],
@@ -712,7 +697,7 @@
 		"A Promise is a Promise 2": {
 			"questid": "unkown-warrior-2",
 			"region": {
-				"open": "open3"
+				"open": "bergen"
 			},
 			"condition": [
 				[ "item", "Broken Shield", 1 ]
@@ -721,7 +706,7 @@
 		"Henry Trailblazing": {
 			"questid": "trailblaze-forest",
 			"region": {
-				"open": "open16"
+				"open": "ridge"
 			},
 			"condition": [
 				[ "item", "Meteor Shade" ],
@@ -738,7 +723,7 @@
 		"Last Minute Help Needed": {
 			"questid": "wervyn-quest",
 			"region": {
-				"open": "open16"
+				"open": "ridge"
 			},
 			"condition": [
 				[ "item", "Meteor Shade", 1 ],
@@ -748,14 +733,14 @@
 		"An Unfortunate Series of Features": {
 			"questid": "dekay-quest",
 			"region": {
-				"open": "open16"
+				"open": "ridge"
 			},
 			"condition": [
 				[ "item", "Heat", 1 ],
 				[ "item", "Cold", 1 ],
 				[ "item", "Wave", 1 ],
 				[ "item", "Shock", 1 ],
-				[ "region", "open", "open5" ]
+				[ "region", "open", "valley" ]
 			],
 			"reward": [
 				[ "item", "Lunatic Paws", 1 ]
@@ -764,7 +749,7 @@
 		"Maroon Valley Trailblazing": {
 			"questid": "trailblaze-maroon",
 			"region": {
-				"open": "open5"
+				"open": "valley"
 			},
 			"condition": [
 				[ "quest", "Maroon Valley Collect" ],
@@ -776,13 +761,13 @@
 		"Maroon Valley Collect": {
 			"questid": "trailblaze-maroon-1",
 			"region": {
-				"open": "open5"
+				"open": "valley"
 			}
 		},
 		"Maroon Valley Defeat": {
 			"questid": "trailblaze-maroon-2",
 			"region": {
-				"open": "open5"
+				"open": "valley"
 			},
 			"condition": [
 				[ "item", "Heat"]
@@ -791,20 +776,23 @@
 		"Maroon Valley Landmarks": {
 			"questid": "trailblaze-maroon-3",
 			"region": {
-				"open": "open5"
+				"open": "valley"
 			}
 		},
 		"Maroon Valley Data Probe": {
 			"questid": "trailblaze-maroon-4",
 			"region": {
-				"open": "open5"
+				"open": "valley"
 			}
 		},
 		"Blasting Shells": {
 			"questid": "nomadAdv-1-turtle_bombing_1",
 			"region": {
-				"open": "open5"
+				"open": "bakii"
 			},
+			"condition": [
+				[ "region", "open", "valley" ]
+			],
 			"reward": [
 				[ "item", "Pepper Night Tea", 2 ],
 				[ "item", "Old Bones", 10 ]
@@ -813,7 +801,7 @@
 		"Hot Trail": {
 			"questid": "nomadAdv-2-tomb_raiding_2",
 			"region": {
-				"open": "open5"
+				"open": "bakii"
 			},
 			"condition": [
 				[ "quest", "Blasting Shells" ],
@@ -828,7 +816,7 @@
 		"Waves of Sand": {
 			"questid": "nomadAdv-3-sandman_tomb_1",
 			"region": {
-				"open": "open5"
+				"open": "bakii"
 			},
 			"condition": [
 				[ "quest", "Hot Trail" ],
@@ -843,7 +831,7 @@
 		"Shady Thief": {
 			"questid": "bakiGuard-1-basar_thief_1",
 			"region": {
-				"open": "open5"
+				"open": "bakii"
 			},
 			"reward": [
 				[ "item", "Glaring Rock", 6 ],
@@ -853,10 +841,11 @@
 		"Just Deserts": {
 			"questid": "bakiGuard-2-evil_guard",
 			"region": {
-				"open": "open5"
+				"open": "bakii"
 			},
 			"condition": [
 				[ "quest", "Shady Thief" ],
+				[ "region", "open", "valley" ],
 				[ "item", "Red Flame Shade", 1 ],
 				[ "item", "Heat", 1 ],
 				[ "item", "Cold", 1 ]
@@ -869,8 +858,11 @@
 		"Crate Hate": {
 			"questid": "bakiTrader-1-crate_defense_1",
 			"region": {
-				"open": "open5"
+				"open": "bakii"
 			},
+			"condition": [
+				[ "region", "open", "valley" ]
+			],
 			"reward": [
 				[ "item", "Cactone Fruit", 11 ],
 				[ "item", "Ancient Earth", 3 ]
@@ -879,10 +871,12 @@
 		"Steamy Booze": {
 			"questid": "bakiTrader-2-brewing_fun_1",
 			"region": {
-				"open": "open5"
+				"open": "bakii"
 			},
 			"condition": [
-				[ "region", "open", "open3" ],
+				[ "region", "open", "rise" ],
+				[ "region", "open", "trail" ],
+				[ "region", "open", "valley" ],
 				[ "quest", "Crate Hate" ],
 				[ "item", "Red Flame Shade", 1 ],
 				[ "item", "Cold", 1 ],
@@ -895,7 +889,7 @@
 		"Steamy Challenge": {
 			"questid": "bakiTrader-2-brewing_challenge_1",
 			"region": {
-				"open": "open5"
+				"open": "bakii"
 			},
 			"condition": [
 				[ "quest", "Steamy Booze" ]
@@ -907,7 +901,7 @@
 		"A Promise is a Promise 3": {
 			"questid": "unknown-warrior-3",
 			"region": {
-				"open": "open5"
+				"open": "bakii"
 			},
 			"condition": [
 				[ "item", "Broken Sword", 1 ]
@@ -916,9 +910,9 @@
 		"Turret Defense": {
 			"questid": "jungleAdv-1-turret_defense_1",
 			"region": {
-				"open": "open10"
+				"open": "basin"
 			},
-			"condition": [[ "region", "open", "open10.Grove" ]],
+			"condition": [[ "region", "open", "garden.grove" ]],
 			"reward": [
 				[ "item", "Virus Root", 4 ],
 				[ "item", "Stout Backplate", 2 ]
@@ -927,7 +921,7 @@
 		"An Original Idea": {
 			"questid": "jungleAdv-2-turret_defense_2",
 			"region": {
-				"open": "open10"
+				"open": "basin"
 			},
 			"condition": [
 				[ "item", "Purple Bolt Shade", 1 ],
@@ -944,7 +938,7 @@
 		"Hostage Situation": {
 			"questid": "jungleGuard-1-hostage_1",
 			"region": {
-				"open": "open10"
+				"open": "basin"
 			},
 			"reward": [
 				[ "item", "Chili Dog", 4 ],
@@ -954,7 +948,7 @@
 		"High Crating": {
 			"questid": "jungleGuard-2-crate_rooftop_1",
 			"region": {
-				"open": "open10"
+				"open": "basin"
 			},
 			"condition": [
 				[ "item", "Purple Bolt Shade", 1 ],
@@ -971,12 +965,12 @@
 		"Tropical Chill": {
 			"questid": "jungleTrader-1-snowman_thief_1",
 			"region": {
-				"open": "open10"
+				"open": "basin"
 			},
 			"condition": [
 				[ "item", "Cold" ],
 				[ "item", "Heat" ],
-				[ "region", "open", "open10.Right" ]
+				[ "region", "open", "garden.east" ]
 			],
 			"reward": [
 				[ "item", "Moon Fruit", 5 ],
@@ -987,7 +981,7 @@
 		"Melting this Cold Fiend": {
 			"questid": "jungleTrader-2-snowman_thief_2",
 			"region": {
-				"open": "open10"
+				"open": "basin"
 			},
 			"condition": [
 				[ "item", "Purple Bolt Shade", 1 ],
@@ -1003,9 +997,9 @@
 		"Lakeside Escort": {
 			"questid": "jungleGreens-1-escort_1",
 			"region": {
-				"open": "open10"
+				"open": "basin"
 			},
-			"condition": [[ "region", "open", "open10.Grove" ]],
+			"condition": [[ "region", "open", "garden.grove" ]],
 			"reward": [
 				[ "item", "Green Risotto", 3 ],
 				[ "item", "Wrap Roll", 3 ],
@@ -1015,7 +1009,7 @@
 		"Rooting for Power": {
 			"questid": "jungleGreens-2-plantSearch_1",
 			"region": {
-				"open": "open10"
+				"open": "basin"
 			},
 			"condition": [
 				[ "item", "Purple Bolt Shade", 1 ],
@@ -1032,19 +1026,19 @@
 		"Sprouting Business": {
 			"questid": "basin-mush-1",
 			"region": {
-				"open": "open10"
+				"open": "basin"
 			},
 			"condition": [
 				[ "item", "Wave", 1 ],
-				[ "region", "open", "open10.Infested" ]
+				[ "region", "open", "garden.infested" ]
 			]
 		},
 		"Pumpkin Land Superfun": {
 			"questid": "halloween",
 			"region": {
-				"open": "open10"
+				"open": "basin"
 			},
-			"condition": [[ "region", "open", "open10.Infested" ]],
+			"condition": [[ "region", "open", "garden.infested" ]],
 			"reward": [
 				[ "item", "Scarecrown", 1 ]
 			]
@@ -1052,7 +1046,7 @@
 		"A Promise is a Promise 4": {
 			"questid": "unknown-warrior-4",
 			"region": {
-				"open": "open10"
+				"open": "basin"
 			},
 			"condition": [
 				[ "item", "Broken Deck", 1 ]
@@ -1061,7 +1055,7 @@
 		"Gaia's Garden Trailblazing": {
 			"questid": "trailblaze-jungle",
 			"region": {
-				"open": "open10"
+				"open": "garden"
 			},
 			"condition": [
 				[ "quest", "Gaia's Garden Collect" ],
@@ -1073,46 +1067,46 @@
 		"Gaia's Garden Collect": {
 			"questid": "trailblaze-jungle-1",
 			"region": {
-				"open": "open10"
+				"open": "garden"
 			},
 			"condition": [
-				[ "region", "open", "open10.Left" ],
-				[ "region", "open", "open10.Infested" ]
+				[ "region", "open", "garden.west" ],
+				[ "region", "open", "garden.infested" ]
 			]
 		},
 		"Gaia's Garden Defeat": {
 			"questid": "trailblaze-jungle-2",
 			"region": {
-				"open": "open10.Right"
+				"open": "garden.east"
 			},
 			"condition": [
-				[ "region", "open", "open10.Left" ]
+				[ "region", "open", "garden.west" ]
 			]
 		},
 		"Gaia's Garden Landmarks": {
 			"questid": "trailblaze-jungle-3",
 			"region": {
-				"open": "open10"
+				"open": "garden"
 			},
 			"condition": [
-				[ "region", "open", "open10.Grove" ],
-				[ "region", "open", "open10.Infested" ]
+				[ "region", "open", "garden.grove" ],
+				[ "region", "open", "garden.infested" ]
 			]
 		},
 		"Gaia's Garden Data Probe": {
 			"questid": "trailblaze-jungle-4",
 			"region": {
-				"open": "open10"
+				"open": "garden"
 			},
 			"condition": [
 				[ "item", "Wave", 1 ],
-				[ "region", "open", "open10.Grove" ]
+				[ "region", "open", "garden.grove" ]
 			]
 		},
 		"Turret Defense Challenge 1": {
 			"questid": "jungleAdv-turret_defense_challenge-1",
 			"region": {
-				"open": "open10.Grove"
+				"open": "garden.grove"
 			},
 			"condition": [
 				[ "quest", "Turret Defense" ]
@@ -1124,7 +1118,7 @@
 		"Turret Defense Challenge 2": {
 			"questid": "jungleAdv-turret_defense_challenge-2",
 			"region": {
-				"open": "open10.Grove"
+				"open": "garden.grove"
 			},
 			"condition": [
 				[ "quest", "An Original Idea" ]
@@ -1136,7 +1130,7 @@
 		"A Promise is a Promise 5": {
 			"questid": "unknown-warrior-5",
 			"region": {
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"condition": [
 				[ "item", "Broken Chakrams" ],
@@ -1149,7 +1143,7 @@
 		"Railing Rider": {
 			"questid": "railing-rider-1",
 			"region": {
-				"open": "open2"
+				"open": "harbor"
 			},
 			"reward": [
 				[ "item", "Veggie Sticks", 6 ]
@@ -1158,8 +1152,11 @@
 		"All Hail the Ice Cream": {
 			"questid": "ice-cream-hype",
 			"region": {
-				"open": "open3"
+				"open": "harbor"
 			},
+			"condition": [
+				[ "region", "open", "trail" ]
+			],
 			"reward": [
 				[ "item", "Bergen Ice Cream", 10 ]
 			]
@@ -1167,7 +1164,7 @@
 		"Training with the Master": {
 			"questid": "training-tutorial",
 			"region": {
-				"open": "open2"
+				"open": "harbor"
 			},
 			"condition": [
 				[ "quest", "Training: VRP" ],
@@ -1180,7 +1177,7 @@
 		"Training: VRP": {
 			"questid": "training-balls",
 			"region": {
-				"open": "open2"
+				"open": "harbor"
 			},
 			"condition": [
 				[ "item", "Blue Ice Shade" ],
@@ -1190,7 +1187,7 @@
 		"Training: VPI": {
 			"questid": "training-close",
 			"region": {
-				"open": "open2"
+				"open": "harbor"
 			},
 			"condition": [
 				[ "item", "Blue Ice Shade" ],
@@ -1201,7 +1198,7 @@
 		"Faction Introduction": {
 			"questid": "faction-tutorial",
 			"region": {
-				"open": "open2"
+				"open": "harbor"
 			},
 			"reward":
 			[
@@ -1211,8 +1208,11 @@
 		"Digging for Data": {
 			"questid": "wa-1-digging",
 			"region": {
-				"open": "open3"
+				"open": "harbor"
 			},
+			"condition": [
+				[ "region", "open", "rise" ]
+			],
 			"reward": [
 				[ "item", "Bronze Edge", 1 ]
 			]
@@ -1220,7 +1220,7 @@
 		"It Can Dig But It Can't Hide": {
 			"questid": "fd-2-meerkat-cave",
 			"region": {
-				"open": "open3"
+				"open": "harbor"
 			},
 			"condition": [
 				[ "quest", "Digging for Data" ]
@@ -1233,9 +1233,10 @@
 		"Points of Power": {
 			"questid": "fd-3-ball_egg_1",
 			"region": {
-				"open": "open9"
+				"open": "harbor"
 			},
 			"condition": [
+				[ "region", "open", "fall" ],
 				[ "item", "Red Flame Shade", 1 ],
 				[ "item", "Heat", 1 ],
 				[ "item", "Cold", 1 ],
@@ -1249,8 +1250,11 @@
 		"Petty Crime Hunter": {
 			"questid": "rhg-1-pickpocket",
 			"region": {
-				"open": "open3"
+				"open": "harbor"
 			},
+			"condition": [
+				[ "region", "open", "rise" ]
+			],
 			"reward": [
 				[ "item", "Hi-Sandwich", 3 ],
 				[ "item", "Just Water", 3 ]
@@ -1259,7 +1263,7 @@
 		"Smuggle Trouble": {
 			"questid": "rhg-2-crate_smuggle",
 			"region": {
-				"open": "open3"
+				"open": "harbor"
 			},
 			"condition": [
 				[ "quest", "Petty Crime Hunter" ]
@@ -1272,7 +1276,7 @@
 		"Wet Work": {
 			"questid": "rhg-3-maritime_smuggle",
 			"region": {
-				"open": "open3"
+				"open": "harbor"
 			},
 			"condition": [
 				[ "item", "Red Flame Shade", 1 ],
@@ -1288,7 +1292,7 @@
 		"Small Time Delivery": {
 			"questid": "rftc-1-collect_trade",
 			"region": {
-				"open": "open3"
+				"open": "harbor"
 			},
 			"reward": [
 				[ "item", "Gold Beetle", 5 ],
@@ -1298,9 +1302,10 @@
 		"Bull Grab": {
 			"questid": "bull-arena-1",
 			"region": {
-				"open": "open3"
+				"open": "harbor"
 			},
 			"condition": [
+				[ "region", "open", "rise" ],
 				[ "quest", "Small Time Delivery" ]
 			],
 			"reward": [
@@ -1312,13 +1317,13 @@
 		"New Metal": {
 			"questid": "rftc-3-metalstuff",
 			"region": {
-				"open": "open9"
+				"open": "harbor.north"
 			},
 			"condition": [
 				[ "item", "Red Flame Shade", 1 ],
 				[ "item", "Heat", 1 ],
 				[ "item", "Cold", 1 ],
-				[ "region", "open", "open4.5" ],
+				[ "region", "open", "mine.5" ],
 				[ "quest", "Bull Grab" ]
 			],
 			"reward": [
@@ -1329,8 +1334,11 @@
 		"Sickly Trees": {
 			"questid": "foa-1-treedoc",
 			"region": {
-				"open": "open3"
+				"open": "harbor"
 			},
+			"condition": [
+				[ "region", "open", "rise" ]
+			],
 			"reward": [
 				[ "item", "Season Apples", 4 ],
 				[ "item", "Fruit Salad", 3 ]
@@ -1339,7 +1347,7 @@
 		"Intensive Tree Care": {
 			"questid": "foa-2-tree_defense",
 			"region": {
-				"open": "open3"
+				"open": "harbor"
 			},
 			"condition": [
 				[ "quest", "Sickly Trees" ]
@@ -1353,10 +1361,11 @@
 		"Bull on Fire": {
 			"questid": "foa-3-buffel_cave",
 			"region": {
-				"open": "open9"
+				"open": "harbor"
 			},
 			"condition": [
 				[ "quest", "Intensive Tree Care" ],
+				[ "region", "open", "fall" ],
 				[ "item", "Heat" ],
 				[ "item", "Cold" ]
 			],
@@ -1369,7 +1378,7 @@
 		"A Promise is a Promise": {
 			"questid": "unknown-warrior-1",
 			"region": {
-				"open": "open3"
+				"open": "harbor"
 			},
 			"condition": [
 				[ "item", "Broken Gauntlet", 1 ]
@@ -1378,8 +1387,11 @@
 		"Wood 'n' Steaks": {
 			"questid": "steaks_1",
 			"region": {
-				"open": "open3"
+				"open": "harbor"
 			},
+			"condition": [
+				[ "region", "open", "trail" ]
+			],
 			"reward": [
 				[ "item", "Hi-Sandwich", 5 ],
 				[ "item", "Chili Con Carne", 2 ]
@@ -1388,10 +1400,11 @@
 		"Meating Expectations": {
 			"questid": "steaks_2",
 			"region": {
-				"open": "open5"
+				"open": "harbor"
 			},
 			"condition": [
-				[ "quest", "Wood 'n' Steaks" ]
+				[ "quest", "Wood 'n' Steaks" ],
+				[ "region", "open", "valley" ]
 			],
 			"reward": [
 				[ "item", "Steak, rare", 5 ]
@@ -1400,10 +1413,11 @@
 		"Raising the Steaks": {
 			"questid": "steaks_3",
 			"region": {
-				"open": "open10"
+				"open": "harbor"
 			},
 			"condition": [
-				[ "region", "open", "open9" ],
+				[ "region", "open", "fall" ],
+				[ "region", "open", "garden.mid" ],
 				[ "quest", "Meating Expectations" ]
 			],
 			"reward": [
@@ -1413,12 +1427,11 @@
 		"Foul Play": {
 			"questid": "console-playstation-1",
 			"region": {
-				"linear": "21",
-				"open": "open10.Right"
+				"open": "basin.slums"
 			},
 			"condition": [
+				[ "region", "open", "garden.east" ],
 				[ "item", "Meteor Shade" ],
-				[ "item", "Pond Slums Pass" ],
 				[ "item", "Cold" ],
 				[ "item", "Wave" ]
 			]
@@ -1426,12 +1439,12 @@
 		"A Switch in Altitude": {
 			"questid": "console-switch-1",
 			"region": {
-				"linear": "14",
-				"open": "open9"
+				"open": "harbor"
 			},
 			"condition": [
+				[ "region", "open", "rise" ],
+				[ "region", "open", "fall" ],
 				[ "item", "Meteor Shade" ],
-				[ "item", "Green Leaf Shade" ],
 				[ "item", "Heat" ],
 				[ "item", "Wave" ]
 			]
@@ -1439,10 +1452,10 @@
 		"Out of the Box": {
 			"questid": "console-xbox-1",
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"open": "bergen"
 			},
 			"condition": [
+				[ "region", "open", "trail" ],
 				[ "item", "Meteor Shade" ],
 				[ "item", "Heat" ],
 				[ "item", "Shock" ]
@@ -1451,10 +1464,10 @@
 		"Best in the West": {
 			"questid": "console-pc-1",
 			"region": {
-				"linear": "21",
-				"open": "open5"
+				"open": "bakii"
 			},
 			"condition": [
+				[ "region", "open", "valley" ],
 				[ "item", "Meteor Shade" ],
 				[ "item", "Cold" ],
 				[ "item", "Shock" ]
