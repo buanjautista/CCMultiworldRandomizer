@@ -1116,6 +1116,9 @@
 				"mapId": 20
 			},
 			"clearance": "Default",
+			"markerOverrides": {
+				"offsetX": 6
+			},
 			"region": {
 				"open": "open3"
 			},
@@ -1307,6 +1310,10 @@
 				"mapId": 1015
 			},
 			"clearance": "Gold",
+			"markerOverrides": {
+				"offsetX": -8,
+				"offsetY": -5
+			},
 			"region": {
 				"open": "open3"
 			},
@@ -1616,6 +1623,9 @@
 				"mapId": 21
 			},
 			"clearance": "Bronze",
+			"markerOverrides": {
+				"offsetX": -4
+			},
 			"region": {
 				"open": "open4.6"
 			},
@@ -1628,6 +1638,9 @@
 				"area": "cold-dng",
 				"map": "cold-dng.b2.room5",
 				"mapId": 66
+			},
+			"markerOverrides": {
+				"clearance": "Bronze"
 			},
 			"region": {
 				"open": "open4.6"
@@ -3046,6 +3059,9 @@
 				"mapId": 69
 			},
 			"clearance": "Bronze",
+			"markerOverrides": {
+				"offsetX": -4
+			},
 			"region": {
 				"linear": "17.5",
 				"open": "open7.5"
@@ -3059,6 +3075,10 @@
 				"area": "heat-dng",
 				"map": "heat-dng.f3.room-05",
 				"mapId": 79
+			},
+			"markerOverrides": {
+				"clearance": "Silver",
+				"offsetX": 4
 			},
 			"region": {
 				"linear": "17.5",
@@ -3195,6 +3215,15 @@
 				"mapId": 1276
 			},
 			"clearance": "Default",
+			"markerOverrides": {
+				"entity": {
+					"type": "Chest",
+					"x": 368,
+					"y": 455,
+					"level": 3
+				},
+				"offsetX": 2
+			},
 			"region": {
 				"linear": "14",
 				"open": "open7.3"
@@ -3214,6 +3243,15 @@
 				"mapId": 1277
 			},
 			"clearance": "Default",
+			"markerOverrides": {
+				"entity": {
+					"type": "Chest",
+					"x": 480,
+					"y": 455,
+					"level": 3
+				},
+				"offsetX": 8
+			},
 			"region": {
 				"linear": "14",
 				"open": "open7.3"
@@ -4752,6 +4790,14 @@
 				"mapId": 1270
 			},
 			"clearance": "Bronze",
+			"markerOverrides": {
+				"entity": {
+					"type": "Chest",
+					"x": 216,
+					"y": 208,
+					"level": 4
+				}
+			},
 			"region": {
 				"linear": "28",
 				"open": "open15.1"
@@ -4771,6 +4817,15 @@
 				"mapId": 1271
 			},
 			"clearance": "Bronze",
+			"markerOverrides": {
+				"entity": {
+					"type": "Chest",
+					"x": 568,
+					"y": 208,
+					"level": 4
+				},
+				"offsetX": 8
+			},
 			"region": {
 				"linear": "28",
 				"open": "open15.1"
@@ -4934,6 +4989,10 @@
 				"mapId": 205
 			},
 			"clearance": "Default",
+			"markerOverrides": {
+				"offsetX": -8,
+				"offsetY": 8
+			},
 			"region": {
 				"linear": "26.5",
 				"open": "open14.2"
@@ -4949,6 +5008,10 @@
 				"mapId": 258
 			},
 			"clearance": "Default",
+			"markerOverrides": {
+				"offsetX": -8,
+				"offsetY": -4
+			},
 			"region": {
 				"linear": "26.5",
 				"open": "open14.2"
@@ -4964,6 +5027,9 @@
 				"mapId": 329
 			},
 			"clearance": "Default",
+			"markerOverrides": {
+				"offsetX": 4
+			},
 			"region": {
 				"open": "open10.Left"
 			},
@@ -4978,6 +5044,9 @@
 				"mapId": 670
 			},
 			"clearance": "Silver",
+			"markerOverrides": {
+				"offsetY": -4
+			},
 			"region": {
 				"linear": "26.5",
 				"open": "open14.2"
@@ -4992,9 +5061,13 @@
 				"map": "wave-dng.b1.center-04-long",
 				"mapId": 671
 			},
+			"markerOverrides": {
+				"clearance": "Gold",
+				"offsetY": 8
+			},
 			"region": {
 				"linear": "26.5",
-				"open": "open14.3"
+				"open": "open14.2"
 			},
 			"reward": [
 				[ "item", "Epic Metal", 1 ]
