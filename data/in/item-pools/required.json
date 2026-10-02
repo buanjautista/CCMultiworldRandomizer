@@ -230,6 +230,10 @@
 				{
 					"item": ["item", "King's Ring"],
 					"quantity": 1
+				},
+				{
+					"item": ["item", "Encrypted Key"],
+					"quantity": 4
 				}
 			]
 		}

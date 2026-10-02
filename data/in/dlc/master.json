@@ -15,6 +15,9 @@
 	"_global": {
 		"/botanics|cutscenes|chests|quests|regions|item-pools|shops/": {
 			"*": {
+				"location": {
+					"extension": "post-game"
+				},
 				"metadata": {
 					"dlc": true
 				}
