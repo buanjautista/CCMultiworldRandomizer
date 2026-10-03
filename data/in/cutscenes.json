@@ -8,7 +8,7 @@
 				"path": ".settings.event.21.accepted.6" 
 			},
 			"region": {
-				"open": "open3" 
+				"open": "rise" 
 			},
 			"properties": {
 				"alwaysQuest": true
@@ -25,8 +25,11 @@
 				"path": ".settings.npcStates.1.event.10" 
 			},
 			"region": {
-				"open": "open3.1" 
+				"open": "rise" 
 			},
+			"condition": [
+				[ "item", "Mine Pass" ]
+			],
 			"reward": [
 				[ "item", "Guild Pass", 1 ]
 			]
@@ -39,7 +42,7 @@
 				"path": ".settings.npcStates.0.event.quest.2.thenStep.17" 
 			},
 			"region": {
-				"open": "open4.1" 
+				"open": "mine.1" 
 			},
 			"reward": [
 				[ "item", "Just Water", 2 ]
@@ -53,7 +56,7 @@
 				"path": ".settings.npcStates.1.event.quest.5"
 			},
 			"region": {
-				"open": "open3"
+				"open": "bergen"
 			},
 			"properties": {
 				"alwaysQuest": true
@@ -70,7 +73,7 @@
 				"path": ".settings.event.20" 
 			},
 			"region": {
-				"open": "open4.1" 
+				"open": "mine.1" 
 			},
 			"condition": [
 				[ "item", "Mine Master Key", 1 ]
@@ -87,8 +90,11 @@
 				"path": ".settings.event.19" 
 			},
 			"region": {
-				"open": "open17" 
+				"open": "ridge" 
 			},
+			"condition": [
+				[ "item", "Old Dojo Key" ]
+			],
 			"reward": [
 				[ "item", "Meteor Shade", 1 ]
 			]
@@ -101,7 +107,7 @@
 				"path": ".settings.event.20" 
 			},
 			"region": {
-				"open": "open7.8" 
+				"open": "fajro.8" 
 			},
 			"reward": [
 				[ "item", "Red Flame Shade", 1 ]
@@ -115,7 +121,7 @@
 				"path": ".settings.npcStates.0.event.4.0.9" 
 			},
 			"region": {
-				"open": "open5" 
+				"open": "bakii" 
 			},
 			"condition": [
 				[ "item", "Cold", 1 ]
@@ -132,7 +138,7 @@
 				"path": ".settings.npcStates.1.event.quest.3.accepted.3" 
 			},
 			"region": {
-				"open": "open5" 
+				"open": "bakii" 
 			},
 			"reward": [
 				[ "item", "Maroon Cave Pass", 1 ]
@@ -146,7 +152,7 @@
 				"path": ".settings.event.17" 
 			},
 			"region": {
-				"open": "open6" 
+				"open": "bakii" 
 			},
 			"condition": [
 				[ "item", "Shiny Orb" ]
@@ -166,7 +172,7 @@
 				"path": ".settings.event.20" 
 			},
 			"region": {
-				"open": "open13.2" 
+				"open": "zirvitar.2" 
 			},
 			"condition": [
 				[ "item", "Wave", 1 ]
@@ -183,7 +189,7 @@
 				"path": ".settings.event.25" 
 			},
 			"region": {
-				"open": "open15.3" 
+				"open": "kajo.3" 
 			},
 			"reward": [
 				[ "item", "Star Shade", 1 ]
@@ -197,8 +203,7 @@
 				"path": ".settings.event.20" 
 			},
 			"region": {
-				"linear": "27",
-				"open": "open14.4"
+				"open": "sonajiz.4"
 			},
 			"reward": [
 				[ "item", "Azure Drop Shade", 1 ]
@@ -212,7 +217,7 @@
 				"path": ".settings.event.74" 
 			},
 			"region": {
-				"open": "open2" 
+				"open": "harbor" 
 			},
 			"reward": [
 				[ "item", "Green Leaf Shade", 1 ]
@@ -226,7 +231,7 @@
 				"path": ".settings.event.90" 
 			},
 			"region": {
-				"open": "open2" 
+				"open": "harbor" 
 			},
 			"reward": [
 				[ "item", "Disc of Insight", 1 ]
@@ -240,7 +245,7 @@
 				"path": ".settings.event.36" 
 			},
 			"region": {
-				"open": "open4.8" 
+				"open": "mine.8" 
 			},
 			"reward": [
 				[ "item", "Circuit Override", 1 ]
@@ -254,7 +259,7 @@
 				"path": ".settings.event.35" 
 			},
 			"region": {
-				"open": "open7.8" 
+				"open": "fajro.8" 
 			},
 			"reward": [
 				[ "item", "Circuit Override", 1 ]
@@ -268,7 +273,7 @@
 				"path": ".settings.event.36" 
 			},
 			"region": {
-				"open": "open15.3" 
+				"open": "kajo.3" 
 			},
 			"reward": [
 				[ "item", "Circuit Override", 2 ]
@@ -282,7 +287,7 @@
 				"path": ".settings.event.14" 
 			},
 			"region": {
-				"open": "open14.4"
+				"open": "sonajiz.4"
 			},
 			"reward": [
 				[ "item", "Circuit Override", 1 ]
@@ -296,7 +301,7 @@
 				"path": ".settings.event.14" 
 			},
 			"region": {
-				"open": "open13.2" 
+				"open": "zirvitar.2" 
 			},
 			"condition": [
 				[ "item", "Wave", 1 ]
@@ -313,7 +318,7 @@
 				"path": ".settings.event.38" 
 			},
 			"region": {
-				"open": "open7.8" 
+				"open": "fajro.8" 
 			},
 			"reward": [
 				[ "sp" ]
@@ -327,7 +332,7 @@
 				"path": ".settings.event.44" 
 			},
 			"region": {
-				"open": "open15.3" 
+				"open": "kajo.3" 
 			},
 			"reward": [
 				[ "sp" ]
@@ -341,7 +346,7 @@
 				"path": ".settings.event.49" 
 			},
 			"region": {
-				"open": "open10" 
+				"open": "garden" 
 			},
 			"reward": [
 				[ "item", "East Gaia Pass", 1 ]
@@ -355,7 +360,7 @@
 				"path": ".settings.event.48" 
 			},
 			"region": {
-				"open": "open10" 
+				"open": "garden" 
 			},
 			"reward": [
 				[ "item", "West Gaia Pass", 1 ]

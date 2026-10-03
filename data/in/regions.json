@@ -3,193 +3,197 @@
 		"open": {
 			"connections": [
 				{
-					"from": "open2",
-					"to": "open3",
+					"from": "harbor",
+					"to": "rise",
 					"condition": [
 						[ "item", "Green Leaf Shade", 1 ]
 					]
 				},
 				{
-					"from": "open3",
-					"to": "open4.1",
+					"from": "rise",
+					"to": "trail"
+				},
+				{
+					"from": "trail",
+					"to": "bergen"
+				},
+				{
+					"from": "bergen",
+					"to": "mine.1",
 					"condition": [
 						[ "item", "Mine Pass", 1 ]
 					]
 				},
 				{
-					"from": "open3",
-					"to": "open3.1",
-					"condition": [
-						[ "item", "Mine Pass", 1 ]
-					]
-				},
-				{
-					"from": "open4.1",
-					"to": "open4.2",
+					"from": "mine.1",
+					"to": "mine.2",
 					"condition": [
 						[ "item", "Mine Key", 1 ]
 					]
 				},
 				{
-					"from": "open4.2",
-					"to": "open4.3",
+					"from": "mine.2",
+					"to": "mine.3",
 					"condition": [
 						[ "item", "Mine Key", 2 ]
 					]
 				},
 				{
-					"from": "open4.3",
-					"to": "open4.4",
+					"from": "mine.3",
+					"to": "mine.4",
 					"condition": [
 						[ "item", "Mine Key", 3 ]
 					]
 				},
 				{
-					"from": "open4.4",
-					"to": "open4.5",
+					"from": "mine.4",
+					"to": "mine.5",
 					"condition": [
 						[ "item", "Mine Key", 5 ]
 					]
 				},
 				{
-					"from": "open4.4",
-					"to": "open4.6",
+					"from": "mine.4",
+					"to": "mine.6",
 					"condition": [
 						[ "item", "Heat", 1 ]
 					]
 				},
 				{
-					"from": "open4.6",
-					"to": "open4.7",
+					"from": "mine.6",
+					"to": "mine.7",
 					"condition": [
 						[ "item", "Mine Key", 5 ]
 					]
 				},
 				{
-					"from": "open4.1",
-					"to": "open4.8",
+					"from": "mine.1",
+					"to": "mine.8",
 					"condition": [
 						[ "item", "Mine Master Key", 1 ]
 					]
 				},
 				{
-					"from": "open3",
-					"to": "open5",
+					"from": "trail",
+					"to": "valley",
 					"condition": [
+						[ "item", "Green Leaf Shade", 1 ],
 						[ "item", "Blue Ice Shade", 1 ]
 					]
-				},				
+				},
 				{
-					"from": "open2",
-					"to": "open5",
+					"from": "valley",
+					"to": "bakii"
+				},
+				{
+					"from": "harbor",
+					"to": "bakii",
 					"condition": [
 						[ "item", "Blue Ice Shade", 1 ],
 						[ "var", "rhombusHubUnlock" ]
 					]
 				},
 				{
-					"from": "open5",
-					"to": "open6",
-					"condition": [
-						[ "item", "Maroon Cave Pass", 1 ]
-					]
-				},
-				{
-					"from": "open5",
-					"to": "open7.1",
+					"from": "valley",
+					"to": "fajro.1",
 					"condition": [
 						[ "item", "Yellow Sand Shade", 1 ]
 					]
 				},
 				{
-					"from": "open7.1",
-					"to": "open7.2",
+					"from": "fajro.1",
+					"to": "fajro.2",
 					"condition": [
 						[ "item", "Faj'ro Key", 1 ],
 						[ "item", "Heat" ]
 					]
 				},
 				{
-					"from": "open7.2",
-					"to": "open7.3",
+					"from": "fajro.2",
+					"to": "fajro.3",
 					"condition": [
 						[ "item", "Faj'ro Key", 3 ]
 					]
 				},
 				{
-					"from": "open7.1",
-					"to": "open7.5",
+					"from": "fajro.1",
+					"to": "fajro.5",
 					"condition": [
 						[ "item", "Cold", 1 ]
 					]
 				},
 				{
-					"from": "open7.5",
-					"to": "open7.6",
+					"from": "fajro.5",
+					"to": "fajro.6",
 					"condition": [
 						[ "item", "White Key", 1 ]
 					]
 				},
 				{
-					"from": "open7.6",
-					"to": "open7.7",
+					"from": "fajro.6",
+					"to": "fajro.7",
 					"condition": [
 						[ "item", "Heat" ]
 					]
 				},
 				{
-					"from": "open7.6",
-					"to": "open7.8",
+					"from": "fajro.6",
+					"to": "fajro.8",
 					"condition": [
 						[ "item", "Faj'ro Master Key", 1 ]
 					]
 				},
 				{
-					"from": "open2",
-					"to": "open8",
+					"from": "harbor",
+					"to": "harbor.north",
 					"condition": [
 						[ "item", "Red Flame Shade", 1 ]
 					]
 				},
 				{
-					"from": "open2",
-					"to": "open9",
+					"from": "harbor",
+					"to": "fall",
 					"condition": [
 						[ "item", "Red Flame Shade", 1 ]
 					]
 				},
 				{
-					"from": "open2",
-					"to": "open20",
+					"from": "harbor",
+					"to": "rhombus",
 					"condition": [
 						[ "item", "Meteor Shade", 1 ]
 					]
 				},
 				{
-					"from": "open9",
-					"to": "open10",
+					"from": "fall",
+					"to": "garden",
 					"condition": [
+						[ "item", "Red Flame Shade", 1 ],
 						[ "item", "Green Seed Shade", 1 ]
 					]
 				},
 				{
-					"from": "open2",
-					"to": "open10",
+					"from": "harbor",
+					"to": "garden",
 					"condition": [
 						[ "item", "Green Seed Shade", 1 ],
 						[ "var", "rhombusHubUnlock" ]
 					]
 				},
 				{
-					"from": "open10",
-					"to": "open11",
+					"from": "garden",
+					"to": "basin"
+				},
+				{
+					"from": "basin",
+					"to": "basin.slums",
 					"condition": [
 						[ "item", "Pond Slums Pass", 1 ]
 					]
 				},
 				{
-					"from": "open10",
-					"to": "open10.Left",
+					"from": "garden",
+					"to": "garden.west",
 					"condition": [
 							[ "or", 
 								[ "var", "closedGaia", "on", false ], 
@@ -198,8 +202,8 @@
 						]
 				},
 				{
-					"from": "open10",
-					"to": "open10.Right",
+					"from": "garden",
+					"to": "garden.east",
 					"condition": [
 						[ "or", 
 							[ "var", "closedGaia", "on", false ], 
@@ -208,8 +212,8 @@
 					]
 				},
 				{
-					"from": "open10",
-					"to": "open10.Mid",
+					"from": "garden",
+					"to": "garden.mid",
 					"condition": [
 						[ "or", 
 							[ "and", 
@@ -221,8 +225,8 @@
 					]
 				},
 				{
-					"from": "open10.Left",
-					"to": "open10.Grove",
+					"from": "garden.west",
+					"to": "garden.grove",
 					"condition": [
 						[ "or", 
 							[ "var", "closedGaia", "full", false ], 
@@ -231,8 +235,8 @@
 					]
 				},
 				{
-					"from": "open10.Right",
-					"to": "open10.Infested",
+					"from": "garden.east",
+					"to": "garden.infested",
 					"condition": [
 						[ "or", 
 							[ "var", "closedGaia", "full", false ], 
@@ -241,53 +245,53 @@
 					]
 				},
 				{
-					"from": "open10.Right",
-					"to": "open13.1",
+					"from": "garden.east",
+					"to": "zirvitar.1",
 					"condition": [
 						[ "item", "Zir'vitar Key", 2 ],
 						[ "any_element" ]
 					]
 				},
 				{
-					"from": "open13.1",
-					"to": "open13.2",
+					"from": "zirvitar.1",
+					"to": "zirvitar.2",
 					"condition": [
 						[ "item", "Wave", 1 ]
 					]
 				},
 				{
-					"from": "open10.Left",
-					"to": "open14.1",
+					"from": "garden.west",
+					"to": "sonajiz.1",
 					"condition": [
 						[ "item", "So'najiz Key", 1 ],
 						[ "any_element" ]
 					]
 				},
 				{
-					"from": "open14.1",
-					"to": "open14.2",
+					"from": "sonajiz.1",
+					"to": "sonajiz.2",
 					"condition": [
 						[ "item", "So'najiz Key", 3 ]
 					]
 				},
 				{
-					"from": "open14.2",
-					"to": "open14.3",
+					"from": "sonajiz.2",
+					"to": "sonajiz.3",
 					"condition": [
 						[ "item", "So'najiz Key", 4 ],
 						[ "item", "Radiant Key", 1 ]
 					]
 				},
 				{
-					"from": "open14.3",
-					"to": "open14.4",
+					"from": "sonajiz.3",
+					"to": "sonajiz.4",
 					"condition": [
 						[ "item", "Shock" ]
 					]
 				},
 				{
-					"from": "open10.Mid",
-					"to": "open15.1",
+					"from": "garden.mid",
+					"to": "kajo.1",
 					"condition": [
 						[ "item", "Azure Drop Shade", 1 ],
 						[ "item", "Purple Bolt Shade", 1 ],
@@ -296,61 +300,55 @@
 					]
 				},
 				{
-					"from": "open15.1",
-					"to": "open15.2",
+					"from": "kajo.1",
+					"to": "kajo.2",
 					"condition": [
 						[ "item", "Krys'kajo Key", 2 ]
 					]
 				},
 				{
-					"from": "open15.1",
-					"to": "open15.3",
+					"from": "kajo.1",
+					"to": "kajo.3",
 					"condition": [
 						[ "item", "Kajo Master Key", 1 ]
 					]
 				},
 				{
-					"from": "open9",
-					"to": "open16",
+					"from": "fall",
+					"to": "ridge",
 					"condition": [
+						[ "item", "Red Flame Shade", 1 ],
 						[ "item", "Star Shade", 1 ]
 					]
 				},
 				{
-					"from": "open2",
-					"to": "open16",
+					"from": "harbor",
+					"to": "ridge",
 					"condition": [
 						[ "item", "Star Shade", 1 ],
 						[ "var", "rhombusHubUnlock" ]
 					]
 				},
 				{
-					"from": "open16",
-					"to": "open17",
-					"condition": [
-						[ "item", "Old Dojo Key", 1 ]
-					]
-				},
-				{
-					"from": "open16",
-					"to": "open16.1",
+					"from": "ridge",
+					"to": "ridge.north",
 					"condition": [
 						[ "item", "Meteor Shade", 1 ]
 					]
 				},
 				{
-					"from": "open16",
-					"to": "open18",
+					"from": "ridge",
+					"to": "wasteland",
 					"condition": [
 						["var", "vwPassage"]
 					]
 				}
 			],
-			"exclude": [ "open1" ],
-			"start": "open2",
+			"exclude": [],
+			"start": "harbor",
 			"goals": {
 				"creator": {
-					"region": "open18",
+					"region": "wasteland",
 					"condition": [
 						[ "item", "Heat", 1 ],
 						[ "item", "Cold", 1 ],
@@ -360,22 +358,22 @@
 					]
 				},
 				"monkey": {
-					"region": "open15.3"
+					"region": "kajo.3"
 				},
 				"observatory": {
-					"region": "open2",
+					"region": "rise",
 					"condition": [
 						[ "location", "The Observatory" ]
 					]
 				},
 				"facility_x": {
-					"region": "open16.1",
+					"region": "ridge",
 					"condition": [
 						[ "item", "Encrypted Key", 4 ],
-						[ "region", "open", "open3" ],
-						[ "region", "open", "open5" ],
-						[ "region", "open", "open9" ],
-						[ "region", "open", "open10.Right" ]
+						[ "region", "open", "trail" ],
+						[ "region", "open", "valley" ],
+						[ "region", "open", "fall" ],
+						[ "region", "open", "garden.east" ]
 					]
 				}
 			}
