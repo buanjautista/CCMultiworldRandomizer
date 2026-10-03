@@ -73,7 +73,7 @@ export function sendTrap(item: ap.Item){
       sc.model.increaseCombatRank(0);
       break;
     case "Ice Cage Trap":
-      ig.game.events.callEvent(new ig.Event( {name: "Ice Cage Trap", steps: [ { type: "WAIT", time: 0.1 }, { type: "SPAWN_ICE_CAGE", "desType": "iceBlock", "time": 15 }, { type: "WAIT", time: 1 } ] }), ig.EventRunType.PARALLEL);
+      ig.game.events.callEvent(new ig.Event( {name: "Ice Cage Trap", steps: [ { type: "WAIT", time: 0.1 }, { type: "SPAWN_ICE_CAGE", "desType": "iceBlock", "time": 15 }, { type: "WAIT", time: 1 } ] }), ig.EventRunType.INTERRUPTABLE);
       break;
     case "Element Swap Trap":
       sc.model.player.scrollElementMode(Math.floor(Math.random()*3-1),false,false);
