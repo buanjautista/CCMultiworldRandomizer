@@ -102,7 +102,7 @@ jobs:
         with:
           tag: ${{ steps.rename.outputs.tag }}
       - uses: softprops/action-gh-release@v3.0.3
-        if: "! ${{ steps.create-tag.outputs.tag_exists }}"
+        if: "${{ !steps.create-tag.outputs.tag_exists }}"
         with:
           files: |
             ${{ steps.rename.outputs.mod_path }}
