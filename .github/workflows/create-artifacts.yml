@@ -1,0 +1,80 @@
+name: Create artifacts
+on: push
+jobs:
+  create-mod:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v6.0.2
+      - name: Install base dependencies
+        run: |
+          sudo apt update
+          sudo apt -y install build-essential jq
+      - uses: pnpm/setup@v1
+        with:
+          version: 11
+      - name: Build and bundle
+        run: |
+          pnpm install
+          pnpm start
+          pnpm run bundle
+          export MOD_NAME=CCMultiworldRandomizer-${GITHUB_RUN_NUMBER}-${GITHUB_SHA:0:12}.ccmod
+          echo "MOD_NAME=$MOD_NAME" >> $GITHUB_ENV
+          mv CCMultiworldRandomizer-*.ccmod CCMultiworldRandomizer-${GITHUB_RUN_NUMBER}-${GITHUB_SHA:0:12}.ccmod
+      - name: Store ccmod
+        uses: actions/upload-artifact@v7.0.0
+        with:
+          path: "${{ env.MOD_NAME }}"
+          archive: false
+          if-no-files-found: error
+          retention-days: 7
+
+  create-apworld-and-yaml:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v6.0.2
+        with:
+          submodules: recursive
+      - name: Install base dependencies
+        run: |
+          sudo apt update
+          sudo apt -y install build-essential # p7zip xz-utils wget libglib2.0-0
+      - name: Get a recent python
+        uses: actions/setup-python@v6.2.0
+        with:
+          python-version: '~3.12.7'
+          check-latest: true
+      - name: Set python environment variables
+        run: |
+          echo "PYTHON=python3.12" >> $GITHUB_ENV
+      - name: Install python dependencies
+        working-directory: ./Archipelago
+        run: |
+          "${{ env.PYTHON }}" -m venv venv
+          source venv/bin/activate
+          "${{ env.PYTHON }}" -m pip install --upgrade pip
+          "${{ env.PYTHON }}" -m pip install -r requirements.txt
+          echo "SKIP_REQUIREMENTS_UPDATE=1" >> $GITHUB_ENV
+      - name: Bundle apworld
+        working-directory: ./Archipelago
+        run: |
+          source venv/bin/activate
+          "${{ env.PYTHON }}" -m worlds.crosscode.bundle
+      - name: Generate template YAMLS
+        working-directory: ./Archipelago
+        run: |
+          source venv/bin/activate
+          "${{ env.PYTHON }}" -c '__import__("Options").generate_yaml_templates("Players/Templates")'
+      - name: Store apworld
+        uses: actions/upload-artifact@v7.0.0
+        with:
+          path: Archipelago/crosscode.apworld
+          archive: false
+          if-no-files-found: error
+          retention-days: 7
+      - name: Store YAML
+        uses: actions/upload-artifact@v7.0.0
+        with:
+          path: Archipelago/Players/Templates/CrossCode.yaml
+          archive: false
+          if-no-files-found: error
+          retention-days: 7
