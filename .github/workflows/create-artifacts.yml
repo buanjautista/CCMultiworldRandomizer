@@ -82,28 +82,23 @@ jobs:
 
   create-release:
     runs-on: ubuntu-22.04
-    if: >
-      startsWith(github.event.head_commit.message, 'Release v')
+    if: github.ref_type == 'tag'
     steps:
       - name: Download artifacts
         uses: actions/download-artifact@v8
       - name: Rename files
         id: rename
         run: |
-          COMMIT_HASH="${{ github.event.head_commit.message }}"
-          TAG=${commit#*v} # trim off everything before the initial v
-          TAG=${commit%% *} # trim off everything after the first space after the version
-          MOD_PATH="CCMultiworldRandomizer-$TAG.ccmod"
+          MOD_PATH="CCMultiworldRandomizer-${{ github.ref_name }}.ccmod"
           mv CCMultiworldRandomizer*.ccmod "$MOD_PATH"
-          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
           echo "mod_path=$MOD_PATH" >> "$GITHUB_OUTPUT"
       - uses: rickstaa/action-create-tag@v1.7.2
-        id: create-tag
         with:
-          tag: ${{ steps.rename.outputs.tag }}
+          tag: ${{ github.ref_name }}
       - uses: softprops/action-gh-release@v3.0.3
-        if: "${{ !steps.create-tag.outputs.tag_exists }}"
         with:
+          draft: true
+          prerelease: contains(github.ref_name, "pre")
           files: |
             ${{ steps.rename.outputs.mod_path }}
             crosscode.apworld
