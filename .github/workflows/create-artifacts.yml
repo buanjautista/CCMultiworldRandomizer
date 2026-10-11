@@ -91,6 +91,8 @@ jobs:
   create-release:
     runs-on: ubuntu-22.04
     needs: [ create-mod, create-apworld-and-yaml ]
+    permissions:
+      contents: write
     if: github.ref_type == 'tag'
     steps:
       - name: Download artifacts
